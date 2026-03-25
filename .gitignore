@@ -1,0 +1,73 @@
+# IDE
+.vs/
+.idea/
+.vscode/
+*.vsconfig
+
+# Unity generated
+Build/
+Demo Viewer/Library/
+Demo Viewer/Temp/
+Demo Viewer/Obj/
+Demo Viewer/Bin/
+Demo Viewer/Build/
+Demo Viewer/Builds/
+Demo Viewer/Logs/
+Demo Viewer/UserSettings/
+Demo Viewer/MemoryCaptures/
+
+# Unity lock file
+Demo Viewer/Temp/UnityLockfile
+
+# Auto-generated project files
+*.csproj
+*.sln
+*.slnx
+*.DotSettings
+
+# Rider/JetBrains
+RiderScriptEditorPersistedState.asset
+
+# Crash dumps
+*.mem.*.blob
+mono_crash.*
+
+# Blender temp files
+*.blend1
+*.blend1.meta
+
+# Project-specific ignores
+DemoViewerLinked/
+Demo Viewer/Assets/Ludiq.Generated/
+Demo Viewer/Assets/Ludiq/
+Demo Viewer/Assets/Ludiq.meta
+Demo Viewer/Assets/Ludiq.Generated.meta
+Demo Viewer/Assets/Arena_V3/ArenaRemesh.blend
+Demo Viewer/Assets/Arena_V3/ArenaRemesh.blend.meta
+
+# Serena MCP
+.serena/
+
+# Native system libraries (not project dependencies)
+libs/
+
+# Analysis/working notes
+ANALYSIS_SUMMARY.txt
+CONVERSION_ANALYSIS.md
+README_BONE_ANALYSIS.md
+AGENTS.md
+BUILD.md
+export_gltf_Version2.py
+INDEX.md
+REBUILD_REQUIRED.md
+REPO_PRUNE.md
+SIGNAL_HANDLING.md
+SIGNAL_HANDLING_SETUP.sh
+check_bones*.py
+compare_conversion.py
+rebuild.sh
+
+# Build logs and captures
+build.log
+*.nevrcap
+*.echoreplay
