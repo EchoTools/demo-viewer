@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required for Meta Quest passthrough (XR_FB_passthrough) -->
+    <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true"/>
+
+    <application>
+        <!-- Tell the system this app uses passthrough -->
+        <meta-data android:name="com.samsung.android.vr.application.mode" android:value="vr_only"/>
+    </application>
+
+</manifest>

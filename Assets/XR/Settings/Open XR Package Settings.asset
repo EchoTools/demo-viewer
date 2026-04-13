@@ -576,6 +576,28 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-1004254132270341116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357c3f84beaa16943b4d021a606254e6, type: 3}
+  m_Name: TableTopPassthroughFeature Android
+  m_EditorClassIdentifier: Assembly-CSharp::TableTopPassthroughFeature
+  m_enabled: 1
+  nameUi: Table-Top Passthrough
+  version: 1.0.0
+  featureIdInternal: com.echotools.tabletop.passthrough
+  openxrExtensionStrings: XR_FB_passthrough
+  company: EchoTools
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-729735272063330596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +769,7 @@ MonoBehaviour:
   - {fileID: -4018838851985500086}
   - {fileID: -4278566755950359107}
   - {fileID: 5772486496455053889}
+  - {fileID: -1004254132270341116}
   - {fileID: 2695209084273021126}
   customLoaderName: 
   m_renderMode: 1
