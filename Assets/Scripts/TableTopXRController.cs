@@ -178,7 +178,7 @@ public class TableTopXRController : MonoBehaviour
         SubsystemManager.GetSubsystems(displaySubsystems);
         foreach (XRDisplaySubsystem subsystem in displaySubsystems)
         {
-            subsystem.SetEnvironmentBlendMode(XREnvironmentBlendMode.AlphaBlend);
+            subsystem.SetEnvironmentBlendMode(XRDisplaySubsystem.EnvironmentBlendMode.AlphaBlend);
             Debug.Log("[TableTopXR] Passthrough blend mode requested.");
             break;
         }
