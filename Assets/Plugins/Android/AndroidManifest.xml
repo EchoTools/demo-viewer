@@ -17,6 +17,8 @@
             android:exported="true"
             tools:node="merge">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="com.oculus.intent.category.VR"/>
             </intent-filter>
             <meta-data android:name="com.oculus.vr.focusaware" android:value="true"/>
