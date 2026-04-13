@@ -1,7 +1,7 @@
 # Demo Viewer — EchoTools fork
 # Unity 6 replay viewer for EchoVR / nEVR telemetry
 
-unity := env("UNITY_PATH", "/opt/Unity/Editor/Unity")
+unity := env("UNITY_PATH", env("HOME", "/home") / "Unity/Hub/Editor/6000.3.4f1/Editor/Unity")
 project := justfile_directory()
 
 # List available recipes
@@ -28,35 +28,25 @@ proto-deps:
 
 # ── Build ─────────────────────────────────────────────────
 
-# Build for Linux
-build-linux: proto
-    mkdir -p Build/Linux
-    {{unity}} -quit -batchmode -nographics \
+[private]
+unity-build platform target: proto
+    mkdir -p "$(dirname "{{target}}")"
+    "{{unity}}" -quit -batchmode -nographics \
         -projectPath "{{project}}" \
-        -buildTarget StandaloneLinux64 \
+        -buildTarget "{{platform}}" \
         -executeMethod BuildScript.PerformBuild \
-        "--output={{project}}/Build/Linux/ReplayViewer" \
-        -logFile -
+        -logFile - \
+        "--output={{target}}" \
+        "--platform={{platform}}"
+
+# Build for Linux
+build-linux: (unity-build "StandaloneLinux64" (project / "Build/Linux/ReplayViewer"))
 
 # Build for Windows
-build-windows: proto
-    mkdir -p Build/Windows
-    {{unity}} -quit -batchmode -nographics \
-        -projectPath "{{project}}" \
-        -buildTarget StandaloneWindows64 \
-        -executeMethod BuildScript.PerformBuild \
-        "--output={{project}}/Build/Windows/ReplayViewer.exe" \
-        -logFile -
+build-windows: (unity-build "StandaloneWindows64" (project / "Build/Windows/ReplayViewer.exe"))
 
 # Build for macOS
-build-macos: proto
-    mkdir -p Build/macOS
-    {{unity}} -quit -batchmode -nographics \
-        -projectPath "{{project}}" \
-        -buildTarget StandaloneOSX \
-        -executeMethod BuildScript.PerformBuild \
-        "--output={{project}}/Build/macOS/ReplayViewer.app" \
-        -logFile -
+build-macos: (unity-build "StandaloneOSX" (project / "Build/macOS/ReplayViewer.app"))
 
 # Build all platforms
 build-all: build-linux build-windows build-macos
@@ -65,11 +55,11 @@ build-all: build-linux build-windows build-macos
 
 # Open project in Unity editor
 edit:
-    {{unity}} -projectPath "{{project}}" &
+    "{{unity}}" -projectPath "{{project}}" &
 
 # Run Unity tests
 test:
-    {{unity}} -quit -batchmode -nographics \
+    "{{unity}}" -quit -batchmode -nographics \
         -projectPath "{{project}}" \
         -runTests \
         -testResults "{{project}}/TestResults.xml" \
@@ -89,7 +79,7 @@ clean-cache:
 
 # Check that required tools are installed
 doctor:
-    @echo "Unity:  $({{unity}} -version 2>/dev/null || echo 'NOT FOUND — set UNITY_PATH')"
+    @echo "Unity:  $("{{unity}}" -version 2>/dev/null || echo 'NOT FOUND — set UNITY_PATH')"
     @echo "buf:    $(buf --version 2>/dev/null || echo 'NOT FOUND — install from buf.build')"
     @echo "just:   $(just --version)"
     @echo "git:    $(git --version)"
