@@ -14,8 +14,10 @@
         -->
         <activity
             android:name="com.unity3d.player.UnityPlayerGameActivity"
+            android:enabled="true"
             android:exported="true"
-            tools:node="merge">
+            tools:node="merge"
+            tools:replace="android:enabled">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
