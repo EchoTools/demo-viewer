@@ -160,27 +160,20 @@ public class TableTopXRController : MonoBehaviour
     }
 
     /// <summary>
-    /// Configures the VR camera for passthrough (transparent background) and
-    /// requests Alpha-Blend environment blend mode from the XR display subsystem.
+    /// Configures the VR camera for passthrough (transparent background).
     ///
-    /// Requires the Oculus/Meta OpenXR feature to be enabled in
-    /// Project Settings → XR Plug-in Management → OpenXR → Features.
+    /// The environment blend mode (AlphaBlend / passthrough) must be enabled
+    /// in the OpenXR feature settings — it cannot be set at runtime via this
+    /// version of the XR packages:
+    ///   Project Settings → XR Plug-in Management → OpenXR
+    ///   → Android → Features → Meta Quest: Passthrough (or Oculus Quest Feature)
     /// </summary>
     private void EnablePassthrough()
     {
-        if (xrCamera != null)
-        {
-            xrCamera.clearFlags = CameraClearFlags.SolidColor;
-            xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
-        }
+        if (xrCamera == null) return;
 
-        var displaySubsystems = new List<XRDisplaySubsystem>();
-        SubsystemManager.GetSubsystems(displaySubsystems);
-        foreach (XRDisplaySubsystem subsystem in displaySubsystems)
-        {
-            subsystem.SetEnvironmentBlendMode(XRDisplaySubsystem.EnvironmentBlendMode.AlphaBlend);
-            Debug.Log("[TableTopXR] Passthrough blend mode requested.");
-            break;
-        }
+        xrCamera.clearFlags = CameraClearFlags.SolidColor;
+        xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        Debug.Log("[TableTopXR] Camera set to transparent for passthrough.");
     }
 }
