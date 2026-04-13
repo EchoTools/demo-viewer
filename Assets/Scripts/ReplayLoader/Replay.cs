@@ -9,7 +9,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using ButterReplays;
 using EchoVRAPI;
-using NevrCap;
 using Tape;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -135,86 +134,6 @@ public class Replay : MonoBehaviour
 			Game readGame = new Game
 			{
 				// rawFrames = // TODO,
-				nFrames = frames.Count,
-				filename = filename,
-				frames = frames
-			};
-
-			lock (gameLock)
-			{
-				game = readGame;
-			}
-		}
-		// nevrcap (Zstd-compressed protobuf)
-		else if (filename.EndsWith(".nevrcap"))
-		{
-			fileReader.Close();
-
-			fileReadProgress = 0;
-			List<Frame> frames = new List<Frame>();
-
-			try
-			{
-				using (var reader = new NevrCapReader(filename))
-				{
-					// Read header (contains metadata about the capture)
-					var header = reader.ReadHeader();
-					if (header != null)
-					{
-						Debug.Log($"[NevrCap] Loading nevrcap: {header.CaptureId}, created at {header.CreatedAt}");
-					}
-					else
-					{
-						Debug.LogWarning("[NevrCap] No header found in nevrcap file");
-					}
-
-					// Read all frames
-					Nevr.Telemetry.Protobuf.LobbySessionStateFrame protoFrame;
-					int framesRead = 0;
-					int framesConverted = 0;
-					int framesRejected = 0;
-					
-					Debug.Log("[NevrCap] Starting frame reading...");
-					
-					while ((protoFrame = reader.ReadFrame()) != null)
-					{
-						// if we started loading a different file instead, stop this one
-						if (threadLoadingId != loadingThreadId) return;
-
-						framesRead++;
-						Frame frame = NevrCapFrameConverter.Convert(protoFrame);
-						if (frame != null)
-						{
-							frames.Add(frame);
-							framesConverted++;
-						}
-						else
-						{
-							framesRejected++;
-						}
-
-						// Log progress every 1000 frames
-						if (framesRead % 1000 == 0)
-						{
-							Debug.Log($"[NevrCap] Progress: Read {framesRead} frames, converted {framesConverted}, rejected {framesRejected}");
-						}
-						
-						// Update progress (estimate based on frame count)
-						fileReadProgress = (framesRead % 1000) / 1000f;
-					}
-					
-					Debug.Log($"[NevrCap] Finished reading file: {framesRead} frames read, {framesConverted} frames converted successfully, {framesRejected} frames rejected");
-				}
-			}
-			catch (Exception ex)
-			{
-				Debug.LogError($"[NevrCap] Error reading nevrcap file: {ex.Message}\nStack trace: {ex.StackTrace}");
-			}
-
-			fileReadProgress = 1;
-
-			Game readGame = new Game
-			{
 				nFrames = frames.Count,
 				filename = filename,
 				frames = frames

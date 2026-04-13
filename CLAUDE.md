@@ -1,8 +1,7 @@
 # Demo-Viewer
 
 EchoTools fork of the EchoVR Replay Viewer. Unity-based 3D replay viewer for
-EchoVR / nEVR telemetry data. Plays back `.echoreplay`, `.nevrcap`, and `.tape`
-capture files.
+EchoVR / nEVR telemetry data. Plays back `.echoreplay` and `.tape` capture files.
 
 ## Build & Run
 
@@ -31,7 +30,6 @@ Assets/
     ReplayLoader/
       Replay.cs           Loads and drives replay playback
     ButterReplays/        .echoreplay format (v1-v3 decompressors)
-    NevrCap/              .nevrcap protobuf-based format (v1)
     Tape/                 .tape protobuf-based format (v2, echotools/tape)
     EchoVRAPI/            Data model (Frame, Player, Team, Disc, etc.)
     Network/              VelNet multiplayer (shared viewing sessions)
@@ -56,8 +54,8 @@ buf.gen.yaml              Buf codegen config (C# output)
 - **Frame pipeline:** Replay files are loaded into `EchoVRAPI.Frame` objects.
   The viewer interpolates between frames and drives player transforms, disc
   position, and game-clock state each Unity update.
-- **Replay formats:** `.echoreplay` (JSON + zstd, handled by ButterReplays),
-  `.nevrcap` (protobuf v1 + zstd, handled by NevrCap/), and `.tape`
+- **Replay formats:** `.echoreplay` (JSON + zstd, handled by ButterReplays)
+  and `.tape`
   (protobuf v2 + zstd, handled by Tape/). The `.tape` format is produced
   by `echotools/tape` (tapedeck CLI) and uses the `telemetry.v2.Envelope`
   wire format with `spatial.v1` float32 types.
@@ -80,18 +78,18 @@ buf.gen.yaml              Buf codegen config (C# output)
 
 ## Dependencies
 
-| Dependency                | Purpose                                                  |
-| ------------------------- | -------------------------------------------------------- |
-| Unity 6000.3.x            | Editor and runtime                                       |
-| buf                       | Protobuf codegen toolchain                               |
-| Google.Protobuf           | Protobuf deserialization for .nevrcap and .tape          |
-| ZstdSharp                 | Zstandard decompression for .echoreplay, .nevrcap, .tape |
-| Newtonsoft.Json (via UPM) | JSON parsing for .echoreplay frames                      |
-| Animation Rigging         | IK for player bone rendering                             |
-| Cinemachine               | Camera system                                            |
-| URP                       | Rendering pipeline                                       |
-| unityutilities            | Shared utility package                                   |
-| VelNet                    | Multiplayer shared viewing                               |
+| Dependency                | Purpose                                        |
+| ------------------------- | ---------------------------------------------- |
+| Unity 6000.3.x            | Editor and runtime                             |
+| buf                       | Protobuf codegen toolchain                     |
+| Google.Protobuf           | Protobuf deserialization for .tape             |
+| ZstdSharp                 | Zstandard decompression for .echoreplay, .tape |
+| Newtonsoft.Json (via UPM) | JSON parsing for .echoreplay frames            |
+| Animation Rigging         | IK for player bone rendering                   |
+| Cinemachine               | Camera system                                  |
+| URP                       | Rendering pipeline                             |
+| unityutilities            | Shared utility package                         |
+| VelNet                    | Multiplayer shared viewing                     |
 
 ---
 
@@ -119,10 +117,12 @@ This codebase was just cleaned up. Keep it clean.
 - **Respect Unity's .meta files.** Never rename, move, or delete assets without understanding that every asset has a .meta file that tracks references. Breaking .meta links breaks the project.
 
 ### Bug Fixes: Reproduce First
+
 - Run the code, see it fail, understand why, then fix it.
 - If you can't reproduce a bug, say so. Don't guess at fixes.
 - After fixing, run it again to prove the fix works. Then build to make sure nothing else broke.
 
 ### Session Hygiene
+
 - **Start:** `git status`, commit any leftover changes, `git log --oneline -5` to remember where you were.
 - **End:** Commit everything (even WIP), push, verify the push succeeded.

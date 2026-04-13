@@ -3,10 +3,15 @@
 
 set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
 
-# UNITY_PATH env var overrides auto-detection on both platforms.
-# On Unix, auto-detect falls back to ~/Unity/Hub/Editor/6000.*/Editor/Unity.
-# On Windows, auto-detect is handled by scripts/find-unity.ps1.
+# Unity auto-detection: UNITY_PATH env var overrides.
+# Unix: ~/Unity/Hub/Editor/6000.*/Editor/Unity
+# Windows: scans Program Files and AppData\Local for Unity 6000.x
+unity_unix := env("UNITY_PATH", env("HOME", "/home") / "Unity/Hub/Editor/6000.3.4f1/Editor/Unity")
 project := justfile_directory()
+
+# Inline PowerShell Unity detection (avoids .ps1 execution policy issues).
+# Assigns $unity and fails fast if not found.
+_find_unity_win := "if ($env:UNITY_PATH) { $unity = $env:UNITY_PATH } else { $unity = @(\"$env:ProgramFiles\\Unity\\Hub\\Editor\", \"$env:LOCALAPPDATA\\Unity\\Hub\\Editor\") | ForEach-Object { Get-ChildItem $_ -Filter '6000.*' -Directory -EA 0 } | Sort-Object Name -Descending | Select-Object -First 1 | ForEach-Object { Join-Path $_.FullName 'Editor\\Unity.exe' }; if (-not $unity -or -not (Test-Path $unity)) { throw 'Unity 6000.x not found. Install via Unity Hub or set UNITY_PATH.' } }"
 
 # List available recipes
 default:
@@ -30,36 +35,12 @@ proto-breaking *args:
 proto-deps:
     buf dep update
 
-# ── Unity path helpers ────────────────────────────────────
-
-[unix, private]
-find-unity:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if [ -n "${UNITY_PATH:-}" ]; then
-        if [ -x "$UNITY_PATH" ]; then echo "$UNITY_PATH"; exit 0; fi
-        echo "UNITY_PATH is set but does not exist: $UNITY_PATH" >&2; exit 1
-    fi
-    for d in "$HOME/Unity/Hub/Editor"/6000.*; do
-        exe="$d/Editor/Unity"
-        if [ -x "$exe" ]; then echo "$exe"; exit 0; fi
-    done
-    echo "Unity 6000.x not found. Install via Unity Hub or set UNITY_PATH." >&2
-    exit 1
-
-[windows, private]
-find-unity:
-    & "{{project}}/scripts/find-unity.ps1"
-
 # ── Build ─────────────────────────────────────────────────
 
 [unix, private]
 unity-build platform target: proto
-    #!/usr/bin/env bash
-    set -euo pipefail
-    unity="$(just find-unity)"
     mkdir -p "$(dirname "{{target}}")"
-    "$unity" -quit -batchmode -nographics \
+    "{{unity_unix}}" -quit -batchmode -nographics \
         -projectPath "{{project}}" \
         -buildTarget "{{platform}}" \
         -executeMethod BuildScript.PerformBuild \
@@ -69,7 +50,7 @@ unity-build platform target: proto
 
 [windows, private]
 unity-build platform target: proto
-    $unity = & "{{project}}/scripts/find-unity.ps1"; \
+    {{_find_unity_win}}; \
     New-Item -ItemType Directory -Force -Path (Split-Path "{{target}}") | Out-Null; \
     & $unity -quit -batchmode -nographics -projectPath "{{project}}" -buildTarget "{{platform}}" -executeMethod BuildScript.PerformBuild -logFile - "--output={{target}}" "--platform={{platform}}"
 
@@ -90,24 +71,18 @@ build-all: build-linux build-windows build-macos
 # Open project in Unity editor
 [unix]
 edit:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    unity="$(just find-unity)"
-    "$unity" -projectPath "{{project}}" &
+    "{{unity_unix}}" -projectPath "{{project}}" &
 
 # Open project in Unity editor
 [windows]
 edit:
-    $unity = & "{{project}}/scripts/find-unity.ps1"; \
+    {{_find_unity_win}}; \
     Start-Process $unity "-projectPath", "{{project}}"
 
 # Run Unity tests
 [unix]
 test:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    unity="$(just find-unity)"
-    "$unity" -quit -batchmode -nographics \
+    "{{unity_unix}}" -quit -batchmode -nographics \
         -projectPath "{{project}}" \
         -runTests \
         -testResults "{{project}}/TestResults.xml" \
@@ -116,7 +91,7 @@ test:
 # Run Unity tests
 [windows]
 test:
-    $unity = & "{{project}}/scripts/find-unity.ps1"; \
+    {{_find_unity_win}}; \
     & $unity -quit -batchmode -nographics -projectPath "{{project}}" -runTests -testResults "{{project}}/TestResults.xml" -logFile -
 
 # ── Housekeeping ──────────────────────────────────────────
@@ -146,24 +121,18 @@ clean-cache:
 # Check that required tools are installed
 [unix]
 doctor:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if unity="$(just find-unity 2>/dev/null)"; then
-        echo "Unity:   $("$unity" -version 2>/dev/null || echo "$unity (version unknown)")"
-    else
-        echo "Unity:   NOT FOUND — install via Unity Hub or set UNITY_PATH"
-    fi
-    echo "buf:     $(buf --version 2>/dev/null || echo 'NOT FOUND — install from buf.build')"
-    echo "just:    $(just --version)"
-    echo "git:     $(git --version)"
-    echo "git-lfs: $(git lfs version 2>/dev/null || echo 'NOT FOUND')"
+    @echo "Unity:  $("{{unity_unix}}" -version 2>/dev/null || echo 'NOT FOUND — set UNITY_PATH')"
+    @echo "buf:    $(buf --version 2>/dev/null || echo 'NOT FOUND — install from buf.build')"
+    @echo "just:   $(just --version)"
+    @echo "git:    $(git --version)"
+    @echo "git-lfs: $(git lfs version 2>/dev/null || echo 'NOT FOUND')"
 
 # Check that required tools are installed
 [windows]
 doctor:
-    try { $u = & "{{project}}/scripts/find-unity.ps1" 2>$null; \
-      try { $v = & $u -version 2>$null; Write-Host "Unity:   $v ($u)" } \
-      catch { Write-Host "Unity:   $u (version unknown)" } } \
+    try { {{_find_unity_win}}; \
+      try { $v = & $unity -version 2>$null; Write-Host "Unity:   $v" } \
+      catch { Write-Host "Unity:   $unity (version unknown)" } } \
     catch { Write-Host "Unity:   NOT FOUND - install via Unity Hub or set UNITY_PATH" }
     try { $v = buf --version 2>$null; Write-Host "buf:     $v" } catch { Write-Host "buf:     NOT FOUND - install from buf.build" }
     Write-Host "just:    $(just --version)"

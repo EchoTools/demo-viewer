@@ -270,7 +270,7 @@ public class ReplaySelectionUI : MonoBehaviour
 			{
 				//Debug.Log(file.FullName);
 
-				if (file.Extension == ".echoreplay" || file.Extension == ".butter" || file.Extension == ".nevrcap" || file.Extension == ".tape")
+				if (file.Extension == ".echoreplay" || file.Extension == ".butter" || file.Extension == ".tape")
 				{
 					GameObject button = Instantiate(replayDataRowPrefab, localReplaysList);
 					ReplayFileInfo replayFileInfo = button.GetComponentInChildren<ReplayFileInfo>();
