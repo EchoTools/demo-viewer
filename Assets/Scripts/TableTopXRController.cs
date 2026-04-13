@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Table-top AR (passthrough) mode controller for Meta Quest.
@@ -160,20 +161,28 @@ public class TableTopXRController : MonoBehaviour
     }
 
     /// <summary>
-    /// Configures the VR camera for passthrough (transparent background).
-    ///
-    /// The environment blend mode (AlphaBlend / passthrough) must be enabled
-    /// in the OpenXR feature settings — it cannot be set at runtime via this
-    /// version of the XR packages:
-    ///   Project Settings → XR Plug-in Management → OpenXR
-    ///   → Android → Features → Meta Quest: Passthrough (or Oculus Quest Feature)
+    /// Tells the Quest runtime to show the real world behind rendered content
+    /// (passthrough / mixed reality) and configures the URP camera to render
+    /// with a transparent background so the compositor sees through it.
     /// </summary>
     private void EnablePassthrough()
     {
         if (xrCamera == null) return;
 
+        // Camera clear — solid black with alpha 0 so URP renders no background pixels.
         xrCamera.clearFlags = CameraClearFlags.SolidColor;
         xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
-        Debug.Log("[TableTopXR] Camera set to transparent for passthrough.");
+
+        // URP camera data — disable post-processing effects that can write opaque alpha.
+        var urpData = xrCamera.GetUniversalAdditionalCameraData();
+        if (urpData != null)
+            urpData.renderPostProcessing = false;
+
+        // Ask the OpenXR runtime to composite our frames over the passthrough feed.
+        // PassthroughBridge is a thin OpenXRFeature subclass that exposes the
+        // otherwise protected-static SetEnvironmentBlendMode call.
+        PassthroughBridge.SetBlendModeAlpha();
+
+        Debug.Log("[TableTopXR] Passthrough enabled — blend mode set to AlphaBlend.");
     }
 }
