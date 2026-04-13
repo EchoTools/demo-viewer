@@ -11,11 +11,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
   m_Name: Android Providers
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders: []
+  m_Loaders:
+  - {fileID: 11400000, guid: 0f1e55daadd8ea04d9d93ab147a4f539, type: 2}
 --- !u!114 &-9098523179682462774
 MonoBehaviour:
   m_ObjectHideFlags: 0

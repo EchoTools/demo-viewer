@@ -90,7 +90,12 @@ public static class SetupXRTableTop
         EnsureTagExists(XRControllerTag);
         log.Add($"• Tag '{XRControllerTag}' ensured in TagManager.");
 
-        // ── 2. Create / find TableAnchor ─────────────────────────────────────────
+        // ── 2. Force enableVR on GameManager (Quest has no -useVR command line) ───
+        Undo.RecordObject(gameManager, "Enable VR on GameManager");
+        gameManager.enableVR = true;
+        log.Add("• GameManager.enableVR = true (required on Android — no -useVR arg).");
+
+        // ── 3. Create / find TableAnchor ─────────────────────────────────────────
         GameObject tableAnchor = GameObject.Find(TableAnchorName);
         if (tableAnchor == null)
         {
@@ -103,7 +108,7 @@ public static class SetupXRTableTop
             log.Add($"• '{TableAnchorName}' already exists — reusing it.");
         }
 
-        // ── 3. Move arena content under TableAnchor ──────────────────────────────
+        // ── 4. Move arena content under TableAnchor ──────────────────────────────
         foreach (string goName in ArenaContentNames)
         {
             GameObject found = GameObject.Find(goName);
@@ -123,7 +128,7 @@ public static class SetupXRTableTop
             log.Add($"• Moved '{goName}' under TableAnchor.");
         }
 
-        // ── 4. Reset RigScaler to 1:1 (arena is now scaled, not the rig) ─────────
+        // ── 5. Reset RigScaler to 1:1 (arena is now scaled, not the rig) ─────────
         GameObject rigScaler = GameObject.Find("RigScaler");
         if (rigScaler != null)
         {
@@ -136,7 +141,7 @@ public static class SetupXRTableTop
             log.Add("  (skip) RigScaler not found — rig scale unchanged.");
         }
 
-        // ── 5. Add TableTopXRController to GameManager ──────────────────────────
+        // ── 6. Add TableTopXRController to GameManager ──────────────────────────
         TableTopXRController xrCtrl = gameManager.GetComponent<TableTopXRController>();
         if (xrCtrl == null)
         {
@@ -155,7 +160,7 @@ public static class SetupXRTableTop
         xrCtrl.tableTopScale = 0.01f;
         log.Add("  → arenaAnchor, xrCamera, playhead wired. tableTopScale = 0.01");
 
-        // ── 6. Create / find PlayPauseButton ─────────────────────────────────────
+        // ── 7. Create / find PlayPauseButton ─────────────────────────────────────
         Transform existingBtn = tableAnchor.transform.Find(ButtonName);
         GameObject button;
         if (existingBtn == null)
@@ -195,11 +200,11 @@ public static class SetupXRTableTop
         btnComp.controllerTag = XRControllerTag;
         log.Add($"  → playhead wired, collider set to trigger.");
 
-        // ── 7. Mark scene dirty ───────────────────────────────────────────────────
+        // ── 8. Mark scene dirty ───────────────────────────────────────────────────
         Undo.CollapseUndoOperations(undoGroup);
         EditorSceneManager.MarkSceneDirty(gameManager.gameObject.scene);
 
-        // ── 8. Summary dialog ─────────────────────────────────────────────────────
+        // ── 9. Summary dialog ─────────────────────────────────────────────────────
         string summary = string.Join("\n", log) +
             "\n\n─── Next steps ───\n" +
             "1. Tag your controller hand GameObjects with 'XRController' so the\n" +
