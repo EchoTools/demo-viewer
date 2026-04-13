@@ -1,53 +1,44 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.Rendering.Universal;
 
 /// <summary>
-/// Table-top AR (passthrough) mode controller for Meta Quest.
+/// Table-top AR mode controller for Meta Quest.
+/// Passthrough is handled by TableTopPassthroughFeature (an OpenXRFeature).
+/// This script manages arena scale, placement, grab, and play/pause input.
 ///
-/// Setup in Inspector:
-///   1. Create an empty GameObject called "TableAnchor" in the scene.
-///   2. Parent all arena content (arena models, disc, players, etc.) under it.
-///   3. Assign "TableAnchor" to arenaAnchor below.
-///   4. Assign the VR camera to xrCamera.
-///   5. Assign the DemoStart playhead to playhead.
+/// Setup: run Tools → Setup XR Table-Top to wire everything automatically.
 ///
 /// Controls:
-///   Right grip   — grab and drag the arena anywhere in the room
+///   Right grip   — grab and drag the arena in world space
 ///   Left trigger — toggle play / pause
 /// </summary>
 public class TableTopXRController : MonoBehaviour
 {
     [Header("Arena")]
-    [Tooltip("Root transform of all arena content. Scale and position are controlled here.")]
     public Transform arenaAnchor;
 
-    [Tooltip("How large the arena appears in real-world metres. 0.01 ≈ 50 cm diameter.")]
+    [Tooltip("Real-world size of the arena. 0.01 ≈ 50 cm diameter.")]
     public float tableTopScale = 0.01f;
 
     [Header("Playback")]
     public Playhead playhead;
 
-    [Header("Passthrough")]
-    [Tooltip("The XR camera. Its clear flags are set to transparent for passthrough.")]
+    [Header("Camera")]
+    [Tooltip("The VR camera. Set to transparent so passthrough shows through.")]
     public Camera xrCamera;
 
-    // Input thresholds
-    private const float GripThreshold = 0.7f;
+    private const float GripThreshold    = 0.7f;
     private const float TriggerThreshold = 0.7f;
 
-    // Grab state
-    private bool isGrabbing;
+    private bool    isGrabbing;
     private Vector3 grabStartControllerPos;
     private Vector3 grabStartArenaPos;
 
-    // Previous-frame button states
     private bool prevRightGrip;
     private bool prevLeftTrigger;
 
-    // XR input devices
     private InputDevice rightController;
     private InputDevice leftController;
 
@@ -59,12 +50,7 @@ public class TableTopXRController : MonoBehaviour
             PlaceAnchorInFrontOfCamera();
         }
 
-        // Camera clear flags can be set immediately.
         SetCameraTransparent();
-
-        // Blend mode must wait until the XR display subsystem is running —
-        // calling it before the session is ready hangs the app on the loading screen.
-        StartCoroutine(EnablePassthroughWhenReady());
 
         InputDevices.deviceConnected += OnDeviceConnected;
         RefreshControllers();
@@ -75,10 +61,7 @@ public class TableTopXRController : MonoBehaviour
         InputDevices.deviceConnected -= OnDeviceConnected;
     }
 
-    private void OnDeviceConnected(InputDevice device)
-    {
-        RefreshControllers();
-    }
+    private void OnDeviceConnected(InputDevice _) => RefreshControllers();
 
     private void RefreshControllers()
     {
@@ -104,16 +87,16 @@ public class TableTopXRController : MonoBehaviour
     {
         if (!rightController.isValid) return;
 
-        rightController.TryGetFeatureValue(CommonUsages.grip, out float gripValue);
-        rightController.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 controllerPos);
+        rightController.TryGetFeatureValue(CommonUsages.grip, out float grip);
+        rightController.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 pos);
 
-        bool gripping = gripValue > GripThreshold;
+        bool gripping = grip > GripThreshold;
 
         if (gripping && !prevRightGrip)
         {
-            isGrabbing = true;
-            grabStartControllerPos = controllerPos;
-            grabStartArenaPos = arenaAnchor.position;
+            isGrabbing            = true;
+            grabStartControllerPos = pos;
+            grabStartArenaPos     = arenaAnchor.position;
         }
         else if (!gripping && prevRightGrip)
         {
@@ -121,7 +104,7 @@ public class TableTopXRController : MonoBehaviour
         }
 
         if (isGrabbing && arenaAnchor != null)
-            arenaAnchor.position = grabStartArenaPos + (controllerPos - grabStartControllerPos);
+            arenaAnchor.position = grabStartArenaPos + (pos - grabStartControllerPos);
 
         prevRightGrip = gripping;
     }
@@ -130,8 +113,8 @@ public class TableTopXRController : MonoBehaviour
     {
         if (playhead == null || !leftController.isValid) return;
 
-        leftController.TryGetFeatureValue(CommonUsages.trigger, out float trigValue);
-        bool triggered = trigValue > TriggerThreshold;
+        leftController.TryGetFeatureValue(CommonUsages.trigger, out float trig);
+        bool triggered = trig > TriggerThreshold;
 
         if (triggered && !prevLeftTrigger)
             playhead.SetPlaying(!playhead.isPlaying);
@@ -144,7 +127,7 @@ public class TableTopXRController : MonoBehaviour
         if (xrCamera == null) return;
 
         Vector3 forward = xrCamera.transform.forward;
-        forward.y = 0;
+        forward.y = 0f;
         if (forward.sqrMagnitude < 0.001f) forward = Vector3.forward;
         forward.Normalize();
 
@@ -154,48 +137,20 @@ public class TableTopXRController : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets camera clear flags immediately — safe to call before XR session is ready.
+    /// Sets the camera to render with a transparent background so the Quest
+    /// compositor can show the passthrough feed behind the scene.
+    /// The actual AlphaBlend mode and XR_FB_passthrough setup is handled by
+    /// TableTopPassthroughFeature (an OpenXRFeature that runs at session start).
     /// </summary>
     private void SetCameraTransparent()
     {
         if (xrCamera == null) return;
 
-        xrCamera.clearFlags = CameraClearFlags.SolidColor;
+        xrCamera.clearFlags      = CameraClearFlags.SolidColor;
         xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
 
         var urpData = xrCamera.GetUniversalAdditionalCameraData();
         if (urpData != null)
             urpData.renderPostProcessing = false;
-    }
-
-    /// <summary>
-    /// Waits until the XRDisplaySubsystem is running, then sets AlphaBlend mode.
-    /// Calling SetEnvironmentBlendMode before the XR session is fully up blocks
-    /// the native layer and hangs the app on the Quest loading screen.
-    /// </summary>
-    private IEnumerator EnablePassthroughWhenReady()
-    {
-        var displays = new List<XRDisplaySubsystem>();
-
-        // Wait up to 30 seconds for the display subsystem to come online.
-        float deadline = Time.time + 30f;
-        while (Time.time < deadline)
-        {
-            SubsystemManager.GetSubsystems(displays);
-            if (displays.Count > 0 && displays[0].running)
-                break;
-
-            displays.Clear();
-            yield return null;
-        }
-
-        if (displays.Count == 0 || !displays[0].running)
-        {
-            Debug.LogWarning("[TableTopXR] XR display subsystem never became ready — passthrough not enabled.");
-            yield break;
-        }
-
-        PassthroughBridge.SetBlendModeAlpha();
-        Debug.Log("[TableTopXR] Passthrough enabled — blend mode set to AlphaBlend.");
     }
 }

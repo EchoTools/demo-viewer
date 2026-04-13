@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEditor.XR.OpenXR.Features;
 using UnityEngine;
 
 /// <summary>
@@ -86,7 +87,22 @@ public static class SetupXRTableTop
 
         var log = new List<string>();
 
-        // ── 1. Ensure XRController tag exists ───────────────────────────────────
+        // ── 1. Enable TableTopPassthroughFeature for Android ────────────────────
+        FeatureHelpers.RefreshFeatures(BuildTargetGroup.Android);
+        var passthroughFeature = FeatureHelpers.GetFeatureWithIdForBuildTarget(
+            BuildTargetGroup.Android, TableTopPassthroughFeature.FeatureId);
+        if (passthroughFeature != null)
+        {
+            passthroughFeature.enabled = true;
+            EditorUtility.SetDirty(passthroughFeature);
+            log.Add("• TableTopPassthroughFeature enabled for Android.");
+        }
+        else
+        {
+            log.Add("  (warn) TableTopPassthroughFeature not found — open Project Settings → XR → OpenXR → Android → Features and enable 'Table-Top Passthrough' manually.");
+        }
+
+        // ── 3. Ensure XRController tag exists ───────────────────────────────────
         EnsureTagExists(XRControllerTag);
         log.Add($"• Tag '{XRControllerTag}' ensured in TagManager.");
 
@@ -95,7 +111,7 @@ public static class SetupXRTableTop
         gameManager.enableVR = true;
         log.Add("• GameManager.enableVR = true (required on Android — no -useVR arg).");
 
-        // ── 3. Create / find TableAnchor ─────────────────────────────────────────
+        // ── 4. Create / find TableAnchor ─────────────────────────────────────────
         GameObject tableAnchor = GameObject.Find(TableAnchorName);
         if (tableAnchor == null)
         {
@@ -108,7 +124,7 @@ public static class SetupXRTableTop
             log.Add($"• '{TableAnchorName}' already exists — reusing it.");
         }
 
-        // ── 4. Move arena content under TableAnchor ──────────────────────────────
+        // ── 5. Move arena content under TableAnchor ──────────────────────────────
         foreach (string goName in ArenaContentNames)
         {
             GameObject found = GameObject.Find(goName);
@@ -128,7 +144,7 @@ public static class SetupXRTableTop
             log.Add($"• Moved '{goName}' under TableAnchor.");
         }
 
-        // ── 5. Reset RigScaler to 1:1 (arena is now scaled, not the rig) ─────────
+        // ── 6. Reset RigScaler to 1:1 (arena is now scaled, not the rig) ─────────
         GameObject rigScaler = GameObject.Find("RigScaler");
         if (rigScaler != null)
         {
@@ -141,7 +157,7 @@ public static class SetupXRTableTop
             log.Add("  (skip) RigScaler not found — rig scale unchanged.");
         }
 
-        // ── 6. Add TableTopXRController to GameManager ──────────────────────────
+        // ── 7. Add TableTopXRController to GameManager ──────────────────────────
         TableTopXRController xrCtrl = gameManager.GetComponent<TableTopXRController>();
         if (xrCtrl == null)
         {
@@ -160,7 +176,7 @@ public static class SetupXRTableTop
         xrCtrl.tableTopScale = 0.01f;
         log.Add("  → arenaAnchor, xrCamera, playhead wired. tableTopScale = 0.01");
 
-        // ── 7. Create / find PlayPauseButton ─────────────────────────────────────
+        // ── 8. Create / find PlayPauseButton ─────────────────────────────────────
         Transform existingBtn = tableAnchor.transform.Find(ButtonName);
         GameObject button;
         if (existingBtn == null)
@@ -200,11 +216,11 @@ public static class SetupXRTableTop
         btnComp.controllerTag = XRControllerTag;
         log.Add($"  → playhead wired, collider set to trigger.");
 
-        // ── 8. Mark scene dirty ───────────────────────────────────────────────────
+        // ── 9. Mark scene dirty ───────────────────────────────────────────────────
         Undo.CollapseUndoOperations(undoGroup);
         EditorSceneManager.MarkSceneDirty(gameManager.gameObject.scene);
 
-        // ── 9. Summary dialog ─────────────────────────────────────────────────────
+        // ── 10. Summary dialog ─────────────────────────────────────────────────────
         string summary = string.Join("\n", log) +
             "\n\n─── Next steps ───\n" +
             "1. Tag your controller hand GameObjects with 'XRController' so the\n" +
