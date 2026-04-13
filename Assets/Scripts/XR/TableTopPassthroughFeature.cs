@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features;
 using UnityEngine.XR.OpenXR.NativeTypes;
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.XR.OpenXR.Features;
+#endif
 
 /// <summary>
 /// OpenXR feature that enables Meta Quest passthrough (XR_FB_passthrough).
@@ -19,19 +23,17 @@ using UnityEngine.XR.OpenXR.NativeTypes;
 ///   Project Settings → XR Plug-in Management → OpenXR → Android → Features
 ///   → Table-Top Passthrough
 /// </summary>
+#if UNITY_EDITOR
 [OpenXRFeature(
     UiName = "Table-Top Passthrough",
-    BuildTargetGroups = new[] {
-#if UNITY_EDITOR
-        UnityEditor.BuildTargetGroup.Android
-#endif
-    },
+    BuildTargetGroups = new[] { BuildTargetGroup.Android },
     Company = "EchoTools",
     Desc = "Enables Meta Quest XR_FB_passthrough for table-top AR mode.",
     OpenxrExtensionStrings = "XR_FB_passthrough",
     Version = "1.0.0",
-    FeatureId = FeatureId
+    FeatureId = TableTopPassthroughFeature.FeatureId
 )]
+#endif
 public class TableTopPassthroughFeature : OpenXRFeature
 {
     public const string FeatureId = "com.echotools.tabletop.passthrough";
