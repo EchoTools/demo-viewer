@@ -11,7 +11,7 @@ project := justfile_directory()
 
 # Inline PowerShell Unity detection (avoids .ps1 execution policy issues).
 # Assigns $unity and fails fast if not found.
-_find_unity_win := "if ($env:UNITY_PATH) { $unity = $env:UNITY_PATH } else { $unity = @(\"$env:ProgramFiles\\Unity\\Hub\\Editor\", \"$env:LOCALAPPDATA\\Unity\\Hub\\Editor\") | ForEach-Object { Get-ChildItem $_ -Filter '6000.*' -Directory -EA 0 } | Sort-Object Name -Descending | Select-Object -First 1 | ForEach-Object { Join-Path $_.FullName 'Editor\\Unity.exe' }; if (-not $unity -or -not (Test-Path $unity)) { throw 'Unity 6000.x not found. Install via Unity Hub or set UNITY_PATH.' } }"
+_find_unity_win := "if ($env:UNITY_PATH) { $unity = $env:UNITY_PATH } else { $search = @(); foreach ($base in @(\"$env:ProgramFiles\\Unity\\Hub\\Editor\", \"$env:LOCALAPPDATA\\Unity\\Hub\\Editor\")) { if (Test-Path $base) { $search += Get-ChildItem $base -Filter '6000.*' -Directory -EA 0 } }; $pick = $search | Sort-Object Name -Descending | Select-Object -First 1; if ($pick) { $unity = Join-Path $pick.FullName 'Editor\\Unity.exe' } else { $unity = $null } }; if (-not $unity -or -not (Test-Path $unity)) { throw 'Unity 6000.x not found. Install via Unity Hub or set UNITY_PATH.' }; Write-Host \"Using Unity: $unity\" -ForegroundColor Cyan"
 
 # List available recipes
 default:
@@ -50,9 +50,13 @@ unity-build platform target: proto
 
 [windows, private]
 unity-build platform target: proto
+    $ErrorActionPreference = 'Stop'; \
     {{_find_unity_win}}; \
     New-Item -ItemType Directory -Force -Path (Split-Path "{{target}}") | Out-Null; \
-    & $unity -quit -batchmode -nographics -projectPath "{{project}}" -buildTarget "{{platform}}" -executeMethod BuildScript.PerformBuild -logFile - "--output={{target}}" "--platform={{platform}}"
+    $log = "{{project}}\Logs\build.log"; \
+    & $unity -quit -batchmode -nographics -projectPath "{{project}}" -buildTarget "{{platform}}" -executeMethod BuildScript.PerformBuild -logFile $log "--output={{target}}" "--platform={{platform}}"; \
+    if (Test-Path $log) { Get-Content $log -Tail 50 }; \
+    if ($LASTEXITCODE -ne 0) { throw "Unity build failed with exit code $LASTEXITCODE. Full log: $log" }
 
 # Build for Linux
 build-linux: (unity-build "StandaloneLinux64" (project / "Build/Linux/ReplayViewer"))
