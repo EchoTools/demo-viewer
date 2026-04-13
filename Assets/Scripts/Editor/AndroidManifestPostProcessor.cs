@@ -57,8 +57,9 @@ public class AndroidManifestPostProcessor : IPostGenerateGradleAndroidProject
             UnityEngine.Debug.Log("[AndroidManifestPostProcessor] Created GameActivity element.");
         }
 
-        // ── 2. Force enabled=true ────────────────────────────────────────────────
+        // ── 2. Force enabled=true + AppCompat theme ──────────────────────────────
         gameActivity.SetAttribute("enabled", AndroidNS, "true");
+        gameActivity.SetAttribute("theme", AndroidNS, "@style/UnityTheme");
 
         // ── 3. Remove nameless activities, adopt their children ──────────────────
         var toRemove = new System.Collections.Generic.List<XmlElement>();
