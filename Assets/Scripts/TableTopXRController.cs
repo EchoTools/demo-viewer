@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
@@ -14,7 +15,7 @@ using UnityEngine.Rendering.Universal;
 ///   5. Assign the DemoStart playhead to playhead.
 ///
 /// Controls:
-///   Right grip  — grab and drag the arena anywhere in the room
+///   Right grip   — grab and drag the arena anywhere in the room
 ///   Left trigger — toggle play / pause
 /// </summary>
 public class TableTopXRController : MonoBehaviour
@@ -58,7 +59,12 @@ public class TableTopXRController : MonoBehaviour
             PlaceAnchorInFrontOfCamera();
         }
 
-        EnablePassthrough();
+        // Camera clear flags can be set immediately.
+        SetCameraTransparent();
+
+        // Blend mode must wait until the XR display subsystem is running —
+        // calling it before the session is ready hangs the app on the loading screen.
+        StartCoroutine(EnablePassthroughWhenReady());
 
         InputDevices.deviceConnected += OnDeviceConnected;
         RefreshControllers();
@@ -94,10 +100,6 @@ public class TableTopXRController : MonoBehaviour
         HandlePlayPause();
     }
 
-    /// <summary>
-    /// Right-grip drag: moves the arena anchor 1:1 with controller movement.
-    /// Movement is unrestricted (no Y clamping) so the user can freely adjust height.
-    /// </summary>
     private void HandleGrab()
     {
         if (!rightController.isValid) return;
@@ -119,16 +121,11 @@ public class TableTopXRController : MonoBehaviour
         }
 
         if (isGrabbing && arenaAnchor != null)
-        {
             arenaAnchor.position = grabStartArenaPos + (controllerPos - grabStartControllerPos);
-        }
 
         prevRightGrip = gripping;
     }
 
-    /// <summary>
-    /// Left-trigger edge: toggles play / pause on press.
-    /// </summary>
     private void HandlePlayPause()
     {
         if (playhead == null || !leftController.isValid) return;
@@ -137,17 +134,11 @@ public class TableTopXRController : MonoBehaviour
         bool triggered = trigValue > TriggerThreshold;
 
         if (triggered && !prevLeftTrigger)
-        {
             playhead.SetPlaying(!playhead.isPlaying);
-        }
 
         prevLeftTrigger = triggered;
     }
 
-    /// <summary>
-    /// Positions the arena anchor ~1 m in front of the camera at table height (0.8 m).
-    /// Called once on Start so the user immediately sees the arena on a surface.
-    /// </summary>
     private void PlaceAnchorInFrontOfCamera()
     {
         if (xrCamera == null) return;
@@ -157,32 +148,54 @@ public class TableTopXRController : MonoBehaviour
         if (forward.sqrMagnitude < 0.001f) forward = Vector3.forward;
         forward.Normalize();
 
-        arenaAnchor.position = xrCamera.transform.position + forward * 1f + Vector3.up * (0.8f - xrCamera.transform.position.y);
+        arenaAnchor.position = xrCamera.transform.position
+            + forward * 1f
+            + Vector3.up * (0.8f - xrCamera.transform.position.y);
     }
 
     /// <summary>
-    /// Tells the Quest runtime to show the real world behind rendered content
-    /// (passthrough / mixed reality) and configures the URP camera to render
-    /// with a transparent background so the compositor sees through it.
+    /// Sets camera clear flags immediately — safe to call before XR session is ready.
     /// </summary>
-    private void EnablePassthrough()
+    private void SetCameraTransparent()
     {
         if (xrCamera == null) return;
 
-        // Camera clear — solid black with alpha 0 so URP renders no background pixels.
         xrCamera.clearFlags = CameraClearFlags.SolidColor;
         xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
 
-        // URP camera data — disable post-processing effects that can write opaque alpha.
         var urpData = xrCamera.GetUniversalAdditionalCameraData();
         if (urpData != null)
             urpData.renderPostProcessing = false;
+    }
 
-        // Ask the OpenXR runtime to composite our frames over the passthrough feed.
-        // PassthroughBridge is a thin OpenXRFeature subclass that exposes the
-        // otherwise protected-static SetEnvironmentBlendMode call.
+    /// <summary>
+    /// Waits until the XRDisplaySubsystem is running, then sets AlphaBlend mode.
+    /// Calling SetEnvironmentBlendMode before the XR session is fully up blocks
+    /// the native layer and hangs the app on the Quest loading screen.
+    /// </summary>
+    private IEnumerator EnablePassthroughWhenReady()
+    {
+        var displays = new List<XRDisplaySubsystem>();
+
+        // Wait up to 30 seconds for the display subsystem to come online.
+        float deadline = Time.time + 30f;
+        while (Time.time < deadline)
+        {
+            SubsystemManager.GetSubsystems(displays);
+            if (displays.Count > 0 && displays[0].running)
+                break;
+
+            displays.Clear();
+            yield return null;
+        }
+
+        if (displays.Count == 0 || !displays[0].running)
+        {
+            Debug.LogWarning("[TableTopXR] XR display subsystem never became ready — passthrough not enabled.");
+            yield break;
+        }
+
         PassthroughBridge.SetBlendModeAlpha();
-
         Debug.Log("[TableTopXR] Passthrough enabled — blend mode set to AlphaBlend.");
     }
 }
