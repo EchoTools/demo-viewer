@@ -1,0 +1,12 @@
+[DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_21-20-36.log
+[21:20:36.589] [Log] [DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_21-20-36.log
+[21:20:36.591] [Log] Reading file: C:\Users\nmdur\Documents\Spark\replays\rec_2025-06-04_01-18-08.echoreplay
+[21:20:37.948] [Warning] The referenced script (Unknown) on this Behaviour is missing!
+[21:20:39.449] [Log] Fished reading file in 2.86 seconds.
+[21:20:51.064] [Log] [GameManager] OnApplicationQuit called
+[21:20:51.067] [Log] [GameManager] Cleaning up resources...
+[21:20:51.067] [Log] [GameManager] Stopping all coroutines
+[21:20:51.067] [Log] [GameManager] Stopping DemoStart coroutines
+[21:20:51.067] [Log] [GameManager] Cleaning up network manager
+[21:20:51.067] [Log] [GameManager] Resource cleanup complete
+[DebugLogger] Application closing, finalizing log file...

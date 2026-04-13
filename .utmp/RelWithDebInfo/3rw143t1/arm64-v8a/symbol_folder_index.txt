@@ -1,0 +1,1 @@
+C:\Users\nmdur\Table-Arena-Fresh\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\3rw143t1\obj\arm64-v8a

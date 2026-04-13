@@ -1,0 +1,87 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mFAB0F3D3DC9503E6D2B4D0DF112BE59A3624269A (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6952D5E317E5187EE83A2D761BC404245DA49230 (void);
+extern void MenuTabletMover_get_isVisible_mC36CB0D5B48C821BA1D791A5A4BDA2A6EB85BF77 (void);
+extern void MenuTabletMover_Awake_m4854312EBA56DDAFD94A87DEC65247D687CA1A6F (void);
+extern void MenuTabletMover_Start_m503E9F1673CA24423F0A33F2C3EB347DE8EF3D03 (void);
+extern void MenuTabletMover_Update_m71AEE1690B2AEF8CEC5D9C1BA7E500F682502014 (void);
+extern void MenuTabletMover_MoveTablet_mFF5D763ED0754A1F70BC59F741DFBB898641F8CD (void);
+extern void MenuTabletMover_MoveTablet_m43477A9D87A654BB6DB63F6BA1C23A7B39CC4C79 (void);
+extern void MenuTabletMover_ShowTabletInstance_mFFA57329EE0E955B310A5889E380E61DFE134D03 (void);
+extern void MenuTabletMover_ShowTablet_mA33E15A2B821409EE976A15B21615DA37EBFE931 (void);
+extern void MenuTabletMover_ToggleTabletInstance_m313AE4CEA49BB25AA37FDB9E49701168929A60A3 (void);
+extern void MenuTabletMover_ToggleTablet_m84F51AE75A743F337E700CD05810E9055A50B060 (void);
+extern void MenuTabletMover_ToggleTablet_mA7B8DDE1E6B611CD4A823CEBD3420080C874AB3E (void);
+extern void MenuTabletMover__ctor_m54F67BC45F699971B095D118E5E1D3360343B8C2 (void);
+extern void MenuTabletToggler_Start_mB8234FDE4A3008461D9032B4A948F90736C0C12A (void);
+extern void MenuTabletToggler_Update_m40980D3B55CC9B09D17929DC093F0F8E9E13A320 (void);
+extern void MenuTabletToggler__ctor_m1D67E160CF7EFEB9DC3349012EF384AC5C0B868D (void);
+static Il2CppMethodPointer s_methodPointers[17] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mFAB0F3D3DC9503E6D2B4D0DF112BE59A3624269A,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6952D5E317E5187EE83A2D761BC404245DA49230,
+	MenuTabletMover_get_isVisible_mC36CB0D5B48C821BA1D791A5A4BDA2A6EB85BF77,
+	MenuTabletMover_Awake_m4854312EBA56DDAFD94A87DEC65247D687CA1A6F,
+	MenuTabletMover_Start_m503E9F1673CA24423F0A33F2C3EB347DE8EF3D03,
+	MenuTabletMover_Update_m71AEE1690B2AEF8CEC5D9C1BA7E500F682502014,
+	MenuTabletMover_MoveTablet_mFF5D763ED0754A1F70BC59F741DFBB898641F8CD,
+	MenuTabletMover_MoveTablet_m43477A9D87A654BB6DB63F6BA1C23A7B39CC4C79,
+	MenuTabletMover_ShowTabletInstance_mFFA57329EE0E955B310A5889E380E61DFE134D03,
+	MenuTabletMover_ShowTablet_mA33E15A2B821409EE976A15B21615DA37EBFE931,
+	MenuTabletMover_ToggleTabletInstance_m313AE4CEA49BB25AA37FDB9E49701168929A60A3,
+	MenuTabletMover_ToggleTablet_m84F51AE75A743F337E700CD05810E9055A50B060,
+	MenuTabletMover_ToggleTablet_mA7B8DDE1E6B611CD4A823CEBD3420080C874AB3E,
+	MenuTabletMover__ctor_m54F67BC45F699971B095D118E5E1D3360343B8C2,
+	MenuTabletToggler_Start_mB8234FDE4A3008461D9032B4A948F90736C0C12A,
+	MenuTabletToggler_Update_m40980D3B55CC9B09D17929DC093F0F8E9E13A320,
+	MenuTabletToggler__ctor_m1D67E160CF7EFEB9DC3349012EF384AC5C0B868D,
+};
+static const int32_t s_InvokerIndices[17] = 
+{
+	24573,
+	15450,
+	24374,
+	15450,
+	15450,
+	15450,
+	6263,
+	6422,
+	11781,
+	23916,
+	15450,
+	24535,
+	21701,
+	15450,
+	15450,
+	15450,
+	15450,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MenuTablet_CodeGenModule;
+const Il2CppCodeGenModule g_MenuTablet_CodeGenModule = 
+{
+	"MenuTablet.dll",
+	17,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

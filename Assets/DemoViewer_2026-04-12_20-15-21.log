@@ -1,0 +1,99 @@
+[DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_20-15-21.log
+[20:15:21.471] [Log] [DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_20-15-21.log
+[20:15:21.474] [Log] Reading file: C:\Users\nmdur\Documents\Spark\replays\rec_2025-06-04_01-18-08.echoreplay
+[20:15:24.695] [Log] Fished reading file in 3.22 seconds.
+[20:15:28.343] [Log] [DemoStart] Made player JAY translucent (alpha: 0.3)
+[20:15:28.343] [Log] [DemoStart] Created PlayerV4 skeleton for JAY
+[20:15:28.349] [Log] [DemoStart] Made player Retro translucent (alpha: 0.3)
+[20:15:28.349] [Log] [DemoStart] Created PlayerV4 skeleton for Retro
+[20:15:28.350] [Log] [DemoStart] Made player sneakypocketgolem translucent (alpha: 0.3)
+[20:15:28.351] [Log] [DemoStart] Created PlayerV4 skeleton for sneakypocketgolem
+[20:15:28.352] [Log] [DemoStart] Made player Glizzy_Supplier translucent (alpha: 0.3)
+[20:15:28.352] [Log] [DemoStart] Created PlayerV4 skeleton for Glizzy_Supplier
+[20:15:28.354] [Log] [DemoStart] Made player Cooper Flagg translucent (alpha: 0.3)
+[20:15:28.354] [Log] [DemoStart] Created PlayerV4 skeleton for Cooper Flagg
+[20:15:28.355] [Log] [DemoStart] Made player ascension05 translucent (alpha: 0.3)
+[20:15:28.356] [Log] [DemoStart] Created PlayerV4 skeleton for ascension05
+[20:15:28.357] [Log] [DemoStart] Made player CLIH translucent (alpha: 0.3)
+[20:15:28.357] [Log] [DemoStart] Created PlayerV4 skeleton for CLIH
+[20:15:28.359] [Log] [DemoStart] Made player FREAKYturtle5312 translucent (alpha: 0.3)
+[20:15:28.359] [Log] [DemoStart] Created PlayerV4 skeleton for FREAKYturtle5312
+[20:15:28.497] [Error] Material 'BlueBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.498] [Log] [DemoStart] Made player PlayerCharacter (Blue)(Clone) translucent (alpha: 0.3)
+[20:15:28.501] [Error] Material 'BlueBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.501] [Log] [DemoStart] Made player PlayerCharacter (Blue)(Clone) translucent (alpha: 0.3)
+[20:15:28.503] [Error] Material 'BlueBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.503] [Log] [DemoStart] Made player PlayerCharacter (Blue)(Clone) translucent (alpha: 0.3)
+[20:15:28.505] [Error] Material 'BlueBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.505] [Log] [DemoStart] Made player PlayerCharacter (Blue)(Clone) translucent (alpha: 0.3)
+[20:15:28.507] [Error] Material 'OrangeBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.511] [Log] [DemoStart] Made player PlayerCharacter (Orange)(Clone) translucent (alpha: 0.3)
+[20:15:28.513] [Error] Material 'OrangeBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.513] [Log] [DemoStart] Made player PlayerCharacter (Orange)(Clone) translucent (alpha: 0.3)
+[20:15:28.514] [Error] Material 'OrangeBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.514] [Log] [DemoStart] Made player PlayerCharacter (Orange)(Clone) translucent (alpha: 0.3)
+[20:15:28.516] [Error] Material 'OrangeBlockingEffect (Instance)' with Shader 'Shader Graphs/forceFieldShader' doesn't have a color property '_Color'
+Stack trace:
+UnityEngine.Material:get_color ()
+DemoStart:MakePlayerTranslucent (UnityEngine.GameObject,single) (at Assets/Scripts/DemoStart.cs:1055)
+DemoStart:RenderPlayer (EchoVRAPI.Player,EchoVRAPI.Player,int,EchoVRAPI.VRPlayer) (at Assets/Scripts/DemoStart.cs:830)
+DemoStart:RenderFrame (EchoVRAPI.Frame,EchoVRAPI.Frame) (at Assets/Scripts/DemoStart.cs:749)
+DemoStart:Update () (at Assets/Scripts/DemoStart.cs:296)
+
+[20:15:28.517] [Log] [DemoStart] Made player PlayerCharacter (Orange)(Clone) translucent (alpha: 0.3)
+[20:15:44.503] [Log] [GameManager] OnApplicationQuit called
+[20:15:44.503] [Log] [GameManager] Cleaning up resources...
+[20:15:44.503] [Log] [GameManager] Stopping all coroutines
+[20:15:44.504] [Log] [GameManager] Stopping DemoStart coroutines
+[20:15:44.504] [Log] [GameManager] Cleaning up network manager
+[20:15:44.504] [Log] [GameManager] Resource cleanup complete
+[DebugLogger] Application closing, finalizing log file...

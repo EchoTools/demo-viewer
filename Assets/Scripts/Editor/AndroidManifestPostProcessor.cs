@@ -59,7 +59,8 @@ public class AndroidManifestPostProcessor : IPostGenerateGradleAndroidProject
 
         // ── 2. Force enabled=true + AppCompat theme ──────────────────────────────
         gameActivity.SetAttribute("enabled", AndroidNS, "true");
-        gameActivity.SetAttribute("theme", AndroidNS, "@style/UnityTheme");
+        // Theme.AppCompat.NoActionBar is bundled with Unity since GameActivity extends AppCompatActivity
+        gameActivity.SetAttribute("theme", AndroidNS, "@style/Theme.AppCompat.NoActionBar");
 
         // ── 3. Remove nameless activities, adopt their children ──────────────────
         var toRemove = new System.Collections.Generic.List<XmlElement>();

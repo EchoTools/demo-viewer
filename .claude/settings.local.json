@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git lfs:*)",
+      "Bash(xargs grep:*)",
+      "Bash(dotnet --version)",
+      "Bash(cp /tmp/nuget_restore/packages/google.protobuf/3.29.3/lib/netstandard2.0/Google.Protobuf.dll Assets/Plugins/Google.Protobuf.dll)",
+      "Bash(cp /tmp/nuget_restore/packages/zstdsharp.port/0.8.1/lib/netstandard2.1/ZstdSharp.dll Assets/Plugins/ZstdSharp.dll)",
+      "Bash(ls -lh Assets/Plugins/*.dll)",
+      "Bash(git restore:*)",
+      "Bash(buf --version)",
+      "Bash(buf generate:*)",
+      "Bash(git pull:*)",
+      "Skill(update-config)",
+      "Bash(git fetch:*)",
+      "Bash(git remote:*)",
+      "Bash(ssh-keygen:*)",
+      "Bash(ssh:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rebase:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}

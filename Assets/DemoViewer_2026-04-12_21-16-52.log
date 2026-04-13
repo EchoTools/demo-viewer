@@ -1,0 +1,11 @@
+[DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_21-16-52.log
+[21:16:52.504] [Log] [DebugLogger] Log file created at: C:/Users/nmdur/Table-Arena-Fresh/Assets\DemoViewer_2026-04-12_21-16-52.log
+[21:16:52.508] [Log] Reading file: C:\Users\nmdur\Documents\Spark\replays\rec_2025-06-04_01-18-08.echoreplay
+[21:16:55.859] [Log] Fished reading file in 3.35 seconds.
+[21:17:00.245] [Log] [GameManager] OnApplicationQuit called
+[21:17:00.247] [Log] [GameManager] Cleaning up resources...
+[21:17:00.247] [Log] [GameManager] Stopping all coroutines
+[21:17:00.249] [Log] [GameManager] Stopping DemoStart coroutines
+[21:17:00.249] [Log] [GameManager] Cleaning up network manager
+[21:17:00.249] [Log] [GameManager] Resource cleanup complete
+[DebugLogger] Application closing, finalizing log file...

@@ -1,0 +1,11762 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+
+struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+struct Action_1_tB5508CF78181CB4414BC225AE9F03041BFE2DE51;
+struct Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A;
+struct Action_2_t7CA98B0050FA621B9DBD37E8415DAA87FA8DE99C;
+struct Action_2_tFA76A29974B6056E7C1C8D9C2071044178F7A0C5;
+struct Action_3_t95AB6A6A0F7FD94ACBDC30364CBE1E66C122966D;
+struct Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3;
+struct Action_3_t64EA0AFEEF7BB4B5A0F84B58CCEECCB3D3F2971F;
+struct Action_6_t884A3E708188851F5183B3C50A7CD6D45B14985A;
+struct Comparison_1_t62E531E7B8260E2C6C2718C3BDB8CF8655139645;
+struct Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF;
+struct Dictionary_2_t184255DB06D490EE1D1E0AC3AB6196B56751FC75;
+struct Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F;
+struct IEnumerable_1_t352FDDEA001ABE8E1D67849D2E2F3D1D75B03D41;
+struct IEnumerable_1_t5C1E5CDFEA99062D152E83B174072FEDB9763788;
+struct IEqualityComparer_1_t8EE38A6A94F4C546DAD0A52E36F5B1483614AED0;
+struct KeyCollection_tA02235F674FFEDF98F51D9768036EE63AE9F74B3;
+struct List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A;
+struct List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF;
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A;
+struct List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4;
+struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
+struct Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7;
+struct Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153;
+struct Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E;
+struct Task_1_t4C228DE57804012969575431CFF12D57C875552D;
+struct ValueCollection_t1390929663190B54F2BE52789CD49063A67044E6;
+struct EntryU5BU5D_t1FB24EA03F7362216CAF167C34881B516B34992A;
+struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
+struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
+struct VRGrabbableU5BU5D_t69BCCF116DB4D7164B405ED3259041A6AC5EC061;
+struct VRGrabbableHandU5BU5D_t6E620A9E8BD217A2753B5DDFE6EB441BF81FAFA9;
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+struct BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158;
+struct BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E;
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63;
+struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B;
+struct Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC;
+struct Delegate_t;
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct Encoder_tAF9067231A76315584BDF4CD27990E2F485A78FA;
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7;
+struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
+struct Joint_tB2C5499F976EBB1EA1C11A80E1BD9F5E2EE4D682;
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+struct MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2;
+struct MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE;
+struct MethodInfo_t;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct MouseControlsVRGrabbableHand_t027A6B45BF0F576789C862915E0A3A8AF4DD7C27;
+struct Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+struct Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA;
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
+struct SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2;
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE;
+struct String_t;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tBB341FEB03C79C1237041C0A5BCF9C590FA5AD40;
+struct VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847;
+struct VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6;
+struct VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599;
+struct VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB;
+struct VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D;
+struct VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091;
+struct VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83;
+struct VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC;
+struct VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268;
+struct VRPhysicalButton_t424442D60CF92EB75D68428D19993BA4F8DBAA20;
+struct VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A;
+struct VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
+struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+struct Teleporter_t0E6FB14DCEC57268912C34E919C168DCBD86BC0F;
+struct ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05;
+struct U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE;
+struct GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287;
+
+IL2CPP_EXTERN_C RuntimeClass* Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____43DEFA405BAAE6B959A38189D9BD55F74CB18B6A0E93D0A30BAE8C6AFFF3A3BB_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____BDE5286F852055ED4D656299CD8B82663DA9E910515F61633FA854F2C77C8AB8_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral09D23355125FE9B1BB65A23424829A0E4908DD98;
+IL2CPP_EXTERN_C String_t* _stringLiteral16633AFD3C597FCB4172056B236DA03F95CE3340;
+IL2CPP_EXTERN_C String_t* _stringLiteral23E80B19348AABD00B1A5523E569122717D63A8E;
+IL2CPP_EXTERN_C String_t* _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
+IL2CPP_EXTERN_C String_t* _stringLiteral6791949E2B1A509A08FDA1A3CA7387C3C9449D77;
+IL2CPP_EXTERN_C String_t* _stringLiteral90EFDE5D38433DB255E13CA9231608C4A6081906;
+IL2CPP_EXTERN_C String_t* _stringLiteral92C01A18BB420A26E8B602BF0791E1ED71668F52;
+IL2CPP_EXTERN_C String_t* _stringLiteral95D6C7167B6E2B0A663AFED1D8AE2FF1D1D54EDB;
+IL2CPP_EXTERN_C String_t* _stringLiteral95F10EE74F914F4E85147E4FF08B23FE283D8E05;
+IL2CPP_EXTERN_C String_t* _stringLiteralAD3A18B32F311E64FA0598228A8697DC99FE2A1E;
+IL2CPP_EXTERN_C String_t* _stringLiteralD65E273C8F5D81BC01B22CF163DC59C03A209C8A;
+IL2CPP_EXTERN_C String_t* _stringLiteralDD496DF24835D19D3087F783C1C159C888BC9666;
+IL2CPP_EXTERN_C String_t* _stringLiteralEEDC14596239BDE99AF1F1AC5C9F9D7C96A17F95;
+IL2CPP_EXTERN_C String_t* _stringLiteralFEE35BC221461671198AA24511DAE076363851B4;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m36EDCB3A47ABF63F0F0630998380AA7635920535_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m0477B1AC627977821505A46B8336448936A105DC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisHingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7_mD226E906030A0E16CE9EEDAAA902B0CD7CA4B45F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mBAC45DFC2B63D038D3F069AA30A0181FAFAC725A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m868E168DE38FB74A53058FFF0AE400BBC0F94238_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mA062405960666EAB13704F40E9A694B0066C03EE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m0DD644EBA13BEC292540DDACEC366D39F37CD9CF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mCC713DF10E37AF5D8A954128F4A9935C55EDD823_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m7BBC59CF2D20F99F1385C8FBE62BEF54581E83D1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m9DE2581122F96E561CAF798E6CAD2A8F7314981F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m46FCF641F7361B14DC9CEC568204DAE20AA6AE61_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mCA30F4CDFF8C5D3AEF88C51F6F7B83A505913F23_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m220EF8E2EABC03A5C33671CBE1BA215F4F1196E1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mA01F5CAEEE2B027CC337DB94587E8EE5E024ED40_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m03AFDB52381868693AEAA5BA7B89C6B92539D55B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m075B340F24648F617AB4687AC791B5E54F3DC1CB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m839816646A232448D2827DD54A3B95A034BE41DD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_mEE52C3433EDB084876073EC3F8B7C6D96D2C2475_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mEC40EAF335114E58FA3B4AA2FE9902DC811476C8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m4D5AFF423511A6D3B30C84CC9E6C570115C0BECF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CFilterDisabledObjectsU3Eb__30_0_mCA4DEA3E7522EE0488A50B95813F8478A644D9E8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CGetBestGrabbableU3Eb__27_0_m87BA61167DF19F8B72AB0D2561E48B28325D7A58_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CGetBestGrabbableU3Eb__27_1_mC3B1CAAF8A33E79B8E9E43F7EC973E400322FC12_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_2_mFCD27B344776BFF51F520C92995E6C98D5DF77E3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_3_mB63B1AEEE3470E442EE5FB27DA87E33470A5B24B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* VRSlider_SlideAction_mD653041212888297EAA2946238F35CA146BAC3FF_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+
+struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
+struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
+struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct U3CModuleU3E_tEC393B88B33233D9689916376DEA5FDE2AAD6A76 
+{
+};
+struct Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F  : public RuntimeObject
+{
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets;
+	EntryU5BU5D_t1FB24EA03F7362216CAF167C34881B516B34992A* ____entries;
+	int32_t ____count;
+	int32_t ____freeList;
+	int32_t ____freeCount;
+	int32_t ____version;
+	RuntimeObject* ____comparer;
+	KeyCollection_tA02235F674FFEDF98F51D9768036EE63AE9F74B3* ____keys;
+	ValueCollection_t1390929663190B54F2BE52789CD49063A67044E6* ____values;
+	RuntimeObject* ____syncRoot;
+};
+struct EmptyArray_1_tA3FD4DA73690B22AF51247DE4AB33A52280CF1DD  : public RuntimeObject
+{
+};
+struct List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A  : public RuntimeObject
+{
+	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF  : public RuntimeObject
+{
+	ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A  : public RuntimeObject
+{
+	VRGrabbableU5BU5D_t69BCCF116DB4D7164B405ED3259041A6AC5EC061* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4  : public RuntimeObject
+{
+	VRGrabbableHandU5BU5D_t6E620A9E8BD217A2753B5DDFE6EB441BF81FAFA9* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153  : public RuntimeObject
+{
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ____array;
+	int32_t ____head;
+	int32_t ____tail;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E  : public RuntimeObject
+{
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ____array;
+	int32_t ____head;
+	int32_t ____tail;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83  : public RuntimeObject
+{
+};
+struct BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158  : public RuntimeObject
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___m_stream;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_buffer;
+	Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC* ___m_decoder;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_charBytes;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_singleChar;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_charBuffer;
+	int32_t ___m_maxCharsSize;
+	bool ___m_2BytesPerChar;
+	bool ___m_isMemoryStream;
+	bool ___m_leaveOpen;
+};
+struct BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E  : public RuntimeObject
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___OutStream;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____buffer;
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ____encoding;
+	Encoder_tAF9067231A76315584BDF4CD27990E2F485A78FA* ____encoder;
+	bool ____leaveOpen;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____largeByteBuffer;
+	int32_t ____maxChars;
+};
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE  : public RuntimeObject
+{
+	RuntimeObject* ____identity;
+};
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_pinvoke
+{
+	Il2CppIUnknown* ____identity;
+};
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_com
+{
+	Il2CppIUnknown* ____identity;
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8  : public RuntimeObject
+{
+	InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382* ___m_Calls;
+	PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25* ___m_PersistentCalls;
+	bool ___m_CallsDirty;
+};
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tBB341FEB03C79C1237041C0A5BCF9C590FA5AD40  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE  : public RuntimeObject
+{
+};
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	RuntimeObject* ____current;
+};
+struct Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E 
+{
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ____current;
+};
+struct Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6 
+{
+	List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ____current;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	uint8_t ___m_value;
+};
+struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
+{
+	float ___r;
+	float ___g;
+	float ___b;
+	float ___a;
+};
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	double ___m_value;
+};
+struct EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 
+{
+	union
+	{
+		struct
+		{
+			int32_t ___m_Data;
+		};
+		uint8_t EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8__padding[4];
+	};
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A 
+{
+	float ___m_Min;
+	float ___m_Max;
+	float ___m_Bounciness;
+	float ___m_BounceMinVelocity;
+	float ___m_ContactDistance;
+	float ___minBounce;
+	float ___maxBounce;
+};
+struct JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 
+{
+	float ___m_TargetVelocity;
+	float ___m_Force;
+	int32_t ___m_FreeSpin;
+};
+struct LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB 
+{
+	int32_t ___m_Mask;
+};
+struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682__padding[1];
+	};
+};
+struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 
+{
+	float ___m00;
+	float ___m10;
+	float ___m20;
+	float ___m30;
+	float ___m01;
+	float ___m11;
+	float ___m21;
+	float ___m31;
+	float ___m02;
+	float ___m12;
+	float ___m22;
+	float ___m32;
+	float ___m03;
+	float ___m13;
+	float ___m23;
+	float ___m33;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
+{
+	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask;
+	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore;
+};
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	float ___x;
+	float ___y;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1983_t751E9B329C14EF73934C578F344BDE14EE5900A8 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1983_t751E9B329C14EF73934C578F344BDE14EE5900A8__padding[1983];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D787_t08024B760C38479D74A60E7CB31212FF7D8CA38B 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D787_t08024B760C38479D74A60E7CB31212FF7D8CA38B__padding[787];
+	};
+};
+#pragma pack(pop, tp)
+struct MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851 
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	bool ___IsEditorOnly;
+};
+struct MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_com
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct Axis3D_t0778C6419F52B5FC1B12DBD01ACBDE70DCB293A8 
+{
+	int32_t ___value__;
+};
+struct Delegate_t  : public RuntimeObject
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	RuntimeObject* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	bool ___method_is_virtual;
+};
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____buffer;
+	int32_t ____origin;
+	int32_t ____position;
+	int32_t ____length;
+	int32_t ____capacity;
+	bool ____expandable;
+	bool ____writable;
+	bool ____exposable;
+	bool ____isOpen;
+	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ____lastReadTask;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct QueryTriggerInteraction_t5AA443202C8B671F391534A002B7CF48A1412D23 
+{
+	int32_t ___value__;
+};
+struct Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Origin;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Direction;
+};
+struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Point;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal;
+	uint32_t ___m_FaceID;
+	float ___m_Distance;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UV;
+	EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 ___m_Collider;
+};
+struct RigidbodyConstraints_tE93C9173FB4F24EF4D38166A288214D28D8E85C8 
+{
+	int32_t ___value__;
+};
+struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
+{
+	intptr_t ___value;
+};
+struct Side_t7839E1E1331C6AD346F6E32AF0547979858AB73C 
+{
+	int32_t ___value__;
+};
+struct Space_tF043E93E06B702DD05199C28C6F779049B38A969 
+{
+	int32_t ___value__;
+};
+struct TouchPhase_t54E0A1AF80465997849420A72317B733E1D49A9E 
+{
+	int32_t ___value__;
+};
+struct TouchType_t84F82C73BC1A6012141735AD84DA67AA7F7AB43F 
+{
+	int32_t ___value__;
+};
+struct VRInput_t622FB60301BA23EBE12C91A2086EFB4EC2B13A7C 
+{
+	int32_t ___value__;
+};
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C  : public UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977
+{
+};
+struct FollowType_t6E930F70F2860155FB4B9CE9C9B096532FE8EB05 
+{
+	int32_t ___value__;
+};
+struct GrabInput_tC840B485265C25D44AA928468C408F927511C423 
+{
+	int32_t ___value__;
+};
+struct MixingMethod_t1315BE89DD296A662FCE0899375F4C41DA0FD1A1 
+{
+	int32_t ___value__;
+};
+struct GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287  : public UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977
+{
+};
+struct MixingMethod_t3E27E95288A8B9B935ED54E5F7DEEE02DF085F9C 
+{
+	int32_t ___value__;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct Touch_t03E51455ED508492B3F278903A0114FA0E87B417 
+{
+	int32_t ___m_FingerId;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Position;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_RawPosition;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PositionDelta;
+	float ___m_TimeDelta;
+	int32_t ___m_TapCount;
+	int32_t ___m_Phase;
+	int32_t ___m_Type;
+	float ___m_Pressure;
+	float ___m_maximumPossiblePressure;
+	float ___m_Radius;
+	float ___m_RadiusVariance;
+	float ___m_AltitudeAngle;
+	float ___m_AzimuthAngle;
+};
+struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C  : public MulticastDelegate_t
+{
+};
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
+};
+struct Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A  : public MulticastDelegate_t
+{
+};
+struct Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3  : public MulticastDelegate_t
+{
+};
+struct Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF  : public MulticastDelegate_t
+{
+};
+struct Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7  : public MulticastDelegate_t
+{
+};
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Joint_tB2C5499F976EBB1EA1C11A80E1BD9F5E2EE4D682  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	uint32_t ___m_NonSerializedVersion;
+};
+struct HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7  : public Joint_tB2C5499F976EBB1EA1C11A80E1BD9F5E2EE4D682
+{
+};
+struct MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
+{
+};
+struct CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target;
+	bool ___followPosition;
+	int32_t ___positionFollowType;
+	float ___positionForceMult;
+	bool ___useFixedUpdatePos;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positionOffset;
+	int32_t ___positionOffsetCoordinateSystem;
+	float ___snapIfDistanceGreaterThan;
+	bool ___followRotation;
+	int32_t ___rotationFollowType;
+	float ___rotationForceMult;
+	bool ___useFixedUpdateRot;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotationOffset;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rotationOffsetVector3;
+	bool ___useVector3RotationOffset;
+	int32_t ___rotationOffsetCoordinateSystem;
+	bool ___singleAxisRotation;
+	int32_t ___singleAxisRotationAxis;
+	float ___snapIfAngleGreaterThan;
+	float ___smoothness;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+};
+struct MouseControlsVRGrabbableHand_t027A6B45BF0F576789C862915E0A3A8AF4DD7C27  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___mainCamera;
+	VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___targetHand;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___layerMask;
+	float ___scrollSpeedMultiplier;
+	float ___extraDeepness;
+	float ___distance;
+};
+struct Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* ___rig;
+	bool ___setPhysicsTimestepToRefreshRate;
+	bool ___grabWallsLeft;
+	bool ___grabWallsRight;
+	bool ___grabAirLeft;
+	bool ___grabAirRight;
+	float ___cdRatioGrabbing;
+	int32_t ___grabInput;
+	bool ___stickBoostBrake;
+	bool ___handBoosters;
+	float ___mainBoosterMaxSpeed;
+	float ___mainBrakeDrag;
+	float ___maxHandBoosterSpeed;
+	float ___mainBoosterForce;
+	float ___handBoosterAccel;
+	float ___mainBoosterCost;
+	float ___mainBoosterBudget;
+	float ___minVel;
+	float ___grabMovementMaxThrowSpeed;
+	int32_t ___turnInput;
+	bool ___continuousRotation;
+	float ___continuousRotationSpeed;
+	float ___snapRotationAmount;
+	float ___turnNullZone;
+	bool ___snapTurnedThisFrame;
+	bool ___yaw;
+	bool ___pitch;
+	bool ___roll;
+	bool ___slidingMovement;
+	float ___slidingAccel;
+	float ___slidingSpeed;
+	bool ___teleportingMovement;
+	Teleporter_t0E6FB14DCEC57268912C34E919C168DCBD86BC0F* ___teleporter;
+	bool ___scootBackMovement;
+	int32_t ___scootBackMovementController;
+	float ___translationalGain;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___translationalGainOffsetObj;
+	float ___normalDrag;
+	Action_2_tFA76A29974B6056E7C1C8D9C2071044178F7A0C5* ___OnGrab;
+	Action_3_t64EA0AFEEF7BB4B5A0F84B58CCEECCB3D3F2971F* ___OnGrabCancel;
+	Action_6_t884A3E708188851F5183B3C50A7CD6D45B14985A* ___OnRelease;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___leftHandGrabbedObj;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rightHandGrabbedObj;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___lastLeftHandGrabbedObj;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___lastRightHandGrabbedObj;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___grabPos;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___grabHoldTime;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___grabInitialLocalPos;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___grabInitialWorldPos;
+	Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* ___lastVels;
+	int32_t ___lastVelsLength;
+	CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* ___cpt;
+	int32_t ___grabbingSide;
+	bool ___wasKinematic;
+	int32_t ___currentTeleportingSide;
+	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___teleportHit;
+	Action_1_tB5508CF78181CB4414BC225AE9F03041BFE2DE51* ___TeleportStart;
+	Action_3_t95AB6A6A0F7FD94ACBDC30364CBE1E66C122966D* ___TeleportEnd;
+	Action_2_t7CA98B0050FA621B9DBD37E8415DAA87FA8DE99C* ___SnapTurn;
+};
+struct Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___head;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___leftHand;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rightHand;
+};
+struct VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* ___listOfGrabbedByHands;
+	bool ___includeInSave;
+	bool ___canBeGrabbedByMultipleHands;
+	int32_t ___priority;
+	bool ___remoteGrabbable;
+	bool ___colorChange;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___highlightColor;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___Grabbed;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___Released;
+	RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* ___highlightMeshes;
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___highlightObjs;
+	List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* ___origColors;
+	List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* ___origVisibility;
+	bool ___locallyOwned;
+	bool ___networkGrabbed;
+};
+struct VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* ___rig;
+	int32_t ___side;
+	bool ___canGrab;
+	int32_t ___grabInput;
+	int32_t ___distanceGrabInput;
+	bool ___vibrateOnGrab;
+	bool ___autograb;
+	float ___autograbTimeout;
+	float ___autograbTimer;
+	bool ___enableRemoteGrabbing;
+	float ___remoteGrabbingDistance;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___layerMask;
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___grabbedVRGrabbable;
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___selectedVRGrabbable;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* ___touchedObjs;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* ___remoteTouchedObjs;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* ___raycastedObjs;
+	Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* ___lastVels;
+	int32_t ___lastVelsLength;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* ___GrabEvent;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* ___ReleaseEvent;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* ___OnGrab;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* ___OnRelease;
+};
+struct VRPhysicalButton_t424442D60CF92EB75D68428D19993BA4F8DBAA20  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___depth;
+	float ___normalHeight;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	float ___forceMultiplier;
+	bool ___clicked;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___normalColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___clickedColor;
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___rend;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___sound;
+	ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* ___onClick;
+};
+struct Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* ___m;
+};
+struct VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___dialAxis;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___lastGrabbedRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lastGrabbedPosition;
+	float ___lastAngle;
+	float ___minAngle;
+	float ___maxAngle;
+	bool ___useLimits;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* ___DialTurned;
+	float ___multiplier;
+	float ___positionMix;
+	bool ___dynamicPositionMix;
+	float ___dynamicPositionMixDistanceMultiplier;
+	int32_t ___mixingMethod;
+	float ___currentAngle;
+	float ___goalAngle;
+	float ___vibrationDelta;
+	float ___vibrationDeltaSum;
+	Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* ___lastRotationVels;
+	int32_t ___lastRotationVelsLength;
+};
+struct VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* ___grabEvent;
+};
+struct VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* ___hinge;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___lastGrabbedRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lastGrabbedPosition;
+	float ___lastAngle;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* ___DialTurned;
+	float ___multiplier;
+	float ___positionMix;
+	bool ___dynamicPositionMix;
+	float ___dynamicPositionMixDistanceMultiplier;
+	int32_t ___mixingMethod;
+	float ___currentAngle;
+	float ___goalAngle;
+	float ___goalDeadzoneDeg;
+	float ___vibrationDelta;
+	float ___vibrationDeltaSum;
+	Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* ___lastRotationVels;
+	int32_t ___lastRotationVelsLength;
+	bool ___wasUsingSpring;
+	bool ___wasUsingGravity;
+};
+struct VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___Moved;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___x_range;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___y_range;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___z_range;
+	float ___multiplier;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___localStartTransform;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localStartPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___handOffset;
+};
+struct VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___Moved;
+	bool ___useVelocityFollow;
+	bool ___wasKinematic;
+	bool ___wasUsingGravity;
+	CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* ___copyTransform;
+	bool ___setKinematic;
+	bool ___releaseVelocitySmoothing;
+	bool ___useFixedPositionOffset;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fixedPositionOffset;
+	bool ___useFixedRotationOffset;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fixedRotationOffset;
+};
+struct VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___dialAxis;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___Moved;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___posOffset;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotOffset;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotOffsetForSnapping;
+	float ___multiplier;
+	float ___positionMix;
+	bool ___dynamicPositionMix;
+	float ___dynamicPositionMixDistanceMultiplier;
+	float ___initialHandToGroundDistance;
+	bool ___stuckInTheGround;
+	float ___currentAngle;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___lift;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___place;
+	float ___timerUntilReSnap;
+};
+struct VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	float ___forceMultiplier;
+	Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* ___localHandGrabPositions;
+};
+struct VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF  : public VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	float ___slideMax;
+	float ___slideMin;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localSlideAxis;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lastGrabPosition;
+	float ___currentSlidePosition;
+	bool ___useVelocity;
+	float ___movementSpeedMultiplier;
+	float ___vibrationDelta;
+	float ___vibrationDeltaSum;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* ___OnSlide;
+};
+struct VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6  : public VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847
+{
+	VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* ___parentDial;
+	float ___factor;
+};
+struct EmptyArray_1_tA3FD4DA73690B22AF51247DE4AB33A52280CF1DD_StaticFields
+{
+	RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* ___Value;
+};
+struct List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A_StaticFields
+{
+	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___s_emptyArray;
+};
+struct List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF_StaticFields
+{
+	ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* ___s_emptyArray;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
+};
+struct List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_StaticFields
+{
+	VRGrabbableU5BU5D_t69BCCF116DB4D7164B405ED3259041A6AC5EC061* ___s_emptyArray;
+};
+struct List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4_StaticFields
+{
+	VRGrabbableHandU5BU5D_t6E620A9E8BD217A2753B5DDFE6EB441BF81FAFA9* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D1983_t751E9B329C14EF73934C578F344BDE14EE5900A8 ___43DEFA405BAAE6B959A38189D9BD55F74CB18B6A0E93D0A30BAE8C6AFFF3A3BB;
+	__StaticArrayInitTypeSizeU3D787_t08024B760C38479D74A60E7CB31212FF7D8CA38B ___BDE5286F852055ED4D656299CD8B82663DA9E910515F61633FA854F2C77C8AB8;
+};
+struct BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_StaticFields
+{
+	BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___Null;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields
+{
+	U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* ___U3CU3E9;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* ___U3CU3E9__27_0;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* ___U3CU3E9__27_1;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* ___U3CU3E9__30_0;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct IntPtr_t_StaticFields
+{
+	intptr_t ___Zero;
+};
+struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
+{
+	float ___Epsilon;
+};
+struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
+{
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_StaticFields
+{
+	int32_t ___k_ColorId;
+	int32_t ___k_MainTexId;
+};
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
+{
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* m_Items[1];
+
+	inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* m_Items[1];
+
+	inline Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* m_Items[1];
+
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 m_Items[1];
+
+	inline RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Color_tD001788D726C3A7F1379BEED0260B9591F440C1F m_Items[1];
+
+	inline Color_tD001788D726C3A7F1379BEED0260B9591F440C1F GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Color_tD001788D726C3A7F1379BEED0260B9591F440C1F GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4  : public RuntimeArray
+{
+	ALIGN_FIELD (8) bool m_Items[1];
+
+	inline bool GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline bool* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, bool value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline bool GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline bool* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, bool value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_gshared_inline (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_gshared_inline (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* __this, float ___0_arg1, float ___1_arg2, bool ___2_arg3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_gshared_inline (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, bool ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_gshared_inline (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Dictionary_2_get_Item_mE9471094833D0656420C54F84B0E66371B2EAF54_gshared (Dictionary_2_t184255DB06D490EE1D1E0AC3AB6196B56751FC75* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m861B0BBC65C4DA70AA8DCC5A206E60158B0C454F_gshared (Dictionary_2_t184255DB06D490EE1D1E0AC3AB6196B56751FC75* __this, RuntimeObject* ___0_key, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m7BB6648452294188E699584EDFFED294B60D8B9E_gshared (Dictionary_2_t184255DB06D490EE1D1E0AC3AB6196B56751FC75* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mA539B8FE4C6FAFC6C87123D3E02A18CDBA76F410_gshared (Dictionary_2_t184255DB06D490EE1D1E0AC3AB6196B56751FC75* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_3__ctor_mB13016E4E4C839BA76F6E0D53E019992D895EBD4_gshared (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_gshared_inline (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_gshared_inline (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, bool ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F_gshared (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179_gshared (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D_gshared (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953_gshared (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_gshared_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC_gshared (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35_gshared (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m3E007299121A15DF80F4A210FF8C20E5DF688F20_gshared (Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_RemoveAll_m1A8DE2A7640CC473609F3ADAC38FDB960520636D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___0_match, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Comparison_1__ctor_mC1E8799BBCE317B612875123C9C894BD470BFE6A_gshared (Comparison_1_t62E531E7B8260E2C6C2718C3BDB8CF8655139645* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_mEB3B61CB86B1419919338B0668DC4E568C2FFF93_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, Comparison_1_t62E531E7B8260E2C6C2718C3BDB8CF8655139645* ___0_comparison, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5_gshared (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m7AF5556215BF2EC986B31780ACADE159F4DAC1C5_gshared (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_mD783561518F916982595A58C9A148BA3AA8F9B10_gshared (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, bool ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_get_touchSupported_m2A4FA398A793861AE1BC5971A1363552AB33BEEF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_t03E51455ED508492B3F278903A0114FA0E87B417 Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1 (int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 TupleToVectorExtensions_ToVector2_m3A794A952A66E3CEB31184A36D547BB5DE058638 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_val, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 Camera_ScreenPointToRay_m2887B9A49880B7AB670C57D66B67D6A6689FE315 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_pos, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA (int32_t ___0_button, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Ray_get_direction_m21C2D22D3BD4A683BD4DC191AB22DD05F5EC2086_inline (Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D (LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_mask, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mCCD2542138D11E665A5D4F413C1547EE7D794DEB (Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___0_ray, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___1_hitInfo, float ___2_maxDistance, int32_t ___3_layerMask, int32_t ___4_queryTriggerInteraction, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Input_get_mouseScrollDelta_mD112408E9182AA0F529179FF31E21D8DCD5CFA74 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3 (int32_t ___0_button, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, bool ___0_includeRemote, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButtonUp_mBE89CC9C69BBEA9A863819E77EA54411B0476ED6 (int32_t ___0_button, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Release_mB50A79BA8E9FF746904B258C4CB802C6E54B6847 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222 (int32_t ___0_intVal, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
+inline Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared)(__this, method);
+}
+inline Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_SetGrabbedObj_m19E5E4795D53A5BF5FCB8154931CEA4A1533CE38 (Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_obj, int32_t ___1_side, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) ;
+inline Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m683E67853797040312868B69E963D0E97F433EEB (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_axis, float ___1_angle, int32_t ___2_relativeTo, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_GrabInput_m282E90A09A1DDB07CD0317CD8B97BFC538E0FB03 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) ;
+inline void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, float, const RuntimeMethod*))Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared)(__this, ___0_item, method);
+}
+inline int32_t Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_inline (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, const RuntimeMethod*))Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_gshared_inline)(__this, method);
+}
+inline float Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method)
+{
+	return ((  float (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, const RuntimeMethod*))Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_TransformDirection_m9BE1261DF2D48B7A4A27D31EE24D2D97F89E7757 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_planeNormal, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_SignedAngle_m76C77F9D7BAF5969FA5B7500ED2D5FF9F9FA4153_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_axis, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_lhs, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Quaternion_ToAngleAxis_mA2A5A81DAE94A9C1AFC34112BE8E5C5C3E9297AF_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, float* ___0_angle, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_axis, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Transform_get_localToWorldMatrix_m5D35188766856338DD21DE756F42277C21719E6D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
+inline void Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_inline (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* __this, float ___0_arg1, float ___1_arg2, bool ___2_arg3, const RuntimeMethod* method)
+{
+	((  void (*) (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3*, float, float, bool, const RuntimeMethod*))Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_gshared_inline)(__this, ___0_arg1, ___1_arg2, ___2_arg3, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputMan_Vibrate_m33E29A3B33C6CBFEF3F3EC64FAD9D2C2ED803470 (int32_t ___0_side, float ___1_intensity, float ___2_duration, float ___3_delay, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368 (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* BitConverter_GetBytes_m86ADBB3533A4FFA79B7303FBEBC9EBD1BCA6A549 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2 (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_input, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) ;
+inline void Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, const RuntimeMethod*))Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster_ResetToParent_m97D34DFD273D6A6EF02532E16D19AD1D577F9A33 (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_SetData_mA35D78BB5A297E1BDBE4323096071AAF1F9975F9 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, float ___0_updatedAngle, bool ___1_localInput, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_HandleGrab_m6D8C9C22DBAA8737A243144B90C2E6F7ED5F3444 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial__ctor_m282F86A224865E8CC0CE937DCC15EE0A5E85216B (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent__ctor_m03D3E5121B9A6100351984D0CE3050B909CD3235 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HingeJoint_get_angle_mCCDAB7FAFB7A535562521C450A1A35393622DD6D (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, const RuntimeMethod* method) ;
+inline HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* Component_GetComponent_TisHingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7_mD226E906030A0E16CE9EEDAAA902B0CD7CA4B45F (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 HingeJoint_get_motor_mF886F1CBD9EE4A89F41F0E8790DAB5E1FEA84F00 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JointMotor_get_force_mB4BDD8D40380A7E01E9C062BAADB1BE97F6A63FE (JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointMotor_set_force_m66139CAD801991E3788835067C0D738EA000BFD3 (JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HingeJoint_set_motor_m9612545CFB6BCF58FE2AC5D49720190D0FDE3800 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HingeJoint_get_useSpring_m239B2FBE0587B605008196463DC40881A3BC3779 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_GrabInput_m4CD26FBA6BD6EF0C543207A2D56C71D7B99EB5AE (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRHingeDial_get_Active_mF2C8857B789DD0A376026A6728A536CE121854E8 (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HingeJoint_set_useSpring_m02AF2737DE4954BB71C2F68710835116BE3AA0D9 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HingeJoint_get_useLimits_mB6505FE417A487B69756B9F9897B06C40AD5F362 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A HingeJoint_get_limits_mD0E3FDF10D6AEF4D539711C0DE418C20930B6433 (HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JointLimits_get_min_m3E8D3C572B30DA53262849D4D5BFFD9A77276FC8 (JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JointLimits_get_max_m4E6BC6E5D320C4E2E7599852B19F4524D9549638 (JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Joint_get_axis_mEDF8FE710E08CED9EA69A0369A075B77FF0BE79C (Joint_tB2C5499F976EBB1EA1C11A80E1BD9F5E2EE4D682* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+inline void Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, bool ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*, bool, const RuntimeMethod*))Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_gshared_inline)(__this, ___0_obj, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_mB42A27EE20E123E0B47336F795B62B017489E3F7 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0 (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_output, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Extensions_Write_m45622B3721BFF4B3268EF719358D5C1386A603E8 (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___0_writer, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_vec3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Extensions_Write_m50D186071E9693D010FB27E415784CDE0F184642 (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___0_writer, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_quat, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Extensions_ReadVector3_mC93DD629C48C224496F9F9DEA7371D3065A3629C (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* ___0_reader, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Extensions_ReadQuaternion_m97317F7A54D8A12B42365D3A38F286C2F983D113 (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* ___0_reader, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_Awake_mB77069C486CF1CDFC2B041EF92D09A6EEF54711D (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Rigidbody_get_isKinematic_mC20906CA5A89983DE06EAC6E3AFC5BC012F90CA1 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Rigidbody_get_useGravity_mBDA227BDCB0F9A81B61A6592929EE43EDDEE7D16 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, const RuntimeMethod* method) ;
+inline CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* Component_GetComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m0477B1AC627977821505A46B8336448936A105DC (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m06155ED25645EBBC06B4C8F05235EF41B1489C7E (RuntimeObject* ___0_message, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_context, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* GameObject_AddComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m220EF8E2EABC03A5C33671CBE1BA215F4F1196E1 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CopyTransform_SetTarget_mAEBB05A13F82503DA6280435E8666B5EB7C8CA62 (CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_newTarget, bool ___1_generateOffsets, const RuntimeMethod* method) ;
+inline bool List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E (RuntimeObject* ___0_message, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_context, const RuntimeMethod* method) ;
+inline int32_t Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_inline (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E*, const RuntimeMethod*))Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_gshared_inline)(__this, method);
+}
+inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3 (RuntimeObject* ___0_source, const RuntimeMethod* method)
+{
+	return ((  Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3_gshared)(___0_source, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_GrabInput_mE6AA7192E78D3E5501157A5FC18D678D0EDF40B2 (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m1B27F500505FFB57D78548B9F5A540A2AD092903 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_direction, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___2_hitInfo, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_LookAt_mBD38EDB5E915C5DA6C5A79D191DEE2C826A9FC2C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldUp, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_mE12DB27208410BB7090FA117D53DBEBBC0A36B30 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___0_xAngle, float ___1_yAngle, float ___2_zAngle, int32_t ___3_relativeTo, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_toDirection, const RuntimeMethod* method) ;
+inline Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6 List_1_GetEnumerator_m03AFDB52381868693AEAA5BA7B89C6B92539D55B (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6 (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mCC713DF10E37AF5D8A954128F4A9935C55EDD823 (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* Enumerator_get_Current_m46FCF641F7361B14DC9CEC568204DAE20AA6AE61_inline (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6* __this, const RuntimeMethod* method)
+{
+	return ((  VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* (*) (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9 (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_key, const RuntimeMethod* method)
+{
+	return ((  Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (*) (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F*, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*, const RuntimeMethod*))Dictionary_2_get_Item_mE9471094833D0656420C54F84B0E66371B2EAF54_gshared)(__this, ___0_key, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_TransformVector_mFA6FB7570442728CB15D03C696353148711CDD98 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_mA4226D0A30E0B55CB0CAD2A956EA16C546505965 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_force, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m9DE2581122F96E561CAF798E6CAD2A8F7314981F (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+inline void Dictionary_2_Add_mBAC45DFC2B63D038D3F069AA30A0181FAFAC725A (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_key, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F*, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*))Dictionary_2_Add_m861B0BBC65C4DA70AA8DCC5A206E60158B0C454F_gshared)(__this, ___0_key, ___1_value, method);
+}
+inline bool Dictionary_2_Remove_m868E168DE38FB74A53058FFF0AE400BBC0F94238 (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_key, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F*, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*, const RuntimeMethod*))Dictionary_2_Remove_m7BB6648452294188E699584EDFFED294B60D8B9E_gshared)(__this, ___0_key, method);
+}
+inline void Dictionary_2__ctor_mA062405960666EAB13704F40E9A694B0066C03EE (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F*, const RuntimeMethod*))Dictionary_2__ctor_mA539B8FE4C6FAFC6C87123D3E02A18CDBA76F410_gshared)(__this, method);
+}
+inline void Action_3__ctor_mB13016E4E4C839BA76F6E0D53E019992D895EBD4 (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_3__ctor_mB13016E4E4C839BA76F6E0D53E019992D895EBD4_gshared)(__this, ___0_object, ___1_method, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_GrabInput_m9C9075BB5D72A1C1E70C316F48A24C792A74944F (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, float ___0_timeDelta, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_fixedDeltaTime_m43136893D00AF5D5FE80AD05609558F6E2381381 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, float ___0_updatedSlide, bool ___1_localInput, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m4A9E3D8836586E7562F6A18EBF5F5B6089D8B649 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_translation, int32_t ___1_relativeTo, const RuntimeMethod* method) ;
+inline int32_t List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* List_1_get_Item_m4D5AFF423511A6D3B30C84CC9E6C570115C0BECF (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* Renderer_get_materials_m43D33328432700524EAEAB093C67AE5689976118 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Material_HasProperty_mC09A83B44E368A217F606DD4954FA080CC03EC6C (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Material_get_color_mA4B7D4B96200D9D8B4F36BF19957E9DA81071DBB (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, const RuntimeMethod* method) ;
+inline void List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_inline (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF*, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F, const RuntimeMethod*))List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_gshared_inline)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Renderer_get_enabled_mFDDF363859AEC88105A925FA7EA341C077B09B54 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
+inline void List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_inline (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, bool ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A*, bool, const RuntimeMethod*))List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_gshared_inline)(__this, ___0_item, method);
+}
+inline void List_1_Add_mA01F5CAEEE2B027CC337DB94587E8EE5E024ED40_inline (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
+inline bool List_1_Remove_mEE52C3433EDB084876073EC3F8B7C6D96D2C2475 (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___0_item, method);
+}
+inline void List_1_RemoveAt_m839816646A232448D2827DD54A3B95A034BE41DD (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+inline Color_tD001788D726C3A7F1379BEED0260B9591F440C1F List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  Color_tD001788D726C3A7F1379BEED0260B9591F440C1F (*) (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF*, int32_t, const RuntimeMethod*))List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F_gshared)(__this, ___0_index, method);
+}
+inline bool List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179 (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A*, int32_t, const RuntimeMethod*))List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179_gshared)(__this, ___0_index, method);
+}
+inline void List_1__ctor_mEC40EAF335114E58FA3B4AA2FE9902DC811476C8 (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
+inline void List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF*, const RuntimeMethod*))List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D_gshared)(__this, method);
+}
+inline void List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953 (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A*, const RuntimeMethod*))List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_FilterDisabledObjects_m560FBE56FED907735706B5382472CD13A1C74934 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputMan_GetDown_m883AA99894692FA75D123F54C77451D9A420463C (int32_t ___0_input, int32_t ___1_side, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputMan_GetUp_m6A09D63FCEBE70955FBD437008AE183B2D4395EC (int32_t ___0_input, int32_t ___1_side, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputMan_Get_mE966D447501FD455ABFC690797D6B0B5F63A30D0 (int32_t ___0_input, int32_t ___1_side, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* VRGrabbableHand_GetBestGrabbable_mCF6CE7DE07B271955A9AA0652C9767119BEFA626 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, bool ___0_includeRemote, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleSelection_m3C89EDDB0FBDF1B5788270F632DC110CC24DD4B5 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* Util_ConeCastAll_m528EFB7D31646C462F9216B3961104AB998F6AA4 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_direction, float ___2_maxRadius, float ___3_maxDistance, int32_t ___4_layerMask, const RuntimeMethod* method) ;
+inline RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_inline (const RuntimeMethod* method)
+{
+	return ((  RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* (*) (const RuntimeMethod*))Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_gshared_inline)(method);
+}
+inline void List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583 (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
+inline VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline void List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_inline (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+inline Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E List_1_GetEnumerator_m075B340F24648F617AB4687AC791B5E54F3DC1CB (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m0DD644EBA13BEC292540DDACEC366D39F37CD9CF (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* Enumerator_get_Current_mCA30F4CDFF8C5D3AEF88C51F6F7B83A505913F23_inline (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E* __this, const RuntimeMethod* method)
+{
+	return ((  VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* (*) (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline bool List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353 (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m7BBC59CF2D20F99F1385C8FBE62BEF54581E83D1 (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 InputMan_ControllerVelocity_mF882E7BCD9A0AB39E759C4BF0580EAD84BA9940C (int32_t ___0_side, int32_t ___1_space, const RuntimeMethod* method) ;
+inline void Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*))Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC_gshared)(__this, ___0_item, method);
+}
+inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35 (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method)
+{
+	return ((  Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (*) (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E*, const RuntimeMethod*))Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Grab_mDA7C8064644B56DC354AAAFF2A73895DEB4D7D9F (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_grabbable, const RuntimeMethod* method) ;
+inline void Action_1_Invoke_m2CBA6757ED22FD813E72CC4CE151A004FA89C3DA_inline (Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A*, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
+inline void Predicate_1__ctor_m3EF98A7BB8774680EA064DD96A92388814B04E25 (Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7*, RuntimeObject*, intptr_t, const RuntimeMethod*))Predicate_1__ctor_m3E007299121A15DF80F4A210FF8C20E5DF688F20_gshared)(__this, ___0_object, ___1_method, method);
+}
+inline int32_t List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* ___0_match, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7*, const RuntimeMethod*))List_1_RemoveAll_m1A8DE2A7640CC473609F3ADAC38FDB960520636D_gshared)(__this, ___0_match, method);
+}
+inline int32_t List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_inline (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline void Comparison_1__ctor_m7B6AE1BBF598FC469BED5F5C0371C80E3A3BC515 (Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF*, RuntimeObject*, intptr_t, const RuntimeMethod*))Comparison_1__ctor_mC1E8799BBCE317B612875123C9C894BD470BFE6A_gshared)(__this, ___0_object, ___1_method, method);
+}
+inline void List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF* ___0_comparison, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF*, const RuntimeMethod*))List_1_Sort_mEB3B61CB86B1419919338B0668DC4E568C2FFF93_gshared)(__this, ___0_comparison, method);
+}
+inline VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* (*) (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+inline void Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5 (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E*, const RuntimeMethod*))Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_CompareTo_mFA011811D4447442ED442B4A507BD4267621C586 (int32_t* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F (float* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m8E2B4A283F00EA3B2BD7A1EAB622B96ABEEE44EA (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, const RuntimeMethod* method) ;
+inline Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_constraints_mE81BF0DAEB980E320538231E092CA4663885A9A3 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+inline MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* Component_GetComponentInChildren_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m36EDCB3A47ABF63F0F0630998380AA7635920535 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* Renderer_get_sharedMaterial_mA2E0CA0A564617FFC3E0E50947C6300082C35F81 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_m77FA4FE195D5A09AFA28304707DD4EA837874F34_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_to, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline (float ___0_f, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_Inverse_m0ABC2C5E4F26053F9F6B8260065D08E264F62566 (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___0_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quaternion_Internal_ToAxisAngleRad_m83A51085BD64C35A83E8F676695FE0A525F3D3E9 (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___0_q, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_axis, float* ___2_angle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromToRotation_m4A801EE9080CD4CBCB9319FF12EB7934E885932F (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_toDirection, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
+inline void List_1_AddWithResize_m7AF5556215BF2EC986B31780ACADE159F4DAC1C5 (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF*, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F, const RuntimeMethod*))List_1_AddWithResize_m7AF5556215BF2EC986B31780ACADE159F4DAC1C5_gshared)(__this, ___0_item, method);
+}
+inline void List_1_AddWithResize_mD783561518F916982595A58C9A148BA3AA8F9B10 (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, bool ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A*, bool, const RuntimeMethod*))List_1_AddWithResize_mD783561518F916982595A58C9A148BA3AA8F9B10_gshared)(__this, ___0_item, method);
+}
+inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90085
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m0B5159003CA20343A82548A1D4175B30ED8503D9 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____43DEFA405BAAE6B959A38189D9BD55F74CB18B6A0E93D0A30BAE8C6AFFF3A3BB_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____BDE5286F852055ED4D656299CD8B82663DA9E910515F61633FA854F2C77C8AB8_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1983));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____43DEFA405BAAE6B959A38189D9BD55F74CB18B6A0E93D0A30BAE8C6AFFF3A3BB_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
+		(&V_0)->___FilePathsData = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)787));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t18B716C2AA32EF2B1166EF5B4CCCC0858F0CED83____BDE5286F852055ED4D656299CD8B82663DA9E910515F61633FA854F2C77C8AB8_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
+		(&V_0)->___TypesData = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
+		(&V_0)->___TotalFiles = ((int32_t)14);
+		(&V_0)->___TotalTypes = ((int32_t)15);
+		(&V_0)->___IsEditorOnly = (bool)0;
+		MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851 L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 90086
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m401DEA4A28BBC1F20CFED35F8FD2DC301B0D82B9 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tBB341FEB03C79C1237041C0A5BCF9C590FA5AD40* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_pinvoke(const MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851& unmarshaled, MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_pinvoke& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_pinvoke_back(const MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_pinvoke& marshaled, MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_pinvoke_cleanup(MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_com(const MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851& unmarshaled, MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_com& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_com_back(const MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_com& marshaled, MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshal_com_cleanup(MonoScriptData_t7A8527607991F1A249F764744D405FB0E229E851_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90087
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseControlsVRGrabbableHand_Update_mDBD1C38959B0ACE56D0EC243D7ECE5781BAA5B41 (MouseControlsVRGrabbableHand_t027A6B45BF0F576789C862915E0A3A8AF4DD7C27* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Touch_t03E51455ED508492B3F278903A0114FA0E87B417 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:20>
+		bool L_0;
+		L_0 = Input_get_touchSupported_m2A4FA398A793861AE1BC5971A1363552AB33BEEF(NULL);
+		if (!L_0)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		int32_t L_1;
+		L_1 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
+		if ((((int32_t)L_1) <= ((int32_t)0)))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:22>
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_2;
+		L_2 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
+		V_2 = L_2;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
+		L_3 = Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A((&V_2), NULL);
+		V_0 = L_3;
+		goto IL_002b;
+	}
+
+IL_0020:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:26>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = TupleToVectorExtensions_ToVector2_m3A794A952A66E3CEB31184A36D547BB5DE058638(L_4, NULL);
+		V_0 = L_5;
+	}
+
+IL_002b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:29>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_6 = __this->___mainCamera;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_7, NULL);
+		NullCheck(L_6);
+		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_9;
+		L_9 = Camera_ScreenPointToRay_m2887B9A49880B7AB670C57D66B67D6A6689FE315(L_6, L_8, NULL);
+		V_1 = L_9;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:32>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:33>
+		bool L_10;
+		L_10 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(0, NULL);
+		if (L_10)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		int32_t L_11;
+		L_11 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
+		if ((((int32_t)L_11) <= ((int32_t)0)))
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_12;
+		L_12 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
+		V_2 = L_12;
+		int32_t L_13;
+		L_13 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_2), NULL);
+		if ((!(((uint32_t)L_13) == ((uint32_t)1))))
+		{
+			goto IL_009f;
+		}
+	}
+
+IL_005e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:35>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:36>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_14 = __this->___targetHand;
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_14, NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_16 = __this->___mainCamera;
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_16, NULL);
+		NullCheck(L_17);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Ray_get_direction_m21C2D22D3BD4A683BD4DC191AB22DD05F5EC2086_inline((&V_1), NULL);
+		V_3 = L_19;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_3), NULL);
+		float L_21 = __this->___distance;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_20, L_21, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_18, L_22, NULL);
+		NullCheck(L_15);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_15, L_23, NULL);
+		goto IL_011b;
+	}
+
+IL_009f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:40>
+		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_24 = V_1;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_25 = __this->___layerMask;
+		int32_t L_26;
+		L_26 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_25, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		bool L_27;
+		L_27 = Physics_Raycast_mCCD2542138D11E665A5D4F413C1547EE7D794DEB(L_24, (&V_4), (100.0f), L_26, 1, NULL);
+		if (!L_27)
+		{
+			goto IL_011b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:42>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_28 = __this->___targetHand;
+		NullCheck(L_28);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_28, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
+		L_30 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_4), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
+		L_31 = Ray_get_direction_m21C2D22D3BD4A683BD4DC191AB22DD05F5EC2086_inline((&V_1), NULL);
+		V_3 = L_31;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
+		L_32 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_3), NULL);
+		float L_33 = __this->___extraDeepness;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_32, L_33, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_30, L_34, NULL);
+		NullCheck(L_29);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_29, L_35, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:43>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_36 = __this->___mainCamera;
+		NullCheck(L_36);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_37;
+		L_37 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_36, NULL);
+		NullCheck(L_37);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_37, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_39 = __this->___targetHand;
+		NullCheck(L_39);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_39, NULL);
+		NullCheck(L_40);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_40, NULL);
+		float L_42;
+		L_42 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_38, L_41, NULL);
+		__this->___distance = L_42;
+	}
+
+IL_011b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:48>
+		float L_43 = __this->___distance;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_44;
+		L_44 = Input_get_mouseScrollDelta_mD112408E9182AA0F529179FF31E21D8DCD5CFA74(NULL);
+		float L_45 = L_44.___y;
+		float L_46 = __this->___scrollSpeedMultiplier;
+		float L_47 = __this->___distance;
+		__this->___distance = ((float)il2cpp_codegen_add(L_43, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_45, (0.0250000004f))), L_46)), L_47))));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:51>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:52>
+		bool L_48;
+		L_48 = Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3(0, NULL);
+		if (L_48)
+		{
+			goto IL_0166;
+		}
+	}
+	{
+		int32_t L_49;
+		L_49 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
+		if ((((int32_t)L_49) <= ((int32_t)0)))
+		{
+			goto IL_0172;
+		}
+	}
+	{
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_50;
+		L_50 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
+		V_2 = L_50;
+		int32_t L_51;
+		L_51 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_2), NULL);
+		if (L_51)
+		{
+			goto IL_0172;
+		}
+	}
+
+IL_0166:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:54>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_52 = __this->___targetHand;
+		NullCheck(L_52);
+		VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D(L_52, (bool)0, NULL);
+	}
+
+IL_0172:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:57>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:58>
+		bool L_53;
+		L_53 = Input_GetMouseButtonUp_mBE89CC9C69BBEA9A863819E77EA54411B0476ED6(0, NULL);
+		if (L_53)
+		{
+			goto IL_0193;
+		}
+	}
+	{
+		int32_t L_54;
+		L_54 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
+		if ((((int32_t)L_54) <= ((int32_t)0)))
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_55;
+		L_55 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
+		V_2 = L_55;
+		int32_t L_56;
+		L_56 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_2), NULL);
+		if ((!(((uint32_t)L_56) == ((uint32_t)3))))
+		{
+			goto IL_019e;
+		}
+	}
+
+IL_0193:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:60>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_57 = __this->___targetHand;
+		NullCheck(L_57);
+		VRGrabbableHand_Release_mB50A79BA8E9FF746904B258C4CB802C6E54B6847(L_57, NULL);
+	}
+
+IL_019e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:62>
+		return;
+	}
+}
+// Method Definition Index: 90088
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseControlsVRGrabbableHand__ctor_mCB91FE54C9A689E0CD48B64EA70E18AF4F67534E (MouseControlsVRGrabbableHand_t027A6B45BF0F576789C862915E0A3A8AF4DD7C27* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:9>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0;
+		L_0 = LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222((-1), NULL);
+		__this->___layerMask = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:10>
+		__this->___scrollSpeedMultiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/MouseControlsVRGrabbableHand.cs:11>
+		__this->___extraDeepness = (0.0500000007f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90089
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Climbable_HandleGrab_m36B9C277C9AF2A2E13592FAC3EBDB7A987E0ABF4 (Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:13>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:15>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_1 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_1, NULL);
+		if (L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:15>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_3 = ___0_h;
+		NullCheck(L_3);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_4 = L_3->___rig;
+		NullCheck(L_4);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_5;
+		L_5 = Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780(L_4, Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780_RuntimeMethod_var);
+		__this->___m = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_5);
+	}
+
+IL_0025:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:16>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_6 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_6, NULL);
+		if (L_7)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:16>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_8 = ___0_h;
+		NullCheck(L_8);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_9 = L_8->___rig;
+		NullCheck(L_9);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_10;
+		L_10 = Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617(L_9, Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617_RuntimeMethod_var);
+		__this->___m = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_10);
+	}
+
+IL_0043:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:17>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_11 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_11, NULL);
+		if (L_12)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:17>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_13 = ___0_h;
+		NullCheck(L_13);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_14 = L_13->___rig;
+		NullCheck(L_14);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_15;
+		L_15 = Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405(L_14, Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405_RuntimeMethod_var);
+		__this->___m = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_15);
+	}
+
+IL_0061:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:19>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_16 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_17;
+		L_17 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_16, NULL);
+		if (!L_17)
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:19>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_18 = __this->___m;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
+		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_20 = ___0_h;
+		NullCheck(L_20);
+		int32_t L_21 = L_20->___side;
+		NullCheck(L_18);
+		Movement_SetGrabbedObj_m19E5E4795D53A5BF5FCB8154931CEA4A1533CE38(L_18, L_19, L_21, NULL);
+	}
+
+IL_0085:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:20>
+		return;
+	}
+}
+// Method Definition Index: 90090
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Climbable_HandleRelease_m3E6B9B193B3E1C6DB6F66DD56B665E3ABD53953F (Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* G_B10_0 = NULL;
+	Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* G_B10_1 = NULL;
+	RuntimeObject* G_B9_0 = NULL;
+	Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* G_B9_1 = NULL;
+	int32_t G_B11_0 = 0;
+	RuntimeObject* G_B11_1 = NULL;
+	Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* G_B11_2 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:24>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:26>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1 = ___0_h;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:28>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_3 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:28>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_5 = ___0_h;
+		NullCheck(L_5);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_6 = L_5->___rig;
+		NullCheck(L_6);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_7;
+		L_7 = Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780(L_6, Component_GetComponent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m14169EA621D673D4137CC6DEFCE05BC2ED38E780_RuntimeMethod_var);
+		__this->___m = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_7);
+	}
+
+IL_002e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:29>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_8 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_8, NULL);
+		if (L_9)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:29>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_10 = ___0_h;
+		NullCheck(L_10);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_11 = L_10->___rig;
+		NullCheck(L_11);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_12;
+		L_12 = Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617(L_11, Component_GetComponentInParent_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_mF1FC017612779087B39B3425FC6BD3D570A13617_RuntimeMethod_var);
+		__this->___m = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_12);
+	}
+
+IL_004c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:30>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_13 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_14;
+		L_14 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_13, NULL);
+		if (L_14)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:30>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_15 = ___0_h;
+		NullCheck(L_15);
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_16 = L_15->___rig;
+		NullCheck(L_16);
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_17;
+		L_17 = Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405(L_16, Component_GetComponentInChildren_TisMovement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B_m16647CEACF3DBF371C7F8A0FB64AE6778E17A405_RuntimeMethod_var);
+		__this->___m = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m), (void*)L_17);
+	}
+
+IL_006a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:34>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_18 = __this->___m;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_19;
+		L_19 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_18, NULL);
+		if (!L_19)
+		{
+			goto IL_0095;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:34>
+		Movement_t7219C6E1BBBF1ADE25FE57D16507101741312E0B* L_20 = __this->___m;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_21 = ___0_h;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_22;
+		L_22 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_22)
+		{
+			G_B10_0 = NULL;
+			G_B10_1 = L_20;
+			goto IL_008a;
+		}
+		G_B9_0 = NULL;
+		G_B9_1 = L_20;
+	}
+	{
+		G_B11_0 = 4;
+		G_B11_1 = G_B9_0;
+		G_B11_2 = G_B9_1;
+		goto IL_0090;
+	}
+
+IL_008a:
+	{
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_23 = ___0_h;
+		NullCheck(L_23);
+		int32_t L_24 = L_23->___side;
+		G_B11_0 = ((int32_t)(L_24));
+		G_B11_1 = G_B10_0;
+		G_B11_2 = G_B10_1;
+	}
+
+IL_0090:
+	{
+		NullCheck(G_B11_2);
+		Movement_SetGrabbedObj_m19E5E4795D53A5BF5FCB8154931CEA4A1533CE38(G_B11_2, (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)G_B11_1, G_B11_0, NULL);
+	}
+
+IL_0095:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:35>
+		return;
+	}
+}
+// Method Definition Index: 90091
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Climbable_PackData_mE6B6246D0594045CA9237D3272FC0B390A480C70 (Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:39>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)0);
+		return L_0;
+	}
+}
+// Method Definition Index: 90092
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Climbable_UnpackData_m3B98F44C3AAB43065A4F57359C80377A6E2191F1 (Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/Climbable.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 90093
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Climbable__ctor_m2EC6C818433529FBDBFF42356B058F977D1B9E2E (Climbable_t5E5B786EAC2D5E03ECFF183544A8BC88C98B2F63* __this, const RuntimeMethod* method) 
+{
+	{
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90094
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_Start_m73B429A3B966154E012E33B0E8BB32AFFE302C17 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:64>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
+		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:65>
+		float L_1 = __this->___goalAngle;
+		VirtualActionInvoker2< float, bool >::Invoke(10, __this, L_1, (bool)0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:66>
+		return;
+	}
+}
+// Method Definition Index: 90095
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_Update_m0DFECAE4620485BB6A969487E09FA32D581C0CD0 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:71>
+		bool L_0 = ((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___locallyOwned;
+		if (L_0)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:73>
+		float L_1 = __this->___goalAngle;
+		float L_2 = __this->___currentAngle;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_2));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:74>
+		float L_3 = V_0;
+		float L_4;
+		L_4 = fabsf(L_3);
+		if ((!(((float)L_4) > ((float)(0.0f)))))
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:76>
+		float L_5 = __this->___currentAngle;
+		float L_6 = V_0;
+		__this->___currentAngle = ((float)il2cpp_codegen_add(L_5, ((float)(L_6/(10.0f)))));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:77>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->___dialAxis;
+		float L_9 = V_0;
+		NullCheck(L_7);
+		Transform_Rotate_m683E67853797040312868B69E963D0E97F433EEB(L_7, L_8, ((float)(L_9/(10.0f))), 1, NULL);
+	}
+
+IL_0050:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:82>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_10;
+		L_10 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_009b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:84>
+		VRDial_GrabInput_m282E90A09A1DDB07CD0317CD8B97BFC538E0FB03(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:87>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_12 = __this->___lastRotationVels;
+		float L_13 = __this->___currentAngle;
+		float L_14 = __this->___lastAngle;
+		NullCheck(L_12);
+		Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459(L_12, ((float)il2cpp_codegen_subtract(L_13, L_14)), Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:88>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_15 = __this->___lastRotationVels;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_inline(L_15, Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		int32_t L_17 = __this->___lastRotationVelsLength;
+		if ((((int32_t)L_16) <= ((int32_t)L_17)))
+		{
+			goto IL_009b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:89>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_18 = __this->___lastRotationVels;
+		NullCheck(L_18);
+		float L_19;
+		L_19 = Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70(L_18, Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_RuntimeMethod_var);
+	}
+
+IL_009b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:92>
+		float L_20 = __this->___currentAngle;
+		__this->___lastAngle = L_20;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:93>
+		return;
+	}
+}
+// Method Definition Index: 90096
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_GrabInput_m282E90A09A1DDB07CD0317CD8B97BFC538E0FB03 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	float V_5 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	float V_7 = 0.0f;
+	float V_8 = 0.0f;
+	float V_9 = 0.0f;
+	float V_10 = 0.0f;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	float V_12 = 0.0f;
+	int32_t V_13 = 0;
+	float G_B22_0 = 0.0f;
+	float G_B26_0 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:101>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_2, L_4, NULL);
+		V_0 = L_5;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:102>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___lastGrabbedPosition;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_6, L_8, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:104>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = __this->___dialAxis;
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_TransformDirection_m9BE1261DF2D48B7A4A27D31EE24D2D97F89E7757(L_10, L_11, NULL);
+		V_1 = L_12;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:107>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_13, L_14, NULL);
+		V_0 = L_15;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:108>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_9, L_16, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:111>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_1;
+		float L_20;
+		L_20 = Vector3_SignedAngle_m76C77F9D7BAF5969FA5B7500ED2D5FF9F9FA4153_inline(L_17, L_18, L_19, NULL);
+		V_2 = L_20;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:112>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_1;
+		float L_23;
+		L_23 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_21, L_22, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:117>
+		bool L_24 = __this->___useLimits;
+		if (!L_24)
+		{
+			goto IL_00b5;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:119>
+		float L_25 = __this->___currentAngle;
+		float L_26 = V_2;
+		V_9 = ((float)il2cpp_codegen_add(L_25, L_26));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:121>
+		float L_27 = V_9;
+		float L_28 = __this->___maxAngle;
+		if ((!(((float)L_27) > ((float)L_28))))
+		{
+			goto IL_009d;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:123>
+		float L_29 = __this->___maxAngle;
+		float L_30 = __this->___currentAngle;
+		V_2 = ((float)il2cpp_codegen_subtract(L_29, L_30));
+		goto IL_00b5;
+	}
+
+IL_009d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:125>
+		float L_31 = V_9;
+		float L_32 = __this->___minAngle;
+		if ((!(((float)L_31) < ((float)L_32))))
+		{
+			goto IL_00b5;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:127>
+		float L_33 = __this->___minAngle;
+		float L_34 = __this->___currentAngle;
+		V_2 = ((float)il2cpp_codegen_subtract(L_33, L_34));
+	}
+
+IL_00b5:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:131>
+		float L_35 = __this->___currentAngle;
+		float L_36 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(L_35, L_36));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:133>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_37;
+		L_37 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_37);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38;
+		L_38 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_37, NULL);
+		NullCheck(L_38);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
+		L_39 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_38, NULL);
+		__this->___lastGrabbedPosition = L_39;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:141>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_40;
+		L_40 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_40);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
+		L_41 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_40, NULL);
+		NullCheck(L_41);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_42;
+		L_42 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_41, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_43 = __this->___lastGrabbedRotation;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_44;
+		L_44 = Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline(L_43, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_45;
+		L_45 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_42, L_44, NULL);
+		V_4 = L_45;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:144>
+		Quaternion_ToAngleAxis_mA2A5A81DAE94A9C1AFC34112BE8E5C5C3E9297AF_inline((&V_4), (&V_5), (&V_6), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:147>
+		float L_46 = V_5;
+		float L_47 = __this->___multiplier;
+		V_5 = ((float)il2cpp_codegen_multiply(L_46, L_47));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:149>
+		float L_48 = __this->___currentAngle;
+		V_7 = L_48;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:152>
+		float L_49 = V_5;
+		if ((!(((float)L_49) > ((float)(0.0f)))))
+		{
+			goto IL_01d6;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:154>
+		float L_50 = V_5;
+		if ((!(((float)L_50) >= ((float)(180.0f)))))
+		{
+			goto IL_0133;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:156>
+		float L_51 = V_5;
+		V_5 = ((float)il2cpp_codegen_subtract(L_51, (360.0f)));
+	}
+
+IL_0133:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:159>
+		float L_52 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
+		L_54 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_52, L_53, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:162>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_55;
+		L_55 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_55);
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_56;
+		L_56 = Transform_get_localToWorldMatrix_m5D35188766856338DD21DE756F42277C21719E6D(L_55, NULL);
+		V_11 = L_56;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = __this->___dialAxis;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
+		L_58 = Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937_inline((&V_11), L_57, NULL);
+		float L_59;
+		L_59 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_54, L_58, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60;
+		L_60 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_60);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
+		L_61 = Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07(L_60, NULL);
+		float L_62 = L_61.___x;
+		V_10 = ((float)(L_59/L_62));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:164>
+		bool L_63 = __this->___useLimits;
+		if (!L_63)
+		{
+			goto IL_01b5;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:166>
+		float L_64 = __this->___currentAngle;
+		float L_65 = V_10;
+		V_12 = ((float)il2cpp_codegen_add(L_64, L_65));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:168>
+		float L_66 = V_12;
+		float L_67 = __this->___maxAngle;
+		if ((!(((float)L_66) > ((float)L_67))))
+		{
+			goto IL_019c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:170>
+		float L_68 = __this->___maxAngle;
+		float L_69 = __this->___currentAngle;
+		V_10 = ((float)il2cpp_codegen_subtract(L_68, L_69));
+		goto IL_01b5;
+	}
+
+IL_019c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:172>
+		float L_70 = V_12;
+		float L_71 = __this->___minAngle;
+		if ((!(((float)L_70) < ((float)L_71))))
+		{
+			goto IL_01b5;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:174>
+		float L_72 = __this->___minAngle;
+		float L_73 = __this->___currentAngle;
+		V_10 = ((float)il2cpp_codegen_subtract(L_72, L_73));
+	}
+
+IL_01b5:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:178>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_74;
+		L_74 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_74);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_75;
+		L_75 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_74, NULL);
+		NullCheck(L_75);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_76;
+		L_76 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_75, NULL);
+		__this->___lastGrabbedRotation = L_76;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:180>
+		float L_77 = __this->___currentAngle;
+		float L_78 = V_10;
+		V_7 = ((float)il2cpp_codegen_add(L_77, L_78));
+	}
+
+IL_01d6:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:186>
+		bool L_79 = __this->___dynamicPositionMix;
+		if (!L_79)
+		{
+			goto IL_0210;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:188>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_80;
+		L_80 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_80);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
+		L_81 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_80, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_82;
+		L_82 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_82);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_83;
+		L_83 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_82, NULL);
+		NullCheck(L_83);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84;
+		L_84 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_83, NULL);
+		float L_85;
+		L_85 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_81, L_84, NULL);
+		float L_86 = __this->___dynamicPositionMixDistanceMultiplier;
+		float L_87;
+		L_87 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)il2cpp_codegen_multiply(L_85, L_86)), NULL);
+		__this->___positionMix = L_87;
+	}
+
+IL_0210:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:192>
+		V_8 = (0.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:194>
+		int32_t L_88 = __this->___mixingMethod;
+		V_13 = L_88;
+		int32_t L_89 = V_13;
+		switch (L_89)
+		{
+			case 0:
+			{
+				goto IL_0238;
+			}
+			case 1:
+			{
+				goto IL_0254;
+			}
+			case 2:
+			{
+				goto IL_026c;
+			}
+			case 3:
+			{
+				goto IL_0284;
+			}
+		}
+	}
+	{
+		goto IL_028a;
+	}
+
+IL_0238:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:197>
+		float L_90 = __this->___positionMix;
+		float L_91 = V_3;
+		float L_92 = __this->___positionMix;
+		float L_93 = V_7;
+		V_8 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_90, L_91)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_92)), L_93))));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:198>
+		goto IL_028a;
+	}
+
+IL_0254:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:200>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:201>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:202>
+		float L_94 = V_3;
+		float L_95;
+		L_95 = fabsf(L_94);
+		float L_96 = V_7;
+		float L_97;
+		L_97 = fabsf(L_96);
+		if ((((float)L_95) > ((float)L_97)))
+		{
+			goto IL_0267;
+		}
+	}
+	{
+		float L_98 = V_7;
+		G_B22_0 = L_98;
+		goto IL_0268;
+	}
+
+IL_0267:
+	{
+		float L_99 = V_3;
+		G_B22_0 = L_99;
+	}
+
+IL_0268:
+	{
+		V_8 = G_B22_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:203>
+		goto IL_028a;
+	}
+
+IL_026c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:205>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:206>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:207>
+		float L_100 = V_3;
+		float L_101;
+		L_101 = fabsf(L_100);
+		float L_102 = V_7;
+		float L_103;
+		L_103 = fabsf(L_102);
+		if ((((float)L_101) < ((float)L_103)))
+		{
+			goto IL_027f;
+		}
+	}
+	{
+		float L_104 = V_7;
+		G_B26_0 = L_104;
+		goto IL_0280;
+	}
+
+IL_027f:
+	{
+		float L_105 = V_3;
+		G_B26_0 = L_105;
+	}
+
+IL_0280:
+	{
+		V_8 = G_B26_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:208>
+		goto IL_028a;
+	}
+
+IL_0284:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:210>
+		float L_106 = V_3;
+		float L_107 = V_7;
+		V_8 = ((float)il2cpp_codegen_add(L_106, L_107));
+	}
+
+IL_028a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:215>
+		float L_108 = V_8;
+		VirtualActionInvoker2< float, bool >::Invoke(10, __this, L_108, (bool)1);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:216>
+		return;
+	}
+}
+// Method Definition Index: 90097
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_SetData_mA35D78BB5A297E1BDBE4323096071AAF1F9975F9 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, float ___0_updatedAngle, bool ___1_localInput, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B3_0 = NULL;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B2_0 = NULL;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B11_0 = NULL;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B10_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:221>
+		bool L_0 = ___1_localInput;
+		((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___locallyOwned = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:223>
+		bool L_1 = ___1_localInput;
+		if (!L_1)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:225>
+		float L_2 = ___0_updatedAngle;
+		float L_3 = __this->___currentAngle;
+		V_0 = ((float)il2cpp_codegen_subtract(L_2, L_3));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:226>
+		float L_4 = ___0_updatedAngle;
+		__this->___currentAngle = L_4;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:227>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___dialAxis;
+		float L_7 = V_0;
+		NullCheck(L_5);
+		Transform_Rotate_m683E67853797040312868B69E963D0E97F433EEB(L_5, L_6, L_7, 1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:228>
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_8 = __this->___DialTurned;
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_9 = L_8;
+		if (L_9)
+		{
+			G_B3_0 = L_9;
+			goto IL_003c;
+		}
+		G_B2_0 = L_9;
+	}
+	{
+		goto IL_0049;
+	}
+
+IL_003c:
+	{
+		float L_10 = __this->___currentAngle;
+		float L_11 = V_0;
+		bool L_12 = ___1_localInput;
+		NullCheck(G_B3_0);
+		Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_inline(G_B3_0, L_10, L_11, L_12, NULL);
+	}
+
+IL_0049:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:232>
+		float L_13 = __this->___vibrationDeltaSum;
+		float L_14 = __this->___vibrationDelta;
+		if ((!(((float)L_13) > ((float)L_14))))
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:234>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_15;
+		L_15 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_15, NULL);
+		if (!L_16)
+		{
+			goto IL_0083;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:236>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_17;
+		L_17 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_17);
+		int32_t L_18 = L_17->___side;
+		InputMan_Vibrate_m33E29A3B33C6CBFEF3F3EC64FAD9D2C2ED803470(L_18, (1.0f), (0.00999999978f), (0.0f), NULL);
+	}
+
+IL_0083:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:238>
+		__this->___vibrationDeltaSum = (0.0f);
+	}
+
+IL_008e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:241>
+		float L_19 = __this->___vibrationDeltaSum;
+		float L_20 = V_0;
+		float L_21;
+		L_21 = fabsf(L_20);
+		__this->___vibrationDeltaSum = ((float)il2cpp_codegen_add(L_19, L_21));
+		return;
+	}
+
+IL_00a2:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:246>
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_22 = __this->___DialTurned;
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_23 = L_22;
+		if (L_23)
+		{
+			G_B11_0 = L_23;
+			goto IL_00ae;
+		}
+		G_B10_0 = L_23;
+	}
+	{
+		goto IL_00bd;
+	}
+
+IL_00ae:
+	{
+		float L_24 = ___0_updatedAngle;
+		float L_25 = ___0_updatedAngle;
+		float L_26 = __this->___goalAngle;
+		NullCheck(G_B11_0);
+		Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_inline(G_B11_0, L_24, ((float)il2cpp_codegen_subtract(L_25, L_26)), (bool)0, NULL);
+	}
+
+IL_00bd:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:247>
+		float L_27 = ___0_updatedAngle;
+		__this->___goalAngle = L_27;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:250>
+		return;
+	}
+}
+// Method Definition Index: 90098
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_HandleGrab_m6D8C9C22DBAA8737A243144B90C2E6F7ED5F3444 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:256>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:258>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		NullCheck(L_2);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3;
+		L_3 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_2, NULL);
+		__this->___lastGrabbedRotation = L_3;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:259>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_4;
+		L_4 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		__this->___lastGrabbedPosition = L_6;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:260>
+		return;
+	}
+}
+// Method Definition Index: 90099
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_HandleRelease_m48943C0C52A945173DCE977A71AE31BD1B765679 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:264>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:267>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_1, NULL);
+		if (!L_2)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_3 = __this->___lastRotationVels;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_inline(L_3, Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		if ((((int32_t)L_4) <= ((int32_t)0)))
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:270>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___dialAxis;
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_7 = __this->___lastRotationVels;
+		float L_8;
+		L_8 = Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368(L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, L_8, NULL);
+		NullCheck(L_5);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_5, L_9, NULL);
+	}
+
+IL_0043:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:272>
+		return;
+	}
+}
+// Method Definition Index: 90100
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRDial_PackData_m7355FB47A9B47FE7D9D960FCB4CA31086500794F (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:276>
+		float L_0 = __this->___currentAngle;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = BitConverter_GetBytes_m86ADBB3533A4FFA79B7303FBEBC9EBD1BCA6A549(L_0, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 90101
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial_UnpackData_mE514639109AEB49F39F48531AC1571C0AAF540D5 (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:281>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001d:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_0026;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_0026:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:283>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+			BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+			V_1 = L_5;
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:285>
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_6 = V_1;
+			NullCheck(L_6);
+			float L_7;
+			L_7 = VirtualFuncInvoker0< float >::Invoke(19, L_6);
+			VirtualActionInvoker2< float, bool >::Invoke(10, __this, L_7, (bool)0);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:287>
+			goto IL_0027;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0027:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:288>
+		return;
+	}
+}
+// Method Definition Index: 90102
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDial__ctor_m282F86A224865E8CC0CE937DCC15EE0A5E85216B (VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:16>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		__this->___dialAxis = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:21>
+		__this->___minAngle = (-100.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:22>
+		__this->___maxAngle = (100.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:28>
+		__this->___multiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:32>
+		__this->___positionMix = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:35>
+		__this->___dynamicPositionMixDistanceMultiplier = (10.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:53>
+		__this->___vibrationDelta = (10.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:57>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_1 = (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*)il2cpp_codegen_object_new(Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153_il2cpp_TypeInfo_var);
+		Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904(L_1, Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_RuntimeMethod_var);
+		__this->___lastRotationVels = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___lastRotationVels), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDial.cs:58>
+		__this->___lastRotationVelsLength = ((int32_t)10);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90103
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster_Start_m561EF93BAB30E81BDE37BC933A9FE9D8080B84F7 (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:15>
+		VRDialAdjuster_ResetToParent_m97D34DFD273D6A6EF02532E16D19AD1D577F9A33(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:16>
+		return;
+	}
+}
+// Method Definition Index: 90104
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster_SetData_m59D3841C21E31CD94170EF130BA48C40821A112C (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, float ___0_updatedAngle, bool ___1_localInput, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:20>
+		float L_0 = ___0_updatedAngle;
+		bool L_1 = ___1_localInput;
+		VRDial_SetData_mA35D78BB5A297E1BDBE4323096071AAF1F9975F9(__this, L_0, L_1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:21>
+		VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* L_2 = __this->___parentDial;
+		float L_3 = ___0_updatedAngle;
+		float L_4 = __this->___factor;
+		bool L_5 = ___1_localInput;
+		NullCheck(L_2);
+		VirtualActionInvoker2< float, bool >::Invoke(10, L_2, ((float)il2cpp_codegen_multiply(L_3, L_4)), L_5);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 90105
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster_ResetToParent_m97D34DFD273D6A6EF02532E16D19AD1D577F9A33 (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:26>
+		VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847* L_0 = __this->___parentDial;
+		NullCheck(L_0);
+		float L_1 = L_0->___currentAngle;
+		float L_2 = __this->___factor;
+		((VRDial_tF2838AAB3919E1043778D6FF18B921E5B18E0847*)__this)->___currentAngle = ((float)(L_1/L_2));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:27>
+		return;
+	}
+}
+// Method Definition Index: 90106
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster_HandleGrab_m451D68A0B4F64AC83646831FA607B9969B500435 (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:31>
+		VRDialAdjuster_ResetToParent_m97D34DFD273D6A6EF02532E16D19AD1D577F9A33(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:33>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRDial_HandleGrab_m6D8C9C22DBAA8737A243144B90C2E6F7ED5F3444(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:35>
+		return;
+	}
+}
+// Method Definition Index: 90107
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDialAdjuster__ctor_m06FE13CE12BB03FCEF5CC3F0CFB041999B145492 (VRDialAdjuster_t1F82D230532AD03E12447F76D93FFEC5E4A94BA6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRDialAdjuster.cs:11>
+		__this->___factor = (0.100000001f);
+		VRDial__ctor_m282F86A224865E8CC0CE937DCC15EE0A5E85216B(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90108
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableJustSendEvent_HandleGrab_m8297CF1780FAB9AB40C3B6F880E54AB588DF3253 (VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* G_B2_0 = NULL;
+	GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* G_B1_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRGrabbableJustSendEvent.cs:17>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRGrabbableJustSendEvent.cs:18>
+		GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* L_1 = __this->___grabEvent;
+		GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* L_2 = L_1;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			goto IL_0012;
+		}
+		G_B1_0 = L_2;
+	}
+	{
+		return;
+	}
+
+IL_0012:
+	{
+		NullCheck(G_B2_0);
+		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B2_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRGrabbableJustSendEvent.cs:19>
+		return;
+	}
+}
+// Method Definition Index: 90109
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRGrabbableJustSendEvent_PackData_m0285F699EA20D663E48EAA57BEA63E173A916B10 (VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRGrabbableJustSendEvent.cs:24>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)0);
+		return L_0;
+	}
+}
+// Method Definition Index: 90110
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableJustSendEvent_UnpackData_mB04F846EFF0043B2DAC16D7EE26B667BF8E645B0 (VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRGrabbableJustSendEvent.cs:29>
+		return;
+	}
+}
+// Method Definition Index: 90111
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableJustSendEvent__ctor_m939A970ECE71F517D66D870D07118E1B51FA137E (VRGrabbableJustSendEvent_tB5E805A4B8BE407E85D436B30B0874897C00978D* __this, const RuntimeMethod* method) 
+{
+	{
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90112
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabEvent__ctor_m1F4C8F6332602A0F70DC23320D426337DDB0FB30 (GrabEvent_t8B0D8F72C171631ECFD11217F261B57D96DB0287* __this, const RuntimeMethod* method) 
+{
+	{
+		UnityEvent__ctor_m03D3E5121B9A6100351984D0CE3050B909CD3235(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90113
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRHingeDial_get_Active_mF2C8857B789DD0A376026A6728A536CE121854E8 (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:29>
+		bool L_0 = ((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___networkGrabbed;
+		if (L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		return L_2;
+	}
+
+IL_0015:
+	{
+		return (bool)1;
+	}
+}
+// Method Definition Index: 90114
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:57>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_0 = __this->___hinge;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = HingeJoint_get_angle_mCCDAB7FAFB7A535562521C450A1A35393622DD6D(L_0, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 90115
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_Start_mC4BA37C316781198A455016258AD2D245380E3D1 (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisHingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7_mD226E906030A0E16CE9EEDAAA902B0CD7CA4B45F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:80>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
+		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:81>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_1;
+		L_1 = Component_GetComponent_TisHingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7_mD226E906030A0E16CE9EEDAAA902B0CD7CA4B45F(__this, Component_GetComponent_TisHingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7_mD226E906030A0E16CE9EEDAAA902B0CD7CA4B45F_RuntimeMethod_var);
+		__this->___hinge = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___hinge), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:82>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_2 = __this->___hinge;
+		NullCheck(L_2);
+		JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 L_3;
+		L_3 = HingeJoint_get_motor_mF886F1CBD9EE4A89F41F0E8790DAB5E1FEA84F00(L_2, NULL);
+		V_0 = L_3;
+		float L_4;
+		L_4 = JointMotor_get_force_mB4BDD8D40380A7E01E9C062BAADB1BE97F6A63FE((&V_0), NULL);
+		if ((!(((float)L_4) == ((float)(0.0f)))))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:84>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_5 = __this->___hinge;
+		NullCheck(L_5);
+		JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 L_6;
+		L_6 = HingeJoint_get_motor_mF886F1CBD9EE4A89F41F0E8790DAB5E1FEA84F00(L_5, NULL);
+		V_1 = L_6;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:85>
+		JointMotor_set_force_m66139CAD801991E3788835067C0D738EA000BFD3((&V_1), (100.0f), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:86>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_7 = __this->___hinge;
+		JointMotor_tC5F454AADC920C4C7E9BB9142F9A2CD8D1F46CC8 L_8 = V_1;
+		NullCheck(L_7);
+		HingeJoint_set_motor_m9612545CFB6BCF58FE2AC5D49720190D0FDE3800(L_7, L_8, NULL);
+	}
+
+IL_0056:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:89>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_9 = __this->___hinge;
+		NullCheck(L_9);
+		bool L_10;
+		L_10 = HingeJoint_get_useSpring_m239B2FBE0587B605008196463DC40881A3BC3779(L_9, NULL);
+		__this->___wasUsingSpring = L_10;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:90>
+		return;
+	}
+}
+// Method Definition Index: 90116
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_Update_m4E457F9276E2DC9DF059A488BA0079E7120056B0 (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* G_B8_0 = NULL;
+	HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* G_B7_0 = NULL;
+	int32_t G_B9_0 = 0;
+	HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* G_B9_1 = NULL;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* G_B11_0 = NULL;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* G_B10_0 = NULL;
+	int32_t G_B12_0 = 0;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* G_B12_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:94>
+		float L_0;
+		L_0 = VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C(__this, NULL);
+		__this->___currentAngle = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:97>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_00a7;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:99>
+		VRHingeDial_GrabInput_m4CD26FBA6BD6EF0C543207A2D56C71D7B99EB5AE(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:102>
+		float L_3;
+		L_3 = VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C(__this, NULL);
+		float L_4 = __this->___lastAngle;
+		V_0 = ((float)il2cpp_codegen_subtract(L_3, L_4));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:103>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_5 = __this->___lastRotationVels;
+		float L_6 = V_0;
+		NullCheck(L_5);
+		Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459(L_5, L_6, Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:104>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_7 = __this->___lastRotationVels;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_inline(L_7, Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		int32_t L_9 = __this->___lastRotationVelsLength;
+		if ((((int32_t)L_8) <= ((int32_t)L_9)))
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:105>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_10 = __this->___lastRotationVels;
+		NullCheck(L_10);
+		float L_11;
+		L_11 = Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70(L_10, Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_RuntimeMethod_var);
+	}
+
+IL_005c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:109>
+		float L_12 = __this->___vibrationDeltaSum;
+		float L_13 = __this->___vibrationDelta;
+		if ((!(((float)L_12) > ((float)L_13))))
+		{
+			goto IL_0094;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:111>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_14;
+		L_14 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___side;
+		InputMan_Vibrate_m33E29A3B33C6CBFEF3F3EC64FAD9D2C2ED803470(L_15, (1.0f), (0.00999999978f), (0.0f), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:112>
+		__this->___vibrationDeltaSum = (0.0f);
+	}
+
+IL_0094:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:115>
+		float L_16 = __this->___vibrationDeltaSum;
+		float L_17 = V_0;
+		float L_18;
+		L_18 = fabsf(L_17);
+		__this->___vibrationDeltaSum = ((float)il2cpp_codegen_add(L_16, L_18));
+	}
+
+IL_00a7:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:118>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_19 = __this->___hinge;
+		bool L_20 = __this->___wasUsingSpring;
+		if (!L_20)
+		{
+			G_B8_0 = L_19;
+			goto IL_00c0;
+		}
+		G_B7_0 = L_19;
+	}
+	{
+		bool L_21;
+		L_21 = VRHingeDial_get_Active_mF2C8857B789DD0A376026A6728A536CE121854E8(__this, NULL);
+		G_B9_0 = ((((int32_t)L_21) == ((int32_t)0))? 1 : 0);
+		G_B9_1 = G_B7_0;
+		goto IL_00c1;
+	}
+
+IL_00c0:
+	{
+		G_B9_0 = 0;
+		G_B9_1 = G_B8_0;
+	}
+
+IL_00c1:
+	{
+		NullCheck(G_B9_1);
+		HingeJoint_set_useSpring_m02AF2737DE4954BB71C2F68710835116BE3AA0D9(G_B9_1, (bool)G_B9_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:119>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_22 = __this->___rb;
+		bool L_23 = __this->___wasUsingGravity;
+		if (!L_23)
+		{
+			G_B11_0 = L_22;
+			goto IL_00df;
+		}
+		G_B10_0 = L_22;
+	}
+	{
+		bool L_24;
+		L_24 = VRHingeDial_get_Active_mF2C8857B789DD0A376026A6728A536CE121854E8(__this, NULL);
+		G_B12_0 = ((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
+		G_B12_1 = G_B10_0;
+		goto IL_00e0;
+	}
+
+IL_00df:
+	{
+		G_B12_0 = 0;
+		G_B12_1 = G_B11_0;
+	}
+
+IL_00e0:
+	{
+		NullCheck(G_B12_1);
+		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(G_B12_1, (bool)G_B12_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:122>
+		bool L_25;
+		L_25 = VRHingeDial_get_Active_mF2C8857B789DD0A376026A6728A536CE121854E8(__this, NULL);
+		if (!L_25)
+		{
+			goto IL_0166;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:125>
+		float L_26 = __this->___goalAngle;
+		V_1 = L_26;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:126>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_27 = __this->___hinge;
+		NullCheck(L_27);
+		bool L_28;
+		L_28 = HingeJoint_get_useLimits_mB6505FE417A487B69756B9F9897B06C40AD5F362(L_27, NULL);
+		if (!L_28)
+		{
+			goto IL_0127;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:128>
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_29 = __this->___hinge;
+		NullCheck(L_29);
+		JointLimits_tB79BCEF381B77F069150A1A961C05DD9838B998A L_30;
+		L_30 = HingeJoint_get_limits_mD0E3FDF10D6AEF4D539711C0DE418C20930B6433(L_29, NULL);
+		V_3 = L_30;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:129>
+		float L_31 = __this->___goalAngle;
+		float L_32;
+		L_32 = JointLimits_get_min_m3E8D3C572B30DA53262849D4D5BFFD9A77276FC8((&V_3), NULL);
+		float L_33;
+		L_33 = JointLimits_get_max_m4E6BC6E5D320C4E2E7599852B19F4524D9549638((&V_3), NULL);
+		float L_34;
+		L_34 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_31, L_32, L_33, NULL);
+		V_1 = L_34;
+	}
+
+IL_0127:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:132>
+		float L_35 = V_1;
+		float L_36;
+		L_36 = VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C(__this, NULL);
+		V_2 = ((float)il2cpp_codegen_subtract(L_35, L_36));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:133>
+		float L_37 = V_2;
+		float L_38;
+		L_38 = fabsf(L_37);
+		float L_39 = __this->___goalDeadzoneDeg;
+		if ((!(((float)L_38) > ((float)L_39))))
+		{
+			goto IL_0166;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:140>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_41 = __this->___hinge;
+		NullCheck(L_41);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
+		L_42 = Joint_get_axis_mEDF8FE710E08CED9EA69A0369A075B77FF0BE79C(L_41, NULL);
+		float L_43 = V_2;
+		NullCheck(L_40);
+		Transform_Rotate_m683E67853797040312868B69E963D0E97F433EEB(L_40, L_42, L_43, 1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:141>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_44 = __this->___rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
+		L_45 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_44);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_44, L_45, NULL);
+	}
+
+IL_0166:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:149>
+		float L_46;
+		L_46 = VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C(__this, NULL);
+		__this->___lastAngle = L_46;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:150>
+		return;
+	}
+}
+// Method Definition Index: 90117
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_GrabInput_m4CD26FBA6BD6EF0C543207A2D56C71D7B99EB5AE (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	float V_5 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	float V_7 = 0.0f;
+	float V_8 = 0.0f;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	float V_10 = 0.0f;
+	int32_t V_11 = 0;
+	float G_B12_0 = 0.0f;
+	float G_B16_0 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:160>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_2, L_4, NULL);
+		V_0 = L_5;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:161>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___lastGrabbedPosition;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_6, L_8, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:163>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_11 = __this->___hinge;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Joint_get_axis_mEDF8FE710E08CED9EA69A0369A075B77FF0BE79C(L_11, NULL);
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_TransformDirection_m9BE1261DF2D48B7A4A27D31EE24D2D97F89E7757(L_10, L_12, NULL);
+		V_1 = L_13;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:166>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_14, L_15, NULL);
+		V_0 = L_16;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:167>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_9, L_17, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:170>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_1;
+		float L_21;
+		L_21 = Vector3_SignedAngle_m76C77F9D7BAF5969FA5B7500ED2D5FF9F9FA4153_inline(L_18, L_19, L_20, NULL);
+		V_2 = L_21;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:172>
+		float L_22 = __this->___goalAngle;
+		float L_23 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(L_22, L_23));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:174>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_24;
+		L_24 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_24, NULL);
+		NullCheck(L_25);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_25, NULL);
+		__this->___lastGrabbedPosition = L_26;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:182>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_27;
+		L_27 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_27);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
+		L_28 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_27, NULL);
+		NullCheck(L_28);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_29;
+		L_29 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_28, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30 = __this->___lastGrabbedRotation;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_31;
+		L_31 = Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline(L_30, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32;
+		L_32 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_29, L_31, NULL);
+		V_4 = L_32;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:185>
+		Quaternion_ToAngleAxis_mA2A5A81DAE94A9C1AFC34112BE8E5C5C3E9297AF_inline((&V_4), (&V_5), (&V_6), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:188>
+		float L_33 = V_5;
+		float L_34 = __this->___multiplier;
+		V_5 = ((float)il2cpp_codegen_multiply(L_33, L_34));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:190>
+		float L_35 = __this->___goalAngle;
+		V_7 = L_35;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:193>
+		float L_36 = V_5;
+		if ((!(((float)L_36) > ((float)(0.0f)))))
+		{
+			goto IL_0140;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:195>
+		float L_37 = V_5;
+		if ((!(((float)L_37) >= ((float)(180.0f)))))
+		{
+			goto IL_00df;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:197>
+		float L_38 = V_5;
+		V_5 = ((float)il2cpp_codegen_subtract(L_38, (360.0f)));
+	}
+
+IL_00df:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:200>
+		float L_39 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_39, L_40, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:203>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42;
+		L_42 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_42);
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_43;
+		L_43 = Transform_get_localToWorldMatrix_m5D35188766856338DD21DE756F42277C21719E6D(L_42, NULL);
+		V_9 = L_43;
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_44 = __this->___hinge;
+		NullCheck(L_44);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
+		L_45 = Joint_get_axis_mEDF8FE710E08CED9EA69A0369A075B77FF0BE79C(L_44, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46;
+		L_46 = Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937_inline((&V_9), L_45, NULL);
+		float L_47;
+		L_47 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_41, L_46, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48;
+		L_48 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_48);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
+		L_49 = Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07(L_48, NULL);
+		float L_50 = L_49.___x;
+		V_8 = ((float)(L_47/L_50));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:205>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_51;
+		L_51 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_51);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52;
+		L_52 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_51, NULL);
+		NullCheck(L_52);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_53;
+		L_53 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_52, NULL);
+		__this->___lastGrabbedRotation = L_53;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:207>
+		float L_54 = __this->___goalAngle;
+		float L_55 = V_8;
+		V_7 = ((float)il2cpp_codegen_add(L_54, L_55));
+	}
+
+IL_0140:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:213>
+		bool L_56 = __this->___dynamicPositionMix;
+		if (!L_56)
+		{
+			goto IL_017a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:215>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_57;
+		L_57 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_57);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
+		L_58 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_57, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_59;
+		L_59 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_59);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60;
+		L_60 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_59, NULL);
+		NullCheck(L_60);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
+		L_61 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_60, NULL);
+		float L_62;
+		L_62 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_58, L_61, NULL);
+		float L_63 = __this->___dynamicPositionMixDistanceMultiplier;
+		float L_64;
+		L_64 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)il2cpp_codegen_multiply(L_62, L_63)), NULL);
+		__this->___positionMix = L_64;
+	}
+
+IL_017a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:218>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:219>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:220>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:221>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:222>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:223>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:224>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:225>
+		int32_t L_65 = __this->___mixingMethod;
+		V_11 = L_65;
+		int32_t L_66 = V_11;
+		switch (L_66)
+		{
+			case 0:
+			{
+				goto IL_019b;
+			}
+			case 1:
+			{
+				goto IL_01b7;
+			}
+			case 2:
+			{
+				goto IL_01cf;
+			}
+			case 3:
+			{
+				goto IL_01e7;
+			}
+		}
+	}
+	{
+		goto IL_01ef;
+	}
+
+IL_019b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:220>
+		float L_67 = __this->___positionMix;
+		float L_68 = V_3;
+		float L_69 = __this->___positionMix;
+		float L_70 = V_7;
+		V_10 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_67, L_68)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_69)), L_70))));
+		goto IL_01f7;
+	}
+
+IL_01b7:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:221>
+		float L_71 = V_3;
+		float L_72;
+		L_72 = fabsf(L_71);
+		float L_73 = V_7;
+		float L_74;
+		L_74 = fabsf(L_73);
+		if ((((float)L_72) > ((float)L_74)))
+		{
+			goto IL_01ca;
+		}
+	}
+	{
+		float L_75 = V_7;
+		G_B12_0 = L_75;
+		goto IL_01cb;
+	}
+
+IL_01ca:
+	{
+		float L_76 = V_3;
+		G_B12_0 = L_76;
+	}
+
+IL_01cb:
+	{
+		V_10 = G_B12_0;
+		goto IL_01f7;
+	}
+
+IL_01cf:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:222>
+		float L_77 = V_3;
+		float L_78;
+		L_78 = fabsf(L_77);
+		float L_79 = V_7;
+		float L_80;
+		L_80 = fabsf(L_79);
+		if ((((float)L_78) < ((float)L_80)))
+		{
+			goto IL_01e2;
+		}
+	}
+	{
+		float L_81 = V_7;
+		G_B16_0 = L_81;
+		goto IL_01e3;
+	}
+
+IL_01e2:
+	{
+		float L_82 = V_3;
+		G_B16_0 = L_82;
+	}
+
+IL_01e3:
+	{
+		V_10 = G_B16_0;
+		goto IL_01f7;
+	}
+
+IL_01e7:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:223>
+		float L_83 = V_3;
+		float L_84 = V_7;
+		V_10 = ((float)il2cpp_codegen_add(L_83, L_84));
+		goto IL_01f7;
+	}
+
+IL_01ef:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:224>
+		float L_85 = __this->___goalAngle;
+		V_10 = L_85;
+	}
+
+IL_01f7:
+	{
+		float L_86 = V_10;
+		__this->___goalAngle = L_86;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:226>
+		return;
+	}
+}
+// Method Definition Index: 90118
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_HandleGrab_m61CF75A6D1EFC5A3E70A20C11C03E6690656366B (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:231>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:233>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		NullCheck(L_2);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3;
+		L_3 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_2, NULL);
+		__this->___lastGrabbedRotation = L_3;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:234>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_4;
+		L_4 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		__this->___lastGrabbedPosition = L_6;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:236>
+		float L_7;
+		L_7 = VRHingeDial_get_CurrentAngle_m3C9239F437EB06BB277DC2B16212FFBDB77E209C(__this, NULL);
+		__this->___goalAngle = L_7;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:237>
+		return;
+	}
+}
+// Method Definition Index: 90119
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_HandleRelease_mC9CDC4B07FD095AA52BC8C4D14190192D843943F (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:241>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:244>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_1, NULL);
+		if (!L_2)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_3 = __this->___lastRotationVels;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_inline(L_3, Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_RuntimeMethod_var);
+		if ((((int32_t)L_4) <= ((int32_t)0)))
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:247>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___rb;
+		HingeJoint_t70A95A9F77881D06B0A7BE99B7B16EA40332D2D7* L_6 = __this->___hinge;
+		NullCheck(L_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Joint_get_axis_mEDF8FE710E08CED9EA69A0369A075B77FF0BE79C(L_6, NULL);
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_8 = __this->___lastRotationVels;
+		float L_9;
+		L_9 = Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368(L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_7, L_9, NULL);
+		NullCheck(L_5);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_5, L_10, NULL);
+	}
+
+IL_0048:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:249>
+		return;
+	}
+}
+// Method Definition Index: 90120
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRHingeDial_PackData_mF7C2675F58BBF6420DB233E208B2162D5E560BDB (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:253>
+		float L_0 = __this->___goalAngle;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = BitConverter_GetBytes_m86ADBB3533A4FFA79B7303FBEBC9EBD1BCA6A549(L_0, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 90121
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial_UnpackData_mB4BD1F745E34EF25A828955F67F5E0497D291C6F (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:258>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001c:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_0025;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_0025:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:259>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+			BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+			V_1 = L_5;
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:260>
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_6 = V_1;
+			NullCheck(L_6);
+			float L_7;
+			L_7 = VirtualFuncInvoker0< float >::Invoke(19, L_6);
+			__this->___goalAngle = L_7;
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:261>
+			goto IL_0026;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0026:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:261>
+		return;
+	}
+}
+// Method Definition Index: 90122
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRHingeDial__ctor_mF432E897565C60C3DB79F288D166BF39BC9F11A8 (VRHingeDial_t7DBB8BB2B100DFD5EEDEC2BFCC87E7653F0C3091* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:37>
+		__this->___multiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:40>
+		__this->___positionMix = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:45>
+		__this->___dynamicPositionMixDistanceMultiplier = (10.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:64>
+		__this->___goalDeadzoneDeg = (0.100000001f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:66>
+		__this->___vibrationDelta = (10.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:70>
+		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_0 = (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*)il2cpp_codegen_object_new(Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153_il2cpp_TypeInfo_var);
+		Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904(L_0, Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_RuntimeMethod_var);
+		__this->___lastRotationVels = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___lastRotationVels), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRHingeDial.cs:71>
+		__this->___lastRotationVelsLength = ((int32_t)10);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90123
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable_Start_mB3B1AF10BC117F9C30232977778A45F61DDD7272 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:29>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___localStartTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_0, NULL);
+		if (L_1)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:31>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_2, NULL);
+		__this->___localStartPosition = L_3;
+		return;
+	}
+
+IL_001f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:35>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___localStartTransform;
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_4, L_6, NULL);
+		__this->___localStartPosition = L_7;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:37>
+		return;
+	}
+}
+// Method Definition Index: 90124
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable_Update_m12B00AA17A3D4428A114067A52FD972A2D8F5742 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B6_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B5_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:42>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_010f;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:46>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_3, NULL);
+		if (!L_4)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:48>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_5, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_7;
+		L_7 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = __this->___handOffset;
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_8, L_9, NULL);
+		NullCheck(L_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_6, L_10, NULL);
+		V_0 = L_11;
+		goto IL_0063;
+	}
+
+IL_004c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:52>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_12;
+		L_12 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_12);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_12, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = __this->___handOffset;
+		NullCheck(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_13, L_14, NULL);
+		V_0 = L_15;
+	}
+
+IL_0063:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:55>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = __this->___localStartPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_16, L_17, NULL);
+		V_1 = L_18;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:56>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_1;
+		float L_20 = __this->___multiplier;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_19, L_20, NULL);
+		V_1 = L_21;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:60>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:61>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:62>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:63>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_1;
+		float L_23 = L_22.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_24 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___x_range);
+		float L_25 = L_24->___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_26 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___x_range);
+		float L_27 = L_26->___y;
+		float L_28;
+		L_28 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_23, L_25, L_27, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_1;
+		float L_30 = L_29.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_31 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___y_range);
+		float L_32 = L_31->___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_33 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___y_range);
+		float L_34 = L_33->___y;
+		float L_35;
+		L_35 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_30, L_32, L_34, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_1;
+		float L_37 = L_36.___z;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_38 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___z_range);
+		float L_39 = L_38->___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_40 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___z_range);
+		float L_41 = L_40->___y;
+		float L_42;
+		L_42 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_37, L_39, L_41, NULL);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_1), L_28, L_35, L_42, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:66>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_43;
+		L_43 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = __this->___localStartPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46;
+		L_46 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_44, L_45, NULL);
+		NullCheck(L_43);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_43, L_46, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:68>
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_47 = __this->___Moved;
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_48 = L_47;
+		if (L_48)
+		{
+			G_B6_0 = L_48;
+			goto IL_0109;
+		}
+		G_B5_0 = L_48;
+	}
+	{
+		return;
+	}
+
+IL_0109:
+	{
+		NullCheck(G_B6_0);
+		Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B6_0, (bool)1, NULL);
+	}
+
+IL_010f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:70>
+		return;
+	}
+}
+// Method Definition Index: 90125
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable_HandleGrab_mDD493A0CC486788E26AFB388C10B1D3FE3DF4763 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:74>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:76>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_2, L_4, NULL);
+		__this->___handOffset = L_5;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 90126
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable_HandleRelease_mD1859B1FC9EA73D52221B257ADDAB15AFEED0F71 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:81>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:85>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Transform_Translate_mB42A27EE20E123E0B47336F795B62B017489E3F7(L_1, (0.0f), (1.0f), (0.0f), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:86>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Transform_Translate_mB42A27EE20E123E0B47336F795B62B017489E3F7(L_2, (0.0f), (-1.0f), (0.0f), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:87>
+		return;
+	}
+}
+// Method Definition Index: 90127
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRLocalConstrainedMoveable_PackData_mBDEC21326B5A6DF2C2CBFC5D2844FF4079A81151 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:91>
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_0 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_003f;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_003f:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:93>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_4 = (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E*)il2cpp_codegen_object_new(BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+			BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0(L_4, L_3, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:95>
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_5 = L_4;
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+			L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_6);
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+			L_7 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_6, NULL);
+			Extensions_Write_m45622B3721BFF4B3268EF719358D5C1386A603E8(L_5, L_7, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:96>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+			L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_8);
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
+			L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
+			Extensions_Write_m50D186071E9693D010FB27E415784CDE0F184642(L_5, L_9, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:98>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_10 = V_0;
+			NullCheck(L_10);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
+			L_11 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41, L_10);
+			V_1 = L_11;
+			goto IL_0040;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:100>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_1;
+		return L_12;
+	}
+}
+// Method Definition Index: 90128
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable_UnpackData_m6EC87AE2B198E9EAA52620AA052405FC49B8C237 (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B3_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B2_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:104>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0044:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_004d;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_004d:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:106>
+				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+				BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+				V_1 = L_5;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:108>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+				L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_7 = V_1;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+				L_8 = Extensions_ReadVector3_mC93DD629C48C224496F9F9DEA7371D3065A3629C(L_7, NULL);
+				NullCheck(L_6);
+				Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_6, L_8, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:109>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+				L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_10 = V_1;
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+				L_11 = Extensions_ReadQuaternion_m97317F7A54D8A12B42365D3A38F286C2F983D113(L_10, NULL);
+				NullCheck(L_9);
+				Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_9, L_11, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:112>
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_12 = __this->___Moved;
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_13 = L_12;
+				if (L_13)
+				{
+					G_B3_0 = L_13;
+					goto IL_003c_1;
+				}
+				G_B2_0 = L_13;
+			}
+			{
+				goto IL_004e;
+			}
+
+IL_003c_1:
+			{
+				NullCheck(G_B3_0);
+				Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B3_0, (bool)0, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:114>
+				goto IL_004e;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:115>
+		return;
+	}
+}
+// Method Definition Index: 90129
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRLocalConstrainedMoveable__ctor_mDD95DDA4291F97DB3566306BEB05DC4D19D7438C (VRLocalConstrainedMoveable_t259373FB4C3245DA06F7763F5286157B49F8AD83* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRLocalConstrainedMoveable.cs:22>
+		__this->___multiplier = (1.0f);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90130
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable_Awake_m9556A44251C08BD76A1452CDB1A2FA3FFF3C1CCF (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m0477B1AC627977821505A46B8336448936A105DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:40>
+		VRGrabbable_Awake_mB77069C486CF1CDFC2B041EF92D09A6EEF54711D(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:41>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
+		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:42>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:44>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___rb;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = Rigidbody_get_isKinematic_mC20906CA5A89983DE06EAC6E3AFC5BC012F90CA1(L_3, NULL);
+		__this->___wasKinematic = L_4;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:45>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___rb;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = Rigidbody_get_useGravity_mBDA227BDCB0F9A81B61A6592929EE43EDDEE7D16(L_5, NULL);
+		__this->___wasUsingGravity = L_6;
+	}
+
+IL_0042:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:48>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_7;
+		L_7 = Component_GetComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m0477B1AC627977821505A46B8336448936A105DC(__this, Component_GetComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m0477B1AC627977821505A46B8336448936A105DC_RuntimeMethod_var);
+		__this->___copyTransform = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___copyTransform), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:49>
+		return;
+	}
+}
+// Method Definition Index: 90131
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable_Update_mD07FDAF982B56999312F5C694B6C14D039396352 (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFEE35BC221461671198AA24511DAE076363851B4);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B3_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B2_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:53>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:56>
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_2 = __this->___Moved;
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_3 = L_2;
+		if (L_3)
+		{
+			G_B3_0 = L_3;
+			goto IL_001a;
+		}
+		G_B2_0 = L_3;
+	}
+	{
+		goto IL_0020;
+	}
+
+IL_001a:
+	{
+		NullCheck(G_B3_0);
+		Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B3_0, (bool)1, NULL);
+	}
+
+IL_0020:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:61>
+		bool L_4 = __this->___setKinematic;
+		if (!L_4)
+		{
+			goto IL_0065;
+		}
+	}
+	{
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0065;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:63>
+		bool L_7 = ((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___locallyOwned;
+		if (L_7)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		bool L_8 = ((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___networkGrabbed;
+		if (!L_8)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:65>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_9 = __this->___rb;
+		NullCheck(L_9);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_9, (bool)1, NULL);
+		goto IL_0065;
+	}
+
+IL_0054:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:69>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_10 = __this->___rb;
+		bool L_11 = __this->___wasKinematic;
+		NullCheck(L_10);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_10, L_11, NULL);
+	}
+
+IL_0065:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:75>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:76>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:77>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		float L_14 = L_13.___x;
+		float L_15;
+		L_15 = fabsf(L_14);
+		if ((((float)L_15) > ((float)(10000.0f))))
+		{
+			goto IL_00b9;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
+		float L_18 = L_17.___y;
+		float L_19;
+		L_19 = fabsf(L_18);
+		if ((((float)L_19) > ((float)(10000.0f))))
+		{
+			goto IL_00b9;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_20);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
+		float L_22 = L_21.___z;
+		float L_23;
+		L_23 = fabsf(L_22);
+		if ((!(((float)L_23) > ((float)(10000.0f)))))
+		{
+			goto IL_00f4;
+		}
+	}
+
+IL_00b9:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:79>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m06155ED25645EBBC06B4C8F05235EF41B1489C7E(_stringLiteralFEE35BC221461671198AA24511DAE076363851B4, __this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:80>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24;
+		L_24 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_24);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_24, L_25, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:81>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_26 = __this->___rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_26);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_26, L_27, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:82>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_28 = __this->___rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_28);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_28, L_29, NULL);
+	}
+
+IL_00f4:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:84>
+		return;
+	}
+}
+// Method Definition Index: 90132
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable_HandleGrab_mB3AFE97A56B411CB9D50BEB45F304F62059A43BA (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m220EF8E2EABC03A5C33671CBE1BA215F4F1196E1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:88>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:90>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:92>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___rb;
+		NullCheck(L_3);
+		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_3, (bool)0, NULL);
+	}
+
+IL_0021:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:96>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_4 = __this->___copyTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_4, NULL);
+		if (L_5)
+		{
+			goto IL_00cc;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:98>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_6);
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_7;
+		L_7 = GameObject_AddComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m220EF8E2EABC03A5C33671CBE1BA215F4F1196E1(L_6, GameObject_AddComponent_TisCopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B_m220EF8E2EABC03A5C33671CBE1BA215F4F1196E1_RuntimeMethod_var);
+		__this->___copyTransform = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___copyTransform), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:100>
+		bool L_8 = __this->___useVelocityFollow;
+		if (!L_8)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:102>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_9 = __this->___copyTransform;
+		NullCheck(L_9);
+		L_9->___positionFollowType = 1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:103>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_10 = __this->___copyTransform;
+		NullCheck(L_10);
+		L_10->___rotationFollowType = 1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:104>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_11 = __this->___copyTransform;
+		NullCheck(L_11);
+		L_11->___useFixedUpdatePos = (bool)0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:105>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_12 = __this->___copyTransform;
+		NullCheck(L_12);
+		L_12->___useFixedUpdateRot = (bool)0;
+		goto IL_0094;
+	}
+
+IL_007c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:109>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_13 = __this->___copyTransform;
+		NullCheck(L_13);
+		L_13->___positionFollowType = 0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:110>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_14 = __this->___copyTransform;
+		NullCheck(L_14);
+		L_14->___rotationFollowType = 0;
+	}
+
+IL_0094:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:113>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_15 = __this->___copyTransform;
+		NullCheck(L_15);
+		L_15->___snapIfAngleGreaterThan = (90.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:114>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_16 = __this->___copyTransform;
+		NullCheck(L_16);
+		L_16->___snapIfDistanceGreaterThan = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:115>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_17 = __this->___copyTransform;
+		NullCheck(L_17);
+		L_17->___followPosition = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:116>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_18 = __this->___copyTransform;
+		NullCheck(L_18);
+		L_18->___followRotation = (bool)1;
+	}
+
+IL_00cc:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:119>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_19 = __this->___copyTransform;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_20 = ___0_h;
+		NullCheck(L_20);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_20, NULL);
+		NullCheck(L_19);
+		CopyTransform_SetTarget_mAEBB05A13F82503DA6280435E8666B5EB7C8CA62(L_19, L_21, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:121>
+		bool L_22 = __this->___useFixedPositionOffset;
+		if (!L_22)
+		{
+			goto IL_00f7;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:123>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_23 = __this->___copyTransform;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = __this->___fixedPositionOffset;
+		NullCheck(L_23);
+		L_23->___positionOffset = L_24;
+	}
+
+IL_00f7:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:126>
+		bool L_25 = __this->___useFixedRotationOffset;
+		if (!L_25)
+		{
+			goto IL_0110;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:128>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_26 = __this->___copyTransform;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_27 = __this->___fixedRotationOffset;
+		NullCheck(L_26);
+		L_26->___rotationOffset = L_27;
+	}
+
+IL_0110:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:132>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_28 = ___0_h;
+		NullCheck(L_28);
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_29 = L_28->___raycastedObjs;
+		NullCheck(L_29);
+		bool L_30;
+		L_30 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_29, __this, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		if (!L_30)
+		{
+			goto IL_012f;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:134>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_31 = __this->___copyTransform;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = __this->___fixedPositionOffset;
+		NullCheck(L_31);
+		L_31->___positionOffset = L_32;
+	}
+
+IL_012f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:136>
+		return;
+	}
+}
+// Method Definition Index: 90133
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable_HandleRelease_mFEB7C8CF2AA06012BCF4FF33F938C4F348AFE584 (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral16633AFD3C597FCB4172056B236DA03F95CE3340);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral92C01A18BB420A26E8B602BF0791E1ED71668F52);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD65E273C8F5D81BC01B22CF163DC59C03A209C8A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:140>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:142>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:144>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___rb;
+		bool L_4 = __this->___wasUsingGravity;
+		NullCheck(L_3);
+		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_3, L_4, NULL);
+	}
+
+IL_0026:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:147>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_5 = __this->___copyTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:149>
+		CopyTransform_tE757A116ACE34F879EAA42748F15AAF7619B199B* L_7 = __this->___copyTransform;
+		NullCheck(L_7);
+		CopyTransform_SetTarget_mAEBB05A13F82503DA6280435E8666B5EB7C8CA62(L_7, (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL, (bool)1, NULL);
+		goto IL_004d;
+	}
+
+IL_0042:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:153>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral16633AFD3C597FCB4172056B236DA03F95CE3340, __this, NULL);
+	}
+
+IL_004d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:156>
+		bool L_8 = __this->___releaseVelocitySmoothing;
+		if (!L_8)
+		{
+			goto IL_00a6;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:158>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_9 = ___0_h;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_10)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:167>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_11 = ___0_h;
+		NullCheck(L_11);
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_12 = L_11->___lastVels;
+		NullCheck(L_12);
+		int32_t L_13;
+		L_13 = Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_inline(L_12, Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_RuntimeMethod_var);
+		if ((((int32_t)L_13) <= ((int32_t)0)))
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_15)
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:169>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = __this->___rb;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_17 = ___0_h;
+		NullCheck(L_17);
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_18 = L_17->___lastVels;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3(L_18, Enumerable_Last_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m5E98E97C221C80D6CE8DC2A70AC99E608CE47CD3_RuntimeMethod_var);
+		NullCheck(L_16);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_16, L_19, NULL);
+		return;
+	}
+
+IL_0091:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:173>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralD65E273C8F5D81BC01B22CF163DC59C03A209C8A, NULL);
+		return;
+	}
+
+IL_009c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:178>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral92C01A18BB420A26E8B602BF0791E1ED71668F52, NULL);
+	}
+
+IL_00a6:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:181>
+		return;
+	}
+}
+// Method Definition Index: 90134
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRMoveable_PackData_m2119558B75C6B0E29BB4AAA7DE5CB3161D552C7F (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:185>
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_0 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_003f;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_003f:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:187>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_4 = (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E*)il2cpp_codegen_object_new(BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+			BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0(L_4, L_3, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:189>
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_5 = L_4;
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+			L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_6);
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+			L_7 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_6, NULL);
+			Extensions_Write_m45622B3721BFF4B3268EF719358D5C1386A603E8(L_5, L_7, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:190>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+			L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_8);
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
+			L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
+			Extensions_Write_m50D186071E9693D010FB27E415784CDE0F184642(L_5, L_9, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:192>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_10 = V_0;
+			NullCheck(L_10);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
+			L_11 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41, L_10);
+			V_1 = L_11;
+			goto IL_0040;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:194>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_1;
+		return L_12;
+	}
+}
+// Method Definition Index: 90135
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable_UnpackData_m5A1A0AFE9BE78331574EDC37A3B7F9B45F9DC3A2 (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B3_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B2_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:198>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0044:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_004d;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_004d:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:200>
+				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+				BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+				V_1 = L_5;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:202>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+				L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_7 = V_1;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+				L_8 = Extensions_ReadVector3_mC93DD629C48C224496F9F9DEA7371D3065A3629C(L_7, NULL);
+				NullCheck(L_6);
+				Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_6, L_8, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:203>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+				L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_10 = V_1;
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+				L_11 = Extensions_ReadQuaternion_m97317F7A54D8A12B42365D3A38F286C2F983D113(L_10, NULL);
+				NullCheck(L_9);
+				Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_9, L_11, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:205>
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_12 = __this->___Moved;
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_13 = L_12;
+				if (L_13)
+				{
+					G_B3_0 = L_13;
+					goto IL_003c_1;
+				}
+				G_B2_0 = L_13;
+			}
+			{
+				goto IL_004e;
+			}
+
+IL_003c_1:
+			{
+				NullCheck(G_B3_0);
+				Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B3_0, (bool)0, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:206>
+				goto IL_004e;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:207>
+		return;
+	}
+}
+// Method Definition Index: 90136
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveable__ctor_mA44E75F95A2A966EECDB92CE3373F42F2872575C (VRMoveable_tEBD937D1871D7269E227CE35A7246C0B69275BEC* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:22>
+		__this->___useVelocityFollow = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:26>
+		__this->___setKinematic = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:28>
+		__this->___releaseVelocitySmoothing = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveable.cs:33>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0;
+		L_0 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		__this->___fixedRotationOffset = L_0;
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90137
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_Update_m8036CFAEEC8D3EAE7B0896FDAA1A9F17D223E90E (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:50>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:52>
+		VRMoveableButOnceItsStuckInTheGroundItsADial_GrabInput_mE6AA7192E78D3E5501157A5FC18D678D0EDF40B2(__this, NULL);
+	}
+
+IL_0014:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:55>
+		float L_2 = __this->___timerUntilReSnap;
+		float L_3;
+		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___timerUntilReSnap = ((float)il2cpp_codegen_add(L_2, L_3));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:56>
+		return;
+	}
+}
+// Method Definition Index: 90138
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_GrabInput_mE6AA7192E78D3E5501157A5FC18D678D0EDF40B2 (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B12_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B11_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:61>
+		bool L_0 = __this->___stuckInTheGround;
+		if (L_0)
+		{
+			goto IL_0129;
+		}
+	}
+	{
+		float L_1 = __this->___timerUntilReSnap;
+		if ((!(((float)L_1) > ((float)(0.200000003f)))))
+		{
+			goto IL_0129;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:64>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_4, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3, L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_8, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Physics_Raycast_m1B27F500505FFB57D78548B9F5A540A2AD092903(L_6, L_9, (&V_0), NULL);
+		if (!L_10)
+		{
+			goto IL_0174;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:67>
+		float L_11;
+		L_11 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78((&V_0), NULL);
+		if ((!(((float)L_11) < ((float)(1.0f)))))
+		{
+			goto IL_0174;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:69>
+		__this->___stuckInTheGround = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:70>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_14;
+		L_14 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_14, NULL);
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_15, NULL);
+		float L_17;
+		L_17 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_13, L_16, NULL);
+		__this->___initialHandToGroundDistance = L_17;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:71>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_18 = __this->___place;
+		NullCheck(L_18);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_18, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:74>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
+		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_19);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20;
+		L_20 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_19, NULL);
+		V_1 = L_20;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:75>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_22;
+		L_22 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_22);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_22, NULL);
+		NullCheck(L_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_23, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_25;
+		L_25 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_25, NULL);
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_26, NULL);
+		NullCheck(L_21);
+		Transform_LookAt_mBD38EDB5E915C5DA6C5A79D191DEE2C826A9FC2C(L_21, L_24, L_27, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:76>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
+		L_28 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_28);
+		Transform_Rotate_mE12DB27208410BB7090FA117D53DBEBBC0A36B30(L_28, (90.0f), (0.0f), (0.0f), 1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:77>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_29);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30;
+		L_30 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_29, NULL);
+		V_2 = L_30;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:78>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_31 = V_2;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32;
+		L_32 = Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline(L_31, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_33 = V_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_34;
+		L_34 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_32, L_33, NULL);
+		__this->___rotOffsetForSnapping = L_34;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:79>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
+		L_35 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = L_35;
+		NullCheck(L_36);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_37;
+		L_37 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_36, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38 = __this->___rotOffsetForSnapping;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_39;
+		L_39 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_37, L_38, NULL);
+		NullCheck(L_36);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_36, L_39, NULL);
+		goto IL_0174;
+	}
+
+IL_0129:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:87>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_40);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_40, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_42;
+		L_42 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_42);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_43;
+		L_43 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_42, NULL);
+		NullCheck(L_43);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
+		L_44 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_43, NULL);
+		float L_45;
+		L_45 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_41, L_44, NULL);
+		float L_46 = __this->___initialHandToGroundDistance;
+		if ((!(((float)L_45) > ((float)((float)il2cpp_codegen_add(L_46, (0.100000001f)))))))
+		{
+			goto IL_0174;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:89>
+		__this->___stuckInTheGround = (bool)0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:90>
+		__this->___timerUntilReSnap = (0.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:91>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_47 = __this->___lift;
+		NullCheck(L_47);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_47, NULL);
+	}
+
+IL_0174:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:97>
+		bool L_48 = __this->___stuckInTheGround;
+		if (!L_48)
+		{
+			goto IL_01e0;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:99>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49;
+		L_49 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_50;
+		L_50 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_50);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51;
+		L_51 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_50, NULL);
+		NullCheck(L_51);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
+		L_52 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_51, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_53;
+		L_53 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_53);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_54;
+		L_54 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_53, NULL);
+		NullCheck(L_54);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
+		L_55 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_54, NULL);
+		NullCheck(L_49);
+		Transform_LookAt_mBD38EDB5E915C5DA6C5A79D191DEE2C826A9FC2C(L_49, L_52, L_55, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:100>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_56;
+		L_56 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_56);
+		Transform_Rotate_mE12DB27208410BB7090FA117D53DBEBBC0A36B30(L_56, (90.0f), (0.0f), (0.0f), 1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:101>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_57;
+		L_57 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_58 = L_57;
+		NullCheck(L_58);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_59;
+		L_59 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_58, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_60 = __this->___rotOffsetForSnapping;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_61;
+		L_61 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_59, L_60, NULL);
+		NullCheck(L_58);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_58, L_61, NULL);
+		goto IL_0227;
+	}
+
+IL_01e0:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:107>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_62;
+		L_62 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_63;
+		L_63 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_63);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_64;
+		L_64 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_63, NULL);
+		NullCheck(L_64);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_65;
+		L_65 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_64, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_66 = __this->___rotOffset;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_67;
+		L_67 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_65, L_66, NULL);
+		NullCheck(L_62);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_62, L_67, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:108>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_68;
+		L_68 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_69;
+		L_69 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_69);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_70;
+		L_70 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_69, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = __this->___posOffset;
+		NullCheck(L_70);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
+		L_72 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_70, L_71, NULL);
+		NullCheck(L_68);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_68, L_72, NULL);
+	}
+
+IL_0227:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:112>
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_73 = __this->___Moved;
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_74 = L_73;
+		if (L_74)
+		{
+			G_B12_0 = L_74;
+			goto IL_0232;
+		}
+		G_B11_0 = L_74;
+	}
+	{
+		return;
+	}
+
+IL_0232:
+	{
+		NullCheck(G_B12_0);
+		Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B12_0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:115>
+		return;
+	}
+}
+// Method Definition Index: 90139
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_HandleGrab_m3800C9C6B54284F3D1392FC2F6E8F4B4D3B4387A (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:119>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:121>
+		VirtualActionInvoker1< VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* >::Invoke(7, __this, (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*)NULL);
+	}
+
+IL_0015:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:123>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_2 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_2, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:125>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_3;
+		L_3 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_4, L_6, NULL);
+		__this->___posOffset = L_7;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:126>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_8;
+		L_8 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_8);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
+		NullCheck(L_9);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_10;
+		L_10 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_9, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+		L_11 = Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline(L_10, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_12);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13;
+		L_13 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_12, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_14;
+		L_14 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_11, L_13, NULL);
+		__this->___rotOffset = L_14;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:127>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_15, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_17;
+		L_17 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_17, NULL);
+		NullCheck(L_18);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_20);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_19, L_21, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_23;
+		L_23 = Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A_inline(L_16, L_22, NULL);
+		__this->___rotOffsetForSnapping = L_23;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:129>
+		bool L_24 = __this->___stuckInTheGround;
+		if (!L_24)
+		{
+			goto IL_00cc;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:131>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_25);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_25, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_27;
+		L_27 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_27);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
+		L_28 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_27, NULL);
+		NullCheck(L_28);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_28, NULL);
+		float L_30;
+		L_30 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_26, L_29, NULL);
+		__this->___initialHandToGroundDistance = L_30;
+	}
+
+IL_00cc:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:133>
+		return;
+	}
+}
+// Method Definition Index: 90140
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_HandleRelease_m06D5473AC41F7BA1EDF5F3D55BF3F61D24EC8548 (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:137>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:138>
+		return;
+	}
+}
+// Method Definition Index: 90141
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRMoveableButOnceItsStuckInTheGroundItsADial_PackData_m0CC82FE005730D7CD6C9874B84024E3EBF2E5FDE (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:142>
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_0 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_003f;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_003f:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:144>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_4 = (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E*)il2cpp_codegen_object_new(BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+			BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0(L_4, L_3, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:146>
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_5 = L_4;
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+			L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_6);
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+			L_7 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_6, NULL);
+			Extensions_Write_m45622B3721BFF4B3268EF719358D5C1386A603E8(L_5, L_7, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:147>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+			L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_8);
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
+			L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
+			Extensions_Write_m50D186071E9693D010FB27E415784CDE0F184642(L_5, L_9, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:149>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_10 = V_0;
+			NullCheck(L_10);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
+			L_11 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41, L_10);
+			V_1 = L_11;
+			goto IL_0040;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:151>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_1;
+		return L_12;
+	}
+}
+// Method Definition Index: 90142
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial_UnpackData_mC6CAC77E801D3F8C762A85E81B6E8299B7896E22 (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B3_0 = NULL;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* G_B2_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:155>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0044:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_004d;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_004d:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:157>
+				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+				BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+				V_1 = L_5;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:159>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+				L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_7 = V_1;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+				L_8 = Extensions_ReadVector3_mC93DD629C48C224496F9F9DEA7371D3065A3629C(L_7, NULL);
+				NullCheck(L_6);
+				Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_6, L_8, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:160>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+				L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_10 = V_1;
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+				L_11 = Extensions_ReadQuaternion_m97317F7A54D8A12B42365D3A38F286C2F983D113(L_10, NULL);
+				NullCheck(L_9);
+				Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_9, L_11, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:162>
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_12 = __this->___Moved;
+				Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_13 = L_12;
+				if (L_13)
+				{
+					G_B3_0 = L_13;
+					goto IL_003c_1;
+				}
+				G_B2_0 = L_13;
+			}
+			{
+				goto IL_004e;
+			}
+
+IL_003c_1:
+			{
+				NullCheck(G_B3_0);
+				Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline(G_B3_0, (bool)0, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:163>
+				goto IL_004e;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:164>
+		return;
+	}
+}
+// Method Definition Index: 90143
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRMoveableButOnceItsStuckInTheGroundItsADial__ctor_m863EA6C7BCE60FDE52AFFAA21E9013173D619F70 (VRMoveableButOnceItsStuckInTheGroundItsADial_tAF219A688D29AFFA7F07B124D1C417B97AB2A268* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:12>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		__this->___dialAxis = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:22>
+		__this->___multiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRMoveableButOnceItsStuckInTheGroundItsADial.cs:31>
+		__this->___dynamicPositionMixDistanceMultiplier = (10.0f);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90144
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_Awake_mCD5FB5D4DCAA503F57DF76EFCDACFA8EC7C38125 (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:19>
+		VRGrabbable_Awake_mB77069C486CF1CDFC2B041EF92D09A6EEF54711D(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:20>
+		((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___canBeGrabbedByMultipleHands = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:21>
+		return;
+	}
+}
+// Method Definition Index: 90145
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_Start_m86377855CB2DA33765C40E0E60B1A32A571F6920 (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:25>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
+		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:26>
+		return;
+	}
+}
+// Method Definition Index: 90146
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_Update_mF3A1859477FC62D6CBE48B1F8ACC97B81EFC9729 (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mCC713DF10E37AF5D8A954128F4A9935C55EDD823_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m9DE2581122F96E561CAF798E6CAD2A8F7314981F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m46FCF641F7361B14DC9CEC568204DAE20AA6AE61_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m03AFDB52381868693AEAA5BA7B89C6B92539D55B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* V_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:31>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:33>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_2 = ((VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)__this)->___listOfGrabbedByHands;
+		NullCheck(L_2);
+		Enumerator_tF63E9FA16DD7918FB93FBE15B6F29828989F7AA6 L_3;
+		L_3 = List_1_GetEnumerator_m03AFDB52381868693AEAA5BA7B89C6B92539D55B(L_2, List_1_GetEnumerator_m03AFDB52381868693AEAA5BA7B89C6B92539D55B_RuntimeMethod_var);
+		V_0 = L_3;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_009f:
+			{
+				Enumerator_Dispose_mCC713DF10E37AF5D8A954128F4A9935C55EDD823((&V_0), Enumerator_Dispose_mCC713DF10E37AF5D8A954128F4A9935C55EDD823_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0094_1;
+			}
+
+IL_001f_1:
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:33>
+				VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_4;
+				L_4 = Enumerator_get_Current_m46FCF641F7361B14DC9CEC568204DAE20AA6AE61_inline((&V_0), Enumerator_get_Current_m46FCF641F7361B14DC9CEC568204DAE20AA6AE61_RuntimeMethod_var);
+				V_1 = L_4;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:35>
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:36>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+				L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_6 = V_1;
+				NullCheck(L_6);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+				L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_6, NULL);
+				NullCheck(L_7);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+				L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+				NullCheck(L_5);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+				L_9 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_5, L_8, NULL);
+				Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* L_10 = __this->___localHandGrabPositions;
+				VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_11 = V_1;
+				NullCheck(L_10);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+				L_12 = Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9(L_10, L_11, Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9_RuntimeMethod_var);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+				L_13 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_9, L_12, NULL);
+				V_2 = L_13;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:37>
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:38>
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14 = __this->___rb;
+				float L_15 = __this->___forceMultiplier;
+				float L_16;
+				L_16 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+				L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_2;
+				NullCheck(L_17);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+				L_19 = Transform_TransformVector_mFA6FB7570442728CB15D03C696353148711CDD98(L_17, L_18, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+				L_20 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_15, (10000.0f))), L_16)), L_19, NULL);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+				L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* L_22 = __this->___localHandGrabPositions;
+				VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_23 = V_1;
+				NullCheck(L_22);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+				L_24 = Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9(L_22, L_23, Dictionary_2_get_Item_m66F11C46E336ED8CA34D9EF244D9B5D782F9BFE9_RuntimeMethod_var);
+				NullCheck(L_21);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+				L_25 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_21, L_24, NULL);
+				NullCheck(L_14);
+				Rigidbody_AddForceAtPosition_mA4226D0A30E0B55CB0CAD2A956EA16C546505965(L_14, L_20, L_25, NULL);
+			}
+
+IL_0094_1:
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:33>
+				bool L_26;
+				L_26 = Enumerator_MoveNext_m9DE2581122F96E561CAF798E6CAD2A8F7314981F((&V_0), Enumerator_MoveNext_m9DE2581122F96E561CAF798E6CAD2A8F7314981F_RuntimeMethod_var);
+				if (L_26)
+				{
+					goto IL_001f_1;
+				}
+			}
+			{
+				goto IL_00ad;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00ad:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:41>
+		return;
+	}
+}
+// Method Definition Index: 90147
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_HandleGrab_mDF4DC1EE8BE2FBC23EE21DAB746C84B53964C7B4 (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_mBAC45DFC2B63D038D3F069AA30A0181FAFAC725A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:45>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:46>
+		Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* L_1 = __this->___localHandGrabPositions;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_2 = ___0_h;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_4 = ___0_h;
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_3, L_6, NULL);
+		NullCheck(L_1);
+		Dictionary_2_Add_mBAC45DFC2B63D038D3F069AA30A0181FAFAC725A(L_1, L_2, L_7, Dictionary_2_Add_mBAC45DFC2B63D038D3F069AA30A0181FAFAC725A_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:47>
+		return;
+	}
+}
+// Method Definition Index: 90148
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_HandleRelease_m4B809A35D583E405CD73FDB8FD43DB473C20D362 (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m868E168DE38FB74A53058FFF0AE400BBC0F94238_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:51>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:52>
+		Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* L_1 = __this->___localHandGrabPositions;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_2 = ___0_h;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = Dictionary_2_Remove_m868E168DE38FB74A53058FFF0AE400BBC0F94238(L_1, L_2, Dictionary_2_Remove_m868E168DE38FB74A53058FFF0AE400BBC0F94238_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:53>
+		return;
+	}
+}
+// Method Definition Index: 90149
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRPointForceGrabbable_PackData_m9192DE4EEA6F80BE04E8E4676F1B4EDBAD73608C (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:57>
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_0 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_003f;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_003f:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:59>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_4 = (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E*)il2cpp_codegen_object_new(BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+			BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0(L_4, L_3, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:61>
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_5 = L_4;
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+			L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_6);
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+			L_7 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_6, NULL);
+			Extensions_Write_m45622B3721BFF4B3268EF719358D5C1386A603E8(L_5, L_7, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:62>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+			L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			NullCheck(L_8);
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
+			L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
+			Extensions_Write_m50D186071E9693D010FB27E415784CDE0F184642(L_5, L_9, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:64>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_10 = V_0;
+			NullCheck(L_10);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
+			L_11 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41, L_10);
+			V_1 = L_11;
+			goto IL_0040;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:66>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_1;
+		return L_12;
+	}
+}
+// Method Definition Index: 90150
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable_UnpackData_m6D216897CFE95E813D7C70C12B4C6293835252EC (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:70>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0032:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_003b;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_003b:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:72>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+			BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+			V_1 = L_5;
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:74>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+			L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_7 = V_1;
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+			L_8 = Extensions_ReadVector3_mC93DD629C48C224496F9F9DEA7371D3065A3629C(L_7, NULL);
+			NullCheck(L_6);
+			Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_6, L_8, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:75>
+			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+			L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_10 = V_1;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+			L_11 = Extensions_ReadQuaternion_m97317F7A54D8A12B42365D3A38F286C2F983D113(L_10, NULL);
+			NullCheck(L_9);
+			Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_9, L_11, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:76>
+			goto IL_003c;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_003c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 90151
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPointForceGrabbable__ctor_mA6C2627366E2598C649C23785A0C59895234231F (VRPointForceGrabbable_t370126A61EFFACEC55D1D184FC6595B21ABF797A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mA062405960666EAB13704F40E9A694B0066C03EE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:12>
+		__this->___forceMultiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:14>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRPointForceGrabbable.cs:15>
+		Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F* L_0 = (Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F*)il2cpp_codegen_object_new(Dictionary_2_t25A7FD596A8530CF1699779C2D624912C363D41F_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_mA062405960666EAB13704F40E9A694B0066C03EE(L_0, Dictionary_2__ctor_mA062405960666EAB13704F40E9A694B0066C03EE_RuntimeMethod_var);
+		__this->___localHandGrabPositions = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___localHandGrabPositions), (void*)L_0);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90152
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_Awake_m0045D200EFC4391CBE62CB4C86C950408184D9B8 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRSlider_SlideAction_mD653041212888297EAA2946238F35CA146BAC3FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6791949E2B1A509A08FDA1A3CA7387C3C9449D77);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95D6C7167B6E2B0A663AFED1D8AE2FF1D1D54EDB);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:33>
+		VRGrabbable_Awake_mB77069C486CF1CDFC2B041EF92D09A6EEF54711D(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:34>
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_0 = __this->___OnSlide;
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_1 = (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3*)il2cpp_codegen_object_new(Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3_il2cpp_TypeInfo_var);
+		Action_3__ctor_mB13016E4E4C839BA76F6E0D53E019992D895EBD4(L_1, __this, (intptr_t)((void*)VRSlider_SlideAction_mD653041212888297EAA2946238F35CA146BAC3FF_RuntimeMethod_var), NULL);
+		Delegate_t* L_2;
+		L_2 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_0, L_1, NULL);
+		__this->___OnSlide = ((Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3*)Castclass((RuntimeObject*)L_2, Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3_il2cpp_TypeInfo_var));
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___OnSlide), (void*)((Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3*)Castclass((RuntimeObject*)L_2, Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3_il2cpp_TypeInfo_var)));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:35>
+		float L_3 = __this->___slideMax;
+		float L_4 = __this->___slideMin;
+		if ((!(((float)L_3) < ((float)L_4))))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:37>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral6791949E2B1A509A08FDA1A3CA7387C3C9449D77, __this, NULL);
+	}
+
+IL_0041:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:39>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->___localSlideAxis;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		bool L_7;
+		L_7 = Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline(L_5, L_6, NULL);
+		if (!L_7)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:41>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral95D6C7167B6E2B0A663AFED1D8AE2FF1D1D54EDB, __this, NULL);
+	}
+
+IL_005e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:43>
+		return;
+	}
+}
+// Method Definition Index: 90153
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_Start_m0FB0D286B1F20AC77A816181C00851E783BAC36D (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral90EFDE5D38433DB255E13CA9231608C4A6081906);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:49>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___localSlideAxis);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline(L_0, NULL);
+		__this->___localSlideAxis = L_1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:50>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2;
+		L_2 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		__this->___rb = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:51>
+		bool L_3 = __this->___useVelocity;
+		if (!L_3)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___rb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_4, NULL);
+		if (L_5)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:53>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral90EFDE5D38433DB255E13CA9231608C4A6081906, __this, NULL);
+	}
+
+IL_003d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:55>
+		return;
+	}
+}
+// Method Definition Index: 90154
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_Update_m9532CA400DCECAB57FDFE81A86D22FC61D64518F (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:59>
+		bool L_0 = __this->___useVelocity;
+		if (L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:61>
+		float L_3;
+		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		VRSlider_GrabInput_m9C9075BB5D72A1C1E70C316F48A24C792A74944F(__this, L_3, NULL);
+	}
+
+IL_0021:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:63>
+		return;
+	}
+}
+// Method Definition Index: 90155
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_FixedUpdate_mBD8A242092FE3A6A88F5EFEB1FFE758F1A010C48 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:67>
+		bool L_0 = __this->___useVelocity;
+		if (!L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1;
+		L_1 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:69>
+		float L_3;
+		L_3 = Time_get_fixedDeltaTime_m43136893D00AF5D5FE80AD05609558F6E2381381(NULL);
+		VRSlider_GrabInput_m9C9075BB5D72A1C1E70C316F48A24C792A74944F(__this, L_3, NULL);
+	}
+
+IL_0021:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:71>
+		return;
+	}
+}
+// Method Definition Index: 90156
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_GrabInput_m9C9075BB5D72A1C1E70C316F48A24C792A74944F (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, float ___0_timeDelta, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:75>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0;
+		L_0 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:76>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->___lastGrabPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_2, L_3, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:77>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___localSlideAxis;
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_TransformDirection_m9BE1261DF2D48B7A4A27D31EE24D2D97F89E7757(L_5, L_6, NULL);
+		V_0 = L_7;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:78>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = V_0;
+		float L_9;
+		L_9 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_4, L_8, NULL);
+		float L_10 = __this->___movementSpeedMultiplier;
+		V_1 = ((float)il2cpp_codegen_multiply(L_9, L_10));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:80>
+		float L_11 = __this->___currentSlidePosition;
+		float L_12 = V_1;
+		V_2 = ((float)il2cpp_codegen_add(L_11, L_12));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:81>
+		float L_13 = V_2;
+		float L_14 = __this->___slideMax;
+		if ((!(((float)L_13) > ((float)L_14))))
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:83>
+		float L_15 = __this->___slideMax;
+		V_2 = L_15;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:84>
+		float L_16 = __this->___slideMax;
+		float L_17 = __this->___currentSlidePosition;
+		V_1 = ((float)il2cpp_codegen_subtract(L_16, L_17));
+		goto IL_0082;
+	}
+
+IL_0064:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:86>
+		float L_18 = V_2;
+		float L_19 = __this->___slideMin;
+		if ((!(((float)L_18) < ((float)L_19))))
+		{
+			goto IL_0082;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:88>
+		float L_20 = __this->___slideMin;
+		V_2 = L_20;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:89>
+		float L_21 = __this->___slideMin;
+		float L_22 = __this->___currentSlidePosition;
+		V_1 = ((float)il2cpp_codegen_subtract(L_21, L_22));
+	}
+
+IL_0082:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:92>
+		float L_23 = V_1;
+		if ((((float)L_23) == ((float)(0.0f))))
+		{
+			goto IL_00a8;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:94>
+		float L_24 = V_2;
+		VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960(__this, L_24, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:95>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_25;
+		L_25 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_25, NULL);
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_26, NULL);
+		__this->___lastGrabPosition = L_27;
+	}
+
+IL_00a8:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 90157
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, float ___0_updatedSlide, bool ___1_localInput, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B6_0 = NULL;
+	Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* G_B5_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:102>
+		float L_0 = ___0_updatedSlide;
+		float L_1 = __this->___currentSlidePosition;
+		V_0 = ((float)il2cpp_codegen_subtract(L_0, L_1));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:103>
+		float L_2 = ___0_updatedSlide;
+		__this->___currentSlidePosition = L_2;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:104>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->___localSlideAxis;
+		float L_5 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_4, L_5, NULL);
+		NullCheck(L_3);
+		Transform_Translate_m4A9E3D8836586E7562F6A18EBF5F5B6089D8B649(L_3, L_6, 1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:109>
+		float L_7 = __this->___vibrationDeltaSum;
+		float L_8 = __this->___vibrationDelta;
+		if ((!(((float)L_7) > ((float)L_8))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:111>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_9;
+		L_9 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_9, NULL);
+		if (!L_10)
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:113>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_11;
+		L_11 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_11);
+		int32_t L_12 = L_11->___side;
+		InputMan_Vibrate_m33E29A3B33C6CBFEF3F3EC64FAD9D2C2ED803470(L_12, (1.0f), (0.200000003f), (0.0f), NULL);
+	}
+
+IL_0062:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:115>
+		__this->___vibrationDeltaSum = (0.0f);
+	}
+
+IL_006d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:118>
+		float L_13 = __this->___vibrationDeltaSum;
+		float L_14 = V_0;
+		float L_15;
+		L_15 = fabsf(L_14);
+		__this->___vibrationDeltaSum = ((float)il2cpp_codegen_add(L_13, L_15));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:121>
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_16 = __this->___OnSlide;
+		Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* L_17 = L_16;
+		if (L_17)
+		{
+			G_B6_0 = L_17;
+			goto IL_008b;
+		}
+		G_B5_0 = L_17;
+	}
+	{
+		return;
+	}
+
+IL_008b:
+	{
+		float L_18 = ___0_updatedSlide;
+		float L_19 = V_0;
+		bool L_20 = ___1_localInput;
+		NullCheck(G_B6_0);
+		Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_inline(G_B6_0, L_18, L_19, L_20, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:122>
+		return;
+	}
+}
+// Method Definition Index: 90158
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_SlideAction_mD653041212888297EAA2946238F35CA146BAC3FF (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, float ___0_currentSlideAmount, float ___1_deltaLength, bool ___2_localInput, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:126>
+		return;
+	}
+}
+// Method Definition Index: 90159
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_Beginning_m879FE2869A0731EE690869F21A60011D6136DB1A (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:130>
+		float L_0 = __this->___slideMin;
+		VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960(__this, L_0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:131>
+		return;
+	}
+}
+// Method Definition Index: 90160
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_End_mD7DE5D103ECBE649610F0C4829FA9AE1C49A86E3 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:135>
+		float L_0 = __this->___slideMax;
+		VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960(__this, L_0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:136>
+		return;
+	}
+}
+// Method Definition Index: 90161
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_HandleGrab_m91911A4E1990145BE93C36078F8C8236B51ADCFC (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:140>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:141>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_1 = ___0_h;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		__this->___lastGrabPosition = L_3;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:142>
+		return;
+	}
+}
+// Method Definition Index: 90162
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* VRSlider_PackData_mA62F32AC66E6E8F25ECF5F5CF2028B31F812619D (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:146>
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_0 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0020:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_0029;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_0029:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:148>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+			BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_4 = (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E*)il2cpp_codegen_object_new(BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
+			BinaryWriter__ctor_mF2F1235E378C3EC493A8C816597BCEB4205A9CA0(L_4, L_3, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:150>
+			float L_5 = __this->___currentSlidePosition;
+			NullCheck(L_4);
+			VirtualActionInvoker1< float >::Invoke(21, L_4, L_5);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:152>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_6 = V_0;
+			NullCheck(L_6);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7;
+			L_7 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41, L_6);
+			V_1 = L_7;
+			goto IL_002a;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_002a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:154>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = V_1;
+		return L_8;
+	}
+}
+// Method Definition Index: 90163
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider_UnpackData_mD68CFD6A04AF5BE9BCBB43E8B1CF3553B43261CF (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* V_0 = NULL;
+	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* V_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:158>
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_data;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2*)il2cpp_codegen_object_new(MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2_il2cpp_TypeInfo_var);
+		MemoryStream__ctor_m662CA0D5A0004A2E3B475FE8DCD687B654870AA2(L_1, L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001d:
+			{
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_2 = V_0;
+					if (!L_2)
+					{
+						goto IL_0026;
+					}
+				}
+				{
+					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = V_0;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_0026:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:160>
+			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = V_0;
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_5 = (BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158*)il2cpp_codegen_object_new(BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
+			BinaryReader__ctor_m898732FE0DBEDD480B24F6DE45A9AC696E44CC0F(L_5, L_4, NULL);
+			V_1 = L_5;
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:162>
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_6 = V_1;
+			NullCheck(L_6);
+			float L_7;
+			L_7 = VirtualFuncInvoker0< float >::Invoke(19, L_6);
+			VRSlider_SetData_mA9C387D1DE0C9E4EC9BAB4187B8ED3839F240960(__this, L_7, (bool)0, NULL);
+			//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:163>
+			goto IL_0027;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0027:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:164>
+		return;
+	}
+}
+// Method Definition Index: 90164
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRSlider__ctor_m2E6D94A0C69C48848AAFB32E278789A57FD31931 (VRSlider_t19EB1F3CFA313783562AC6BABAA531F74202C4DF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:21>
+		__this->___movementSpeedMultiplier = (1.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/Subclasses/VRSlider.cs:23>
+		__this->___vibrationDelta = (0.0199999996f);
+		VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90165
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m4D5AFF423511A6D3B30C84CC9E6C570115C0BECF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:18>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_0 = __this->___listOfGrabbedByHands;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline(L_0, List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		if ((((int32_t)L_1) > ((int32_t)0)))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		return (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB*)NULL;
+	}
+
+IL_0010:
+	{
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_2 = __this->___listOfGrabbedByHands;
+		NullCheck(L_2);
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_3;
+		L_3 = List_1_get_Item_m4D5AFF423511A6D3B30C84CC9E6C570115C0BECF(L_2, 0, List_1_get_Item_m4D5AFF423511A6D3B30C84CC9E6C570115C0BECF_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// Method Definition Index: 90166
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_Awake_mB77069C486CF1CDFC2B041EF92D09A6EEF54711D (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral23E80B19348AABD00B1A5523E569122717D63A8E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEEDC14596239BDE99AF1F1AC5C9F9D7C96A17F95);
+		s_Il2CppMethodInitialized = true;
+	}
+	RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* V_0 = NULL;
+	int32_t V_1 = 0;
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* V_2 = NULL;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* V_3 = NULL;
+	int32_t V_4 = 0;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* V_5 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:63>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_0 = __this->___highlightMeshes;
+		NullCheck(L_0);
+		if ((((RuntimeArray*)L_0)->max_length))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_1 = __this->___highlightObjs;
+		NullCheck(L_1);
+		if ((((RuntimeArray*)L_1)->max_length))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_2;
+		L_2 = Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8(__this, Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:65>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_4 = (RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A*)(RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A*)SZArrayNew(RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A_il2cpp_TypeInfo_var, (uint32_t)1);
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_5 = L_4;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_6;
+		L_6 = Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8(__this, Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)L_6);
+		__this->___highlightMeshes = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___highlightMeshes), (void*)L_5);
+	}
+
+IL_0034:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:68>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_7 = __this->___highlightMeshes;
+		NullCheck(L_7);
+		if (!(((RuntimeArray*)L_7)->max_length))
+		{
+			goto IL_00f2;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:70>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_8 = __this->___highlightMeshes;
+		V_0 = L_8;
+		V_1 = 0;
+		goto IL_00e9;
+	}
+
+IL_004e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:70>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_9 = V_0;
+		int32_t L_10 = V_1;
+		NullCheck(L_9);
+		int32_t L_11 = L_10;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		V_2 = L_12;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:72>
+		bool L_13 = __this->___colorChange;
+		if (!L_13)
+		{
+			goto IL_00d4;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:74>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_14 = V_2;
+		NullCheck(L_14);
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_15;
+		L_15 = Renderer_get_materials_m43D33328432700524EAEAB093C67AE5689976118(L_14, NULL);
+		V_3 = L_15;
+		V_4 = 0;
+		goto IL_00cd;
+	}
+
+IL_0066:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:74>
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_16 = V_3;
+		int32_t L_17 = V_4;
+		NullCheck(L_16);
+		int32_t L_18 = L_17;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
+		V_5 = L_19;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:76>
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_20 = V_5;
+		NullCheck(L_20);
+		bool L_21;
+		L_21 = Material_HasProperty_mC09A83B44E368A217F606DD4954FA080CC03EC6C(L_20, _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE, NULL);
+		if (!L_21)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:78>
+		List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* L_22 = __this->___origColors;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = V_5;
+		NullCheck(L_23);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
+		L_24 = Material_get_color_mA4B7D4B96200D9D8B4F36BF19957E9DA81071DBB(L_23, NULL);
+		NullCheck(L_22);
+		List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_inline(L_22, L_24, List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_RuntimeMethod_var);
+		goto IL_00c7;
+	}
+
+IL_008e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:80>
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_25 = V_5;
+		NullCheck(L_25);
+		bool L_26;
+		L_26 = Material_HasProperty_mC09A83B44E368A217F606DD4954FA080CC03EC6C(L_25, _stringLiteral23E80B19348AABD00B1A5523E569122717D63A8E, NULL);
+		if (!L_26)
+		{
+			goto IL_00b0;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:82>
+		List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* L_27 = __this->___origColors;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_28 = V_5;
+		NullCheck(L_28);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
+		L_29 = Material_get_color_mA4B7D4B96200D9D8B4F36BF19957E9DA81071DBB(L_28, NULL);
+		NullCheck(L_27);
+		List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_inline(L_27, L_29, List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_RuntimeMethod_var);
+		goto IL_00c7;
+	}
+
+IL_00b0:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:86>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_30 = V_2;
+		NullCheck(L_30);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31;
+		L_31 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_30, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteralEEDC14596239BDE99AF1F1AC5C9F9D7C96A17F95, L_31, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:87>
+		__this->___colorChange = (bool)0;
+	}
+
+IL_00c7:
+	{
+		int32_t L_32 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_32, 1));
+	}
+
+IL_00cd:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:74>
+		int32_t L_33 = V_4;
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_34 = V_3;
+		NullCheck(L_34);
+		if ((((int32_t)L_33) < ((int32_t)((int32_t)(((RuntimeArray*)L_34)->max_length)))))
+		{
+			goto IL_0066;
+		}
+	}
+
+IL_00d4:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:91>
+		List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* L_35 = __this->___origVisibility;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_36 = V_2;
+		NullCheck(L_36);
+		bool L_37;
+		L_37 = Renderer_get_enabled_mFDDF363859AEC88105A925FA7EA341C077B09B54(L_36, NULL);
+		NullCheck(L_35);
+		List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_inline(L_35, L_37, List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_RuntimeMethod_var);
+		int32_t L_38 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_38, 1));
+	}
+
+IL_00e9:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:70>
+		int32_t L_39 = V_1;
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_40 = V_0;
+		NullCheck(L_40);
+		if ((((int32_t)L_39) < ((int32_t)((int32_t)(((RuntimeArray*)L_40)->max_length)))))
+		{
+			goto IL_004e;
+		}
+	}
+
+IL_00f2:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:95>
+		return;
+	}
+}
+// Method Definition Index: 90167
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleGrab_m10C4A84A082C6AF49CB21088634F00A1A3B67CA6 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mA01F5CAEEE2B027CC337DB94587E8EE5E024ED40_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral09D23355125FE9B1BB65A23424829A0E4908DD98);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B7_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B6_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:99>
+		bool L_0 = __this->___canBeGrabbedByMultipleHands;
+		if (L_0)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_1 = __this->___listOfGrabbedByHands;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline(L_1, List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:101>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_3 = __this->___listOfGrabbedByHands;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline(L_3, List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		if ((((int32_t)L_4) <= ((int32_t)1)))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:103>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral09D23355125FE9B1BB65A23424829A0E4908DD98, NULL);
+	}
+
+IL_002e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:106>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_5;
+		L_5 = VRGrabbable_get_GrabbedBy_m47184CD660714C68582B5555FD153074C9FB30D5(__this, NULL);
+		NullCheck(L_5);
+		VRGrabbableHand_Release_mB50A79BA8E9FF746904B258C4CB802C6E54B6847(L_5, NULL);
+	}
+
+IL_0039:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:108>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_6 = __this->___listOfGrabbedByHands;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_7 = ___0_h;
+		NullCheck(L_6);
+		List_1_Add_mA01F5CAEEE2B027CC337DB94587E8EE5E024ED40_inline(L_6, L_7, List_1_Add_mA01F5CAEEE2B027CC337DB94587E8EE5E024ED40_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:110>
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8 = __this->___Grabbed;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = L_8;
+		if (L_9)
+		{
+			G_B7_0 = L_9;
+			goto IL_0050;
+		}
+		G_B6_0 = L_9;
+	}
+	{
+		return;
+	}
+
+IL_0050:
+	{
+		NullCheck(G_B7_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B7_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:111>
+		return;
+	}
+}
+// Method Definition Index: 90168
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleRelease_m0C77DCC7D89EC8D1BB79AF72D408E2D848682C1A (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* ___0_h, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m839816646A232448D2827DD54A3B95A034BE41DD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Remove_mEE52C3433EDB084876073EC3F8B7C6D96D2C2475_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95F10EE74F914F4E85147E4FF08B23FE283D8E05);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD3A18B32F311E64FA0598228A8697DC99FE2A1E);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B9_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B8_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:115>
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_0 = ___0_h;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:117>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_2 = __this->___listOfGrabbedByHands;
+		VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* L_3 = ___0_h;
+		NullCheck(L_2);
+		bool L_4;
+		L_4 = List_1_Remove_mEE52C3433EDB084876073EC3F8B7C6D96D2C2475(L_2, L_3, List_1_Remove_mEE52C3433EDB084876073EC3F8B7C6D96D2C2475_RuntimeMethod_var);
+		goto IL_005a;
+	}
+
+IL_0018:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:121>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_5 = __this->___listOfGrabbedByHands;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline(L_5, List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		if ((((int32_t)L_6) <= ((int32_t)1)))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:123>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteralAD3A18B32F311E64FA0598228A8697DC99FE2A1E, __this, NULL);
+		goto IL_005a;
+	}
+
+IL_0033:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:125>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_7 = __this->___listOfGrabbedByHands;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_inline(L_7, List_1_get_Count_m76D61300A3D783101BBAA5CBFC394066C979AA73_RuntimeMethod_var);
+		if ((((int32_t)L_8) <= ((int32_t)0)))
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:127>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_9 = __this->___listOfGrabbedByHands;
+		NullCheck(L_9);
+		List_1_RemoveAt_m839816646A232448D2827DD54A3B95A034BE41DD(L_9, 0, List_1_RemoveAt_m839816646A232448D2827DD54A3B95A034BE41DD_RuntimeMethod_var);
+		goto IL_005a;
+	}
+
+IL_004f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:131>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral95F10EE74F914F4E85147E4FF08B23FE283D8E05, __this, NULL);
+	}
+
+IL_005a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:135>
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = __this->___Released;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_11 = L_10;
+		if (L_11)
+		{
+			G_B9_0 = L_11;
+			goto IL_0065;
+		}
+		G_B8_0 = L_11;
+	}
+	{
+		return;
+	}
+
+IL_0065:
+	{
+		NullCheck(G_B9_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B9_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:136>
+		return;
+	}
+}
+// Method Definition Index: 90169
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleSelection_m3C89EDDB0FBDF1B5788270F632DC110CC24DD4B5 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* V_1 = NULL;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:141>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_0 = __this->___highlightMeshes;
+		NullCheck(L_0);
+		if (!(((RuntimeArray*)L_0)->max_length))
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:143>
+		V_0 = 0;
+		goto IL_0051;
+	}
+
+IL_000d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:145>
+		bool L_1 = __this->___colorChange;
+		if (!L_1)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:147>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_2 = __this->___highlightMeshes;
+		int32_t L_3 = V_0;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		NullCheck(L_5);
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_6;
+		L_6 = Renderer_get_materials_m43D33328432700524EAEAB093C67AE5689976118(L_5, NULL);
+		V_1 = L_6;
+		V_2 = 0;
+		goto IL_0039;
+	}
+
+IL_0027:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:147>
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_7 = V_1;
+		int32_t L_8 = V_2;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:149>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = __this->___highlightColor;
+		NullCheck(L_10);
+		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_10, L_11, NULL);
+		int32_t L_12 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+	}
+
+IL_0039:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:147>
+		int32_t L_13 = V_2;
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_14 = V_1;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))
+		{
+			goto IL_0027;
+		}
+	}
+
+IL_003f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:152>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_15 = __this->___highlightMeshes;
+		int32_t L_16 = V_0;
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		NullCheck(L_18);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_18, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:143>
+		int32_t L_19 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_19, 1));
+	}
+
+IL_0051:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:143>
+		int32_t L_20 = V_0;
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_21 = __this->___highlightMeshes;
+		NullCheck(L_21);
+		if ((((int32_t)L_20) < ((int32_t)((int32_t)(((RuntimeArray*)L_21)->max_length)))))
+		{
+			goto IL_000d;
+		}
+	}
+
+IL_005c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:155>
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_22 = __this->___highlightObjs;
+		NullCheck(L_22);
+		if (!(((RuntimeArray*)L_22)->max_length))
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:157>
+		V_3 = 0;
+		goto IL_0080;
+	}
+
+IL_0069:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:159>
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_23 = __this->___highlightObjs;
+		int32_t L_24 = V_3;
+		NullCheck(L_23);
+		int32_t L_25 = L_24;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_26);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27;
+		L_27 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_26, NULL);
+		NullCheck(L_27);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:157>
+		int32_t L_28 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_28, 1));
+	}
+
+IL_0080:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:157>
+		int32_t L_29 = V_3;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_30 = __this->___highlightObjs;
+		NullCheck(L_30);
+		if ((((int32_t)L_29) < ((int32_t)((int32_t)(((RuntimeArray*)L_30)->max_length)))))
+		{
+			goto IL_0069;
+		}
+	}
+
+IL_008b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:162>
+		return;
+	}
+}
+// Method Definition Index: 90170
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* V_2 = NULL;
+	int32_t V_3 = 0;
+	int32_t V_4 = 0;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:167>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_0 = __this->___highlightMeshes;
+		NullCheck(L_0);
+		if (!(((RuntimeArray*)L_0)->max_length))
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:169>
+		V_0 = 0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:170>
+		V_1 = 0;
+		goto IL_0068;
+	}
+
+IL_000f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:172>
+		bool L_1 = __this->___colorChange;
+		if (!L_1)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:174>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_2 = __this->___highlightMeshes;
+		int32_t L_3 = V_1;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		NullCheck(L_5);
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_6;
+		L_6 = Renderer_get_materials_m43D33328432700524EAEAB093C67AE5689976118(L_5, NULL);
+		V_2 = L_6;
+		V_3 = 0;
+		goto IL_0045;
+	}
+
+IL_0029:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:174>
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_7 = V_2;
+		int32_t L_8 = V_3;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:176>
+		List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* L_11 = __this->___origColors;
+		int32_t L_12 = V_0;
+		int32_t L_13 = L_12;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+		NullCheck(L_11);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_14;
+		L_14 = List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F(L_11, L_13, List_1_get_Item_mE616D49F5F6197745A12A06084EEE9E6FFCF017F_RuntimeMethod_var);
+		NullCheck(L_10);
+		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_10, L_14, NULL);
+		int32_t L_15 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_15, 1));
+	}
+
+IL_0045:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:174>
+		int32_t L_16 = V_3;
+		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_17 = V_2;
+		NullCheck(L_17);
+		if ((((int32_t)L_16) < ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))))
+		{
+			goto IL_0029;
+		}
+	}
+
+IL_004b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:179>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_18 = __this->___highlightMeshes;
+		int32_t L_19 = V_1;
+		NullCheck(L_18);
+		int32_t L_20 = L_19;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_21 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
+		List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* L_22 = __this->___origVisibility;
+		int32_t L_23 = V_1;
+		NullCheck(L_22);
+		bool L_24;
+		L_24 = List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179(L_22, L_23, List_1_get_Item_m876910864A81E4E2ACB93266B50ADFBE8262C179_RuntimeMethod_var);
+		NullCheck(L_21);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_21, L_24, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:170>
+		int32_t L_25 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+	}
+
+IL_0068:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:170>
+		int32_t L_26 = V_1;
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_27 = __this->___highlightMeshes;
+		NullCheck(L_27);
+		if ((((int32_t)L_26) < ((int32_t)((int32_t)(((RuntimeArray*)L_27)->max_length)))))
+		{
+			goto IL_000f;
+		}
+	}
+
+IL_0073:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:182>
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_28 = __this->___highlightObjs;
+		NullCheck(L_28);
+		if (!(((RuntimeArray*)L_28)->max_length))
+		{
+			goto IL_00a7;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:184>
+		V_4 = 0;
+		goto IL_009b;
+	}
+
+IL_0081:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:186>
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_29 = __this->___highlightObjs;
+		int32_t L_30 = V_4;
+		NullCheck(L_29);
+		int32_t L_31 = L_30;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
+		NullCheck(L_32);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33;
+		L_33 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_32, NULL);
+		NullCheck(L_33);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_33, (bool)0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:184>
+		int32_t L_34 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_34, 1));
+	}
+
+IL_009b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:184>
+		int32_t L_35 = V_4;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_36 = __this->___highlightObjs;
+		NullCheck(L_36);
+		if ((((int32_t)L_35) < ((int32_t)((int32_t)(((RuntimeArray*)L_36)->max_length)))))
+		{
+			goto IL_0081;
+		}
+	}
+
+IL_00a7:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:189>
+		return;
+	}
+}
+// Method Definition Index: 90173
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbable__ctor_m799D21B4ECD88B7311ADDBBA3CD41B9D631E10A9 (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mEC40EAF335114E58FA3B4AA2FE9902DC811476C8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:12>
+		List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4* L_0 = (List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4*)il2cpp_codegen_object_new(List_1_tDFB6364BFB0053F8DAE1D37286825CD95396C4A4_il2cpp_TypeInfo_var);
+		List_1__ctor_mEC40EAF335114E58FA3B4AA2FE9902DC811476C8(L_0, List_1__ctor_mEC40EAF335114E58FA3B4AA2FE9902DC811476C8_RuntimeMethod_var);
+		__this->___listOfGrabbedByHands = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___listOfGrabbedByHands), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:21>
+		__this->___includeInSave = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:34>
+		__this->___colorChange = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:37>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
+		L_1 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		__this->___highlightColor = L_1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:43>
+		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_2 = (RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A*)(RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A*)SZArrayNew(RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A_il2cpp_TypeInfo_var, (uint32_t)0);
+		__this->___highlightMeshes = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___highlightMeshes), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:46>
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_3 = (TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)SZArrayNew(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var, (uint32_t)0);
+		__this->___highlightObjs = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___highlightObjs), (void*)L_3);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:48>
+		List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* L_4 = (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF*)il2cpp_codegen_object_new(List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF_il2cpp_TypeInfo_var);
+		List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D(L_4, List_1__ctor_mE1298EFE02E4CF09A9513D04C6D0FE12C4A5A96D_RuntimeMethod_var);
+		__this->___origColors = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___origColors), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:49>
+		List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* L_5 = (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A*)il2cpp_codegen_object_new(List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A_il2cpp_TypeInfo_var);
+		List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953(L_5, List_1__ctor_m87539832B82A3453971F3BCC702C7346E8D3F953_RuntimeMethod_var);
+		__this->___origVisibility = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___origVisibility), (void*)L_5);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbable/VRGrabbable.cs:54>
+		__this->___locallyOwned = (bool)1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90174
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Update_mB44416220AE9A93C3B710CFE6583AA0A05F10E34 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m0DD644EBA13BEC292540DDACEC366D39F37CD9CF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m7BBC59CF2D20F99F1385C8FBE62BEF54581E83D1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mCA30F4CDFF8C5D3AEF88C51F6F7B83A505913F23_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m075B340F24648F617AB4687AC791B5E54F3DC1CB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* V_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* V_1 = NULL;
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_2 = NULL;
+	RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* V_3 = NULL;
+	int32_t V_4 = 0;
+	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* V_6 = NULL;
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_7 = NULL;
+	Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_9 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:67>
+		VRGrabbableHand_FilterDisabledObjects_m560FBE56FED907735706B5382472CD13A1C74934(__this, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:69>
+		bool L_0 = __this->___canGrab;
+		if (!L_0)
+		{
+			goto IL_00b2;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:72>
+		int32_t L_1 = __this->___grabInput;
+		int32_t L_2 = __this->___side;
+		bool L_3;
+		L_3 = InputMan_GetDown_m883AA99894692FA75D123F54C77451D9A420463C(L_1, L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:74>
+		VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D(__this, (bool)0, NULL);
+		goto IL_0085;
+	}
+
+IL_002d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:77>
+		int32_t L_4 = __this->___grabInput;
+		int32_t L_5 = __this->___side;
+		bool L_6;
+		L_6 = InputMan_GetUp_m6A09D63FCEBE70955FBD437008AE183B2D4395EC(L_4, L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:79>
+		VRGrabbableHand_Release_mB50A79BA8E9FF746904B258C4CB802C6E54B6847(__this, NULL);
+		goto IL_0085;
+	}
+
+IL_0048:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:82>
+		bool L_7 = __this->___autograb;
+		if (!L_7)
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		float L_8 = __this->___autograbTimeout;
+		if ((((float)L_8) == ((float)(0.0f))))
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		float L_9 = __this->___autograbTimer;
+		float L_10 = __this->___autograbTimeout;
+		if ((!(((float)L_9) < ((float)L_10))))
+		{
+			goto IL_0085;
+		}
+	}
+
+IL_006b:
+	{
+		int32_t L_11 = __this->___grabInput;
+		int32_t L_12 = __this->___side;
+		bool L_13;
+		L_13 = InputMan_Get_mE966D447501FD455ABFC690797D6B0B5F63A30D0(L_11, L_12, NULL);
+		if (!L_13)
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:84>
+		VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D(__this, (bool)0, NULL);
+	}
+
+IL_0085:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:87>
+		int32_t L_14 = __this->___grabInput;
+		int32_t L_15 = __this->___side;
+		bool L_16;
+		L_16 = InputMan_Get_mE966D447501FD455ABFC690797D6B0B5F63A30D0(L_14, L_15, NULL);
+		if (!L_16)
+		{
+			goto IL_00b2;
+		}
+	}
+	{
+		int32_t L_17 = __this->___distanceGrabInput;
+		int32_t L_18 = __this->___side;
+		bool L_19;
+		L_19 = InputMan_GetDown_m883AA99894692FA75D123F54C77451D9A420463C(L_17, L_18, NULL);
+		if (!L_19)
+		{
+			goto IL_00b2;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:89>
+		VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D(__this, (bool)1, NULL);
+	}
+
+IL_00b2:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:94>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_20 = __this->___grabbedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_20, NULL);
+		if (!L_21)
+		{
+			goto IL_00e0;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:96>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_22 = __this->___selectedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_23;
+		L_23 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_22, NULL);
+		if (!L_23)
+		{
+			goto IL_0139;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:98>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_24 = __this->___selectedVRGrabbable;
+		NullCheck(L_24);
+		VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20(L_24, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:99>
+		__this->___selectedVRGrabbable = (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedVRGrabbable), (void*)(VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL);
+		goto IL_0139;
+	}
+
+IL_00e0:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:104>
+		int32_t L_25 = __this->___grabInput;
+		int32_t L_26 = __this->___side;
+		bool L_27;
+		L_27 = InputMan_Get_mE966D447501FD455ABFC690797D6B0B5F63A30D0(L_25, L_26, NULL);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_28;
+		L_28 = VRGrabbableHand_GetBestGrabbable_mCF6CE7DE07B271955A9AA0652C9767119BEFA626(__this, L_27, NULL);
+		V_2 = L_28;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:105>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_29 = __this->___selectedVRGrabbable;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_30 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_31;
+		L_31 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_29, L_30, NULL);
+		if (!L_31)
+		{
+			goto IL_0139;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:107>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_32 = __this->___selectedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_33;
+		L_33 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_32, NULL);
+		if (!L_33)
+		{
+			goto IL_011e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:108>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_34 = __this->___selectedVRGrabbable;
+		NullCheck(L_34);
+		VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20(L_34, NULL);
+	}
+
+IL_011e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:110>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_35 = V_2;
+		__this->___selectedVRGrabbable = L_35;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedVRGrabbable), (void*)L_35);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:111>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_36 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_37;
+		L_37 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_36, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_37)
+		{
+			goto IL_0139;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:113>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_38 = __this->___selectedVRGrabbable;
+		NullCheck(L_38);
+		VRGrabbable_HandleSelection_m3C89EDDB0FBDF1B5788270F632DC110CC24DD4B5(L_38, NULL);
+	}
+
+IL_0139:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:121>
+		bool L_39 = __this->___enableRemoteGrabbing;
+		if (!L_39)
+		{
+			goto IL_0175;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:123>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_40);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_40, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42;
+		L_42 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_42);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
+		L_43 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_42, NULL);
+		float L_44 = __this->___remoteGrabbingDistance;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_45 = __this->___layerMask;
+		int32_t L_46;
+		L_46 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_45, NULL);
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_47;
+		L_47 = Util_ConeCastAll_m528EFB7D31646C462F9216B3961104AB998F6AA4(L_41, L_43, (1.5f), L_44, L_46, NULL);
+		V_0 = L_47;
+		goto IL_017b;
+	}
+
+IL_0175:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:127>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_48;
+		L_48 = Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_inline(Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_RuntimeMethod_var);
+		V_0 = L_48;
+	}
+
+IL_017b:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:130>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_49 = (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*)il2cpp_codegen_object_new(List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583(L_49, List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		V_1 = L_49;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:131>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_50 = V_0;
+		V_3 = L_50;
+		V_4 = 0;
+		goto IL_01fe;
+	}
+
+IL_0188:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:131>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_51 = V_3;
+		int32_t L_52 = V_4;
+		NullCheck(L_51);
+		int32_t L_53 = L_52;
+		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 L_54 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_53));
+		V_5 = L_54;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:133>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_55;
+		L_55 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D((&V_5), NULL);
+		V_6 = L_55;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:137>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_56 = V_6;
+		NullCheck(L_56);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_57;
+		L_57 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_56, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_58;
+		L_58 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_57, NULL);
+		if (!L_58)
+		{
+			goto IL_01b9;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:138>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_59 = V_6;
+		NullCheck(L_59);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_60;
+		L_60 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_59, NULL);
+		NullCheck(L_60);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_61;
+		L_61 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_60, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_7 = L_61;
+		goto IL_01c2;
+	}
+
+IL_01b9:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:140>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_62 = V_6;
+		NullCheck(L_62);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_63;
+		L_63 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_62, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_7 = L_63;
+	}
+
+IL_01c2:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:144>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_64 = V_7;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_65;
+		L_65 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_64, NULL);
+		if (!L_65)
+		{
+			goto IL_01f8;
+		}
+	}
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_66 = V_7;
+		NullCheck(L_66);
+		bool L_67 = L_66->___remoteGrabbable;
+		if (!L_67)
+		{
+			goto IL_01f8;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:146>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_68 = V_1;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_69 = V_7;
+		NullCheck(L_68);
+		List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_inline(L_68, L_69, List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:148>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_70 = __this->___remoteTouchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_71 = V_7;
+		NullCheck(L_70);
+		bool L_72;
+		L_72 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_70, L_71, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		if (L_72)
+		{
+			goto IL_01f8;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:150>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_73 = __this->___remoteTouchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_74 = V_7;
+		NullCheck(L_73);
+		List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_inline(L_73, L_74, List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var);
+	}
+
+IL_01f8:
+	{
+		int32_t L_75 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_75, 1));
+	}
+
+IL_01fe:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:131>
+		int32_t L_76 = V_4;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_77 = V_3;
+		NullCheck(L_77);
+		if ((((int32_t)L_76) < ((int32_t)((int32_t)(((RuntimeArray*)L_77)->max_length)))))
+		{
+			goto IL_0188;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:156>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_78 = __this->___raycastedObjs;
+		NullCheck(L_78);
+		Enumerator_t3DFC94289D3F7CAF92979B1015B96390ED67524E L_79;
+		L_79 = List_1_GetEnumerator_m075B340F24648F617AB4687AC791B5E54F3DC1CB(L_78, List_1_GetEnumerator_m075B340F24648F617AB4687AC791B5E54F3DC1CB_RuntimeMethod_var);
+		V_8 = L_79;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0261:
+			{
+				Enumerator_Dispose_m0DD644EBA13BEC292540DDACEC366D39F37CD9CF((&V_8), Enumerator_Dispose_m0DD644EBA13BEC292540DDACEC366D39F37CD9CF_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0256_1;
+			}
+
+IL_0214_1:
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:156>
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_80;
+				L_80 = Enumerator_get_Current_mCA30F4CDFF8C5D3AEF88C51F6F7B83A505913F23_inline((&V_8), Enumerator_get_Current_mCA30F4CDFF8C5D3AEF88C51F6F7B83A505913F23_RuntimeMethod_var);
+				V_9 = L_80;
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:158>
+				List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_81 = V_1;
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_82 = V_9;
+				NullCheck(L_81);
+				bool L_83;
+				L_83 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_81, L_82, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+				if (L_83)
+				{
+					goto IL_0256_1;
+				}
+			}
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:160>
+				List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_84 = __this->___remoteTouchedObjs;
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_85 = V_9;
+				NullCheck(L_84);
+				bool L_86;
+				L_86 = List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353(L_84, L_85, List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353_RuntimeMethod_var);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:161>
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_87 = V_9;
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_88 = __this->___selectedVRGrabbable;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_89;
+				L_89 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_87, L_88, NULL);
+				if (!L_89)
+				{
+					goto IL_0256_1;
+				}
+			}
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:163>
+				VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_90 = __this->___selectedVRGrabbable;
+				NullCheck(L_90);
+				VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20(L_90, NULL);
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:164>
+				__this->___selectedVRGrabbable = (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedVRGrabbable), (void*)(VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL);
+			}
+
+IL_0256_1:
+			{
+				//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:156>
+				bool L_91;
+				L_91 = Enumerator_MoveNext_m7BBC59CF2D20F99F1385C8FBE62BEF54581E83D1((&V_8), Enumerator_MoveNext_m7BBC59CF2D20F99F1385C8FBE62BEF54581E83D1_RuntimeMethod_var);
+				if (L_91)
+				{
+					goto IL_0214_1;
+				}
+			}
+			{
+				goto IL_026f;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_026f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:169>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_92 = V_1;
+		__this->___raycastedObjs = L_92;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___raycastedObjs), (void*)L_92);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:172>
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_93 = __this->___rig;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_94;
+		L_94 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_93, NULL);
+		if (!L_94)
+		{
+			goto IL_02c9;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:174>
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_95 = __this->___lastVels;
+		Rig_t3D9BFACBC2D684555312EF0E0CC7E44A29F337AA* L_96 = __this->___rig;
+		NullCheck(L_96);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_97;
+		L_97 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_96, NULL);
+		int32_t L_98 = __this->___side;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99;
+		L_99 = InputMan_ControllerVelocity_mF882E7BCD9A0AB39E759C4BF0580EAD84BA9940C(L_98, 1, NULL);
+		NullCheck(L_97);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100;
+		L_100 = Transform_TransformVector_mFA6FB7570442728CB15D03C696353148711CDD98(L_97, L_99, NULL);
+		NullCheck(L_95);
+		Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC(L_95, L_100, Queue_1_Enqueue_m2C2180B5AA4668F05CAD7D02F683E1EC3FDCD4AC_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:175>
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_101 = __this->___lastVels;
+		NullCheck(L_101);
+		int32_t L_102;
+		L_102 = Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_inline(L_101, Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_RuntimeMethod_var);
+		int32_t L_103 = __this->___lastVelsLength;
+		if ((((int32_t)L_102) <= ((int32_t)L_103)))
+		{
+			goto IL_02c9;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:175>
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_104 = __this->___lastVels;
+		NullCheck(L_104);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105;
+		L_105 = Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35(L_104, Queue_1_Dequeue_m83617D2FF08E362BFF46F7ACDC6CEF0116DDDA35_RuntimeMethod_var);
+	}
+
+IL_02c9:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:178>
+		float L_106 = __this->___autograbTimer;
+		float L_107;
+		L_107 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___autograbTimer = ((float)il2cpp_codegen_add(L_106, L_107));
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:179>
+		return;
+	}
+}
+// Method Definition Index: 90175
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Grab_m9853A705673697387400E2E5620B4E27384D3A5D (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, bool ___0_includeRemote, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:187>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = __this->___grabbedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_0, NULL);
+		if (L_1)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:189>
+		bool L_2 = ___0_includeRemote;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_3;
+		L_3 = VRGrabbableHand_GetBestGrabbable_mCF6CE7DE07B271955A9AA0652C9767119BEFA626(__this, L_2, NULL);
+		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:190>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_4 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:192>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_6 = V_0;
+		VRGrabbableHand_Grab_mDA7C8064644B56DC354AAAFF2A73895DEB4D7D9F(__this, L_6, NULL);
+	}
+
+IL_0025:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:195>
+		return;
+	}
+}
+// Method Definition Index: 90176
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Release_mB50A79BA8E9FF746904B258C4CB802C6E54B6847 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B6_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B5_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B9_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B8_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:203>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = __this->___grabbedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:205>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_2 = __this->___grabbedVRGrabbable;
+		NullCheck(L_2);
+		VirtualActionInvoker1< VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* >::Invoke(7, L_2, __this);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:206>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_3 = __this->___touchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_4 = __this->___grabbedVRGrabbable;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_3, L_4, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		if (L_5)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_6 = __this->___remoteTouchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_7 = __this->___grabbedVRGrabbable;
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_6, L_7, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		if (!L_8)
+		{
+			goto IL_0056;
+		}
+	}
+
+IL_003f:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:208>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_9 = __this->___grabbedVRGrabbable;
+		__this->___selectedVRGrabbable = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedVRGrabbable), (void*)L_9);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:209>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_10 = __this->___selectedVRGrabbable;
+		NullCheck(L_10);
+		VRGrabbable_HandleSelection_m3C89EDDB0FBDF1B5788270F632DC110CC24DD4B5(L_10, NULL);
+	}
+
+IL_0056:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:213>
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_11 = __this->___ReleaseEvent;
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_12 = L_11;
+		if (L_12)
+		{
+			G_B6_0 = L_12;
+			goto IL_0062;
+		}
+		G_B5_0 = L_12;
+	}
+	{
+		goto IL_006d;
+	}
+
+IL_0062:
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_13 = __this->___grabbedVRGrabbable;
+		NullCheck(G_B6_0);
+		Action_1_Invoke_m2CBA6757ED22FD813E72CC4CE151A004FA89C3DA_inline(G_B6_0, L_13, NULL);
+	}
+
+IL_006d:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:214>
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_14 = __this->___OnRelease;
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_15 = L_14;
+		if (L_15)
+		{
+			G_B9_0 = L_15;
+			goto IL_0079;
+		}
+		G_B8_0 = L_15;
+	}
+	{
+		goto IL_0084;
+	}
+
+IL_0079:
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_16 = __this->___grabbedVRGrabbable;
+		NullCheck(G_B9_0);
+		Action_1_Invoke_m2CBA6757ED22FD813E72CC4CE151A004FA89C3DA_inline(G_B9_0, L_16, NULL);
+	}
+
+IL_0084:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:216>
+		__this->___grabbedVRGrabbable = (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___grabbedVRGrabbable), (void*)(VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:217>
+		return;
+	}
+}
+// Method Definition Index: 90177
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_Grab_mDA7C8064644B56DC354AAAFF2A73895DEB4D7D9F (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_grabbable, const RuntimeMethod* method) 
+{
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B4_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B3_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B7_0 = NULL;
+	Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* G_B6_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:227>
+		__this->___autograbTimer = (0.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:228>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_grabbable;
+		NullCheck(L_0);
+		VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20(L_0, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:229>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_1 = ___0_grabbable;
+		NullCheck(L_1);
+		VirtualActionInvoker1< VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* >::Invoke(6, L_1, __this);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:230>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_2 = ___0_grabbable;
+		__this->___grabbedVRGrabbable = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___grabbedVRGrabbable), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:231>
+		bool L_3 = __this->___vibrateOnGrab;
+		if (!L_3)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:233>
+		int32_t L_4 = __this->___side;
+		InputMan_Vibrate_m33E29A3B33C6CBFEF3F3EC64FAD9D2C2ED803470(L_4, (1.0f), (0.5f), (0.0f), NULL);
+	}
+
+IL_0041:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:236>
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_5 = __this->___GrabEvent;
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_6 = L_5;
+		if (L_6)
+		{
+			G_B4_0 = L_6;
+			goto IL_004d;
+		}
+		G_B3_0 = L_6;
+	}
+	{
+		goto IL_0053;
+	}
+
+IL_004d:
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_7 = ___0_grabbable;
+		NullCheck(G_B4_0);
+		Action_1_Invoke_m2CBA6757ED22FD813E72CC4CE151A004FA89C3DA_inline(G_B4_0, L_7, NULL);
+	}
+
+IL_0053:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:237>
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_8 = __this->___OnGrab;
+		Action_1_t04B02AD361D6C9F47BC8FD36EEEF87FECED7304A* L_9 = L_8;
+		if (L_9)
+		{
+			G_B7_0 = L_9;
+			goto IL_005e;
+		}
+		G_B6_0 = L_9;
+	}
+	{
+		return;
+	}
+
+IL_005e:
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_10 = ___0_grabbable;
+		NullCheck(G_B7_0);
+		Action_1_Invoke_m2CBA6757ED22FD813E72CC4CE151A004FA89C3DA_inline(G_B7_0, L_10, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:238>
+		return;
+	}
+}
+// Method Definition Index: 90178
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* VRGrabbableHand_GetBestGrabbable_mCF6CE7DE07B271955A9AA0652C9767119BEFA626 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, bool ___0_includeRemote, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CGetBestGrabbableU3Eb__27_0_m87BA61167DF19F8B72AB0D2561E48B28325D7A58_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CGetBestGrabbableU3Eb__27_1_mC3B1CAAF8A33E79B8E9E43F7EC973E400322FC12_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_2_mFCD27B344776BFF51F520C92995E6C98D5DF77E3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_3_mB63B1AEEE3470E442EE5FB27DA87E33470A5B24B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B2_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B2_1 = NULL;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B1_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B1_1 = NULL;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B4_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B4_1 = NULL;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B3_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B3_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:247>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_0 = __this->___touchedObjs;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_1 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_0;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_2 = L_1;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			G_B2_1 = L_0;
+			goto IL_0025;
+		}
+		G_B1_0 = L_2;
+		G_B1_1 = L_0;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* L_3 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_4 = (Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7*)il2cpp_codegen_object_new(Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var);
+		Predicate_1__ctor_m3EF98A7BB8774680EA064DD96A92388814B04E25(L_4, L_3, (intptr_t)((void*)U3CU3Ec_U3CGetBestGrabbableU3Eb__27_0_m87BA61167DF19F8B72AB0D2561E48B28325D7A58_RuntimeMethod_var), NULL);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_5 = L_4;
+		((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_0 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_0), (void*)L_5);
+		G_B2_0 = L_5;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0025:
+	{
+		NullCheck(G_B2_1);
+		int32_t L_6;
+		L_6 = List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE(G_B2_1, G_B2_0, List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:248>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_7 = __this->___remoteTouchedObjs;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_8 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_1;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_9 = L_8;
+		if (L_9)
+		{
+			G_B4_0 = L_9;
+			G_B4_1 = L_7;
+			goto IL_0050;
+		}
+		G_B3_0 = L_9;
+		G_B3_1 = L_7;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* L_10 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_11 = (Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7*)il2cpp_codegen_object_new(Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var);
+		Predicate_1__ctor_m3EF98A7BB8774680EA064DD96A92388814B04E25(L_11, L_10, (intptr_t)((void*)U3CU3Ec_U3CGetBestGrabbableU3Eb__27_1_mC3B1CAAF8A33E79B8E9E43F7EC973E400322FC12_RuntimeMethod_var), NULL);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_12 = L_11;
+		((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_1 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__27_1), (void*)L_12);
+		G_B4_0 = L_12;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_0050:
+	{
+		NullCheck(G_B4_1);
+		int32_t L_13;
+		L_13 = List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE(G_B4_1, G_B4_0, List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:251>
+		bool L_14 = __this->___canGrab;
+		if (L_14)
+		{
+			goto IL_0060;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:251>
+		return (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+	}
+
+IL_0060:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:254>
+		bool L_15 = ___0_includeRemote;
+		if (!L_15)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:256>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_16 = __this->___touchedObjs;
+		NullCheck(L_16);
+		int32_t L_17;
+		L_17 = List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_inline(L_16, List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var);
+		if ((((int32_t)L_17) > ((int32_t)0)))
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_18 = __this->___remoteTouchedObjs;
+		NullCheck(L_18);
+		int32_t L_19;
+		L_19 = List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_inline(L_18, List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var);
+		if ((((int32_t)L_19) > ((int32_t)0)))
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:256>
+		return (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+	}
+
+IL_0081:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:260>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_20 = __this->___touchedObjs;
+		NullCheck(L_20);
+		int32_t L_21;
+		L_21 = List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_inline(L_20, List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var);
+		if ((((int32_t)L_21) > ((int32_t)0)))
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:260>
+		return (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+	}
+
+IL_0091:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:264>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_22 = __this->___touchedObjs;
+		NullCheck(L_22);
+		int32_t L_23;
+		L_23 = List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_inline(L_22, List_1_get_Count_mB7F0D5EAFBFAFB2A07EB8F75C67E9E29E1D48AFF_RuntimeMethod_var);
+		if ((((int32_t)L_23) <= ((int32_t)0)))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:267>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:268>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:269>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:270>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:271>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:272>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:273>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:274>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:275>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:276>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:277>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:278>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:279>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:280>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_24 = __this->___touchedObjs;
+		Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF* L_25 = (Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF*)il2cpp_codegen_object_new(Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF_il2cpp_TypeInfo_var);
+		Comparison_1__ctor_m7B6AE1BBF598FC469BED5F5C0371C80E3A3BC515(L_25, __this, (intptr_t)((void*)VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_2_mFCD27B344776BFF51F520C92995E6C98D5DF77E3_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
+		List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD(L_24, L_25, List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:282>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_26 = __this->___touchedObjs;
+		NullCheck(L_26);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_27;
+		L_27 = List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D(L_26, 0, List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D_RuntimeMethod_var);
+		return L_27;
+	}
+
+IL_00c3:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:285>
+		bool L_28 = ___0_includeRemote;
+		if (!L_28)
+		{
+			goto IL_00ea;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:288>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:289>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:290>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:291>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:292>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:293>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:294>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:295>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:296>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:297>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:298>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:299>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:300>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:301>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_29 = __this->___remoteTouchedObjs;
+		Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF* L_30 = (Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF*)il2cpp_codegen_object_new(Comparison_1_tB73BB1578F6D7FEC9426A9E35F2D616A7973B8BF_il2cpp_TypeInfo_var);
+		Comparison_1__ctor_m7B6AE1BBF598FC469BED5F5C0371C80E3A3BC515(L_30, __this, (intptr_t)((void*)VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_3_mB63B1AEEE3470E442EE5FB27DA87E33470A5B24B_RuntimeMethod_var), NULL);
+		NullCheck(L_29);
+		List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD(L_29, L_30, List_1_Sort_mA449570C3D468554B2A0B1D2CA531B0439F0F4FD_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:303>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_31 = __this->___remoteTouchedObjs;
+		NullCheck(L_31);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_32;
+		L_32 = List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D(L_31, 0, List_1_get_Item_m43B0BF15ACB2A4F7BCA191D9A262CF01F5201D6D_RuntimeMethod_var);
+		return L_32;
+	}
+
+IL_00ea:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:306>
+		return (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+	}
+}
+// Method Definition Index: 90179
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_OnTriggerStay_m2C1B80B0D536332826E2163801E94F1197E612CB (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:312>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = __this->___layerMask;
+		int32_t L_1;
+		L_1 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_0, NULL);
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_2 = __this->___layerMask;
+		int32_t L_3;
+		L_3 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_2, NULL);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = ___0_other;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF(L_5, NULL);
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)(L_3|((int32_t)(1<<((int32_t)(L_6&((int32_t)31))))))))))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:312>
+		return;
+	}
+
+IL_002a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:316>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_7 = ___0_other;
+		NullCheck(L_7);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8;
+		L_8 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_8, NULL);
+		if (!L_9)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:317>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_10 = ___0_other;
+		NullCheck(L_10);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_11;
+		L_11 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_10, NULL);
+		NullCheck(L_11);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_12;
+		L_12 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_11, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_0 = L_12;
+		goto IL_004c;
+	}
+
+IL_0045:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:319>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_13 = ___0_other;
+		NullCheck(L_13);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_14;
+		L_14 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_13, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_0 = L_14;
+	}
+
+IL_004c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:322>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_15 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_15, NULL);
+		if (!L_16)
+		{
+			goto IL_006e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:324>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_17 = __this->___touchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_18 = V_0;
+		NullCheck(L_17);
+		bool L_19;
+		L_19 = List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F(L_17, L_18, List_1_Contains_m3E84FDC5337DC85C805919C93ADD2A3603080D0F_RuntimeMethod_var);
+		if (L_19)
+		{
+			goto IL_006e;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:326>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_20 = __this->___touchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_21 = V_0;
+		NullCheck(L_20);
+		List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_inline(L_20, L_21, List_1_Add_mDB906F97EB2A8996A4E0D0661C4CF997D5C14C33_RuntimeMethod_var);
+	}
+
+IL_006e:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:329>
+		return;
+	}
+}
+// Method Definition Index: 90180
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_OnTriggerExit_m9F5DA932703542ECBF703D7F704A55E8B0F82D31 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* V_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:334>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = __this->___layerMask;
+		int32_t L_1;
+		L_1 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_0, NULL);
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_2 = __this->___layerMask;
+		int32_t L_3;
+		L_3 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_2, NULL);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = ___0_other;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF(L_5, NULL);
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)(L_3|((int32_t)(1<<((int32_t)(L_6&((int32_t)31))))))))))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:334>
+		return;
+	}
+
+IL_002a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:338>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_7 = ___0_other;
+		NullCheck(L_7);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8;
+		L_8 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_8, NULL);
+		if (!L_9)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:339>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_10 = ___0_other;
+		NullCheck(L_10);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_11;
+		L_11 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_10, NULL);
+		NullCheck(L_11);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_12;
+		L_12 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_11, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_0 = L_12;
+		goto IL_004c;
+	}
+
+IL_0045:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:341>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_13 = ___0_other;
+		NullCheck(L_13);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_14;
+		L_14 = Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D(L_13, Component_GetComponent_TisVRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599_m9AC3D6DC54ADE02345E382E6F6CE487421F8C91D_RuntimeMethod_var);
+		V_0 = L_14;
+	}
+
+IL_004c:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:344>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_15 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_15, NULL);
+		if (!L_16)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:346>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_17 = __this->___touchedObjs;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_18 = V_0;
+		NullCheck(L_17);
+		bool L_19;
+		L_19 = List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353(L_17, L_18, List_1_Remove_m1CD3D1F896EE97A0142D9C59427E3951FD640353_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:347>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_20 = V_0;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_21 = __this->___selectedVRGrabbable;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_22;
+		L_22 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_20, L_21, NULL);
+		if (!L_22)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:349>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_23 = __this->___selectedVRGrabbable;
+		NullCheck(L_23);
+		VRGrabbable_HandleDeselection_m1321967D7F57EF00D6D5FD2100406E886191AE20(L_23, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:350>
+		__this->___selectedVRGrabbable = (VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedVRGrabbable), (void*)(VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599*)NULL);
+	}
+
+IL_0081:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:353>
+		return;
+	}
+}
+// Method Definition Index: 90181
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand_FilterDisabledObjects_m560FBE56FED907735706B5382472CD13A1C74934 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CFilterDisabledObjectsU3Eb__30_0_mCA4DEA3E7522EE0488A50B95813F8478A644D9E8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B2_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B2_1 = NULL;
+	Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* G_B1_0 = NULL;
+	List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* G_B1_1 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:357>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_0 = __this->___touchedObjs;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_1 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__30_0;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_2 = L_1;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			G_B2_1 = L_0;
+			goto IL_0025;
+		}
+		G_B1_0 = L_2;
+		G_B1_1 = L_0;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* L_3 = ((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9;
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_4 = (Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7*)il2cpp_codegen_object_new(Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7_il2cpp_TypeInfo_var);
+		Predicate_1__ctor_m3EF98A7BB8774680EA064DD96A92388814B04E25(L_4, L_3, (intptr_t)((void*)U3CU3Ec_U3CFilterDisabledObjectsU3Eb__30_0_mCA4DEA3E7522EE0488A50B95813F8478A644D9E8_RuntimeMethod_var), NULL);
+		Predicate_1_t37D90E9EFD1963C9A1B159134403CFFE924588F7* L_5 = L_4;
+		((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__30_0 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9__30_0), (void*)L_5);
+		G_B2_0 = L_5;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0025:
+	{
+		NullCheck(G_B2_1);
+		int32_t L_6;
+		L_6 = List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE(G_B2_1, G_B2_0, List_1_RemoveAll_m40F31878A7E569996062B1AA8AA6ED4296E3EBBE_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:358>
+		return;
+	}
+}
+// Method Definition Index: 90182
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRGrabbableHand__ctor_mAC7E21CC235F8699810B52127BDD3C4DFD867571 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:16>
+		__this->___canGrab = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:19>
+		__this->___grabInput = 2;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:22>
+		__this->___distanceGrabInput = 1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:24>
+		__this->___vibrateOnGrab = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:27>
+		__this->___autograb = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:34>
+		__this->___enableRemoteGrabbing = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:35>
+		__this->___remoteGrabbingDistance = (5.0f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:38>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0;
+		L_0 = LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222((-1), NULL);
+		__this->___layerMask = L_0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:47>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_1 = (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*)il2cpp_codegen_object_new(List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583(L_1, List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		__this->___touchedObjs = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___touchedObjs), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:48>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_2 = (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*)il2cpp_codegen_object_new(List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583(L_2, List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		__this->___remoteTouchedObjs = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___remoteTouchedObjs), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:50>
+		List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A* L_3 = (List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A*)il2cpp_codegen_object_new(List_1_tDBD434BCE8CC4D2DF5AD4D51BC5BF319BCF8E91A_il2cpp_TypeInfo_var);
+		List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583(L_3, List_1__ctor_mD136F66A646BB2F5874FDBAD0C3ABDD1A083D583_RuntimeMethod_var);
+		__this->___raycastedObjs = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___raycastedObjs), (void*)L_3);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:53>
+		Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* L_4 = (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E*)il2cpp_codegen_object_new(Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E_il2cpp_TypeInfo_var);
+		Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5(L_4, Queue_1__ctor_m952364AC83BF42910DE6DC62F4705F44455DA4E5_RuntimeMethod_var);
+		__this->___lastVels = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___lastVels), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:54>
+		__this->___lastVelsLength = 5;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 90183
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_2_mFCD27B344776BFF51F520C92995E6C98D5DF77E3 (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_a, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:269>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_a;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___priority;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_2 = ___1_b;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___priority;
+		if ((((int32_t)L_1) == ((int32_t)L_3)))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:270>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_4 = ___1_b;
+		NullCheck(L_4);
+		int32_t* L_5 = (int32_t*)(&L_4->___priority);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_6 = ___0_a;
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___priority;
+		int32_t L_8;
+		L_8 = Int32_CompareTo_mFA011811D4447442ED442B4A507BD4267621C586(L_5, L_7, NULL);
+		return L_8;
+	}
+
+IL_0020:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:274>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:275>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_9 = ___0_a;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		float L_14;
+		L_14 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_11, L_13, NULL);
+		V_2 = L_14;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_15 = ___1_b;
+		NullCheck(L_15);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_18);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
+		float L_20;
+		L_20 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_17, L_19, NULL);
+		int32_t L_21;
+		L_21 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&V_2), L_20, NULL);
+		V_0 = ((float)L_21);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:276>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:277>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
+		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_22);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_22, NULL);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_24 = ___0_a;
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_24, NULL);
+		NullCheck(L_25);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_25, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_27, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_26, L_28, NULL);
+		float L_30;
+		L_30 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_23, L_29, NULL);
+		V_2 = L_30;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
+		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_31);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
+		L_32 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_31, NULL);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_33 = ___1_b;
+		NullCheck(L_33);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
+		L_34 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_33, NULL);
+		NullCheck(L_34);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_34, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
+		L_36 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_36);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_35, L_37, NULL);
+		float L_39;
+		L_39 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_32, L_38, NULL);
+		int32_t L_40;
+		L_40 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&V_2), L_39, NULL);
+		V_1 = ((float)L_40);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:278>
+		float L_41 = V_0;
+		float L_42 = V_1;
+		return il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply((0.0f), L_41)), L_42)));
+	}
+}
+// Method Definition Index: 90184
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t VRGrabbableHand_U3CGetBestGrabbableU3Eb__27_3_mB63B1AEEE3470E442EE5FB27DA87E33470A5B24B (VRGrabbableHand_tCE701F10D50FE3EF481E9258A4B707E8981DACBB* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_a, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:290>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_a;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___priority;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_2 = ___1_b;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___priority;
+		if ((((int32_t)L_1) == ((int32_t)L_3)))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:291>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_4 = ___1_b;
+		NullCheck(L_4);
+		int32_t* L_5 = (int32_t*)(&L_4->___priority);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_6 = ___0_a;
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___priority;
+		int32_t L_8;
+		L_8 = Int32_CompareTo_mFA011811D4447442ED442B4A507BD4267621C586(L_5, L_7, NULL);
+		return L_8;
+	}
+
+IL_0020:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:295>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:296>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_9 = ___0_a;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		float L_14;
+		L_14 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_11, L_13, NULL);
+		V_2 = L_14;
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_15 = ___1_b;
+		NullCheck(L_15);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_18);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
+		float L_20;
+		L_20 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_17, L_19, NULL);
+		int32_t L_21;
+		L_21 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&V_2), L_20, NULL);
+		V_0 = ((float)L_21);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:297>
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:298>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
+		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_22);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_22, NULL);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_24 = ___0_a;
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_24, NULL);
+		NullCheck(L_25);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_25, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_27, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_26, L_28, NULL);
+		float L_30;
+		L_30 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_23, L_29, NULL);
+		V_2 = L_30;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
+		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_31);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
+		L_32 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_31, NULL);
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_33 = ___1_b;
+		NullCheck(L_33);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
+		L_34 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_33, NULL);
+		NullCheck(L_34);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_34, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
+		L_36 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_36);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_35, L_37, NULL);
+		float L_39;
+		L_39 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_32, L_38, NULL);
+		int32_t L_40;
+		L_40 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&V_2), L_39, NULL);
+		V_1 = ((float)L_40);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:299>
+		float L_41 = V_0;
+		float L_42 = V_1;
+		return il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply((0.0f), L_41)), L_42)));
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90185
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m9B5D44021DC17A3B8357C28E2FC7C56540D84F50 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* L_0 = (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE*)il2cpp_codegen_object_new(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var);
+		U3CU3Ec__ctor_m8E2B4A283F00EA3B2BD7A1EAB622B96ABEEE44EA(L_0, NULL);
+		((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE_il2cpp_TypeInfo_var))->___U3CU3E9), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 90186
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m8E2B4A283F00EA3B2BD7A1EAB622B96ABEEE44EA (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 90187
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CGetBestGrabbableU3Eb__27_0_m87BA61167DF19F8B72AB0D2561E48B28325D7A58 (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_item, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:247>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_item;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 90188
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CGetBestGrabbableU3Eb__27_1_mC3B1CAAF8A33E79B8E9E43F7EC973E400322FC12 (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_item, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:248>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_item;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 90189
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CFilterDisabledObjectsU3Eb__30_0_mCA4DEA3E7522EE0488A50B95813F8478A644D9E8 (U3CU3Ec_t5F301EC7477D47B4D5687E37BC4D7FD1047802EE* __this, VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* ___0_g, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRGrabbableHand.cs:357>
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_0 = ___0_g;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		VRGrabbable_tBBD585E1E381B5E35A607BEDEB888D162EA68599* L_2 = ___0_g;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A(L_2, NULL);
+		return (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_0013:
+	{
+		return (bool)1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 90190
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPhysicalButton_Start_m833764C8F9E67B0933B414C4F203626269C2C040 (VRPhysicalButton_t424442D60CF92EB75D68428D19993BA4F8DBAA20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m36EDCB3A47ABF63F0F0630998380AA7635920535_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD496DF24835D19D3087F783C1C159C888BC9666);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:25>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
+		L_0 = Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155(__this, Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:26>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		NullCheck(L_1);
+		Rigidbody_set_constraints_mE81BF0DAEB980E320538231E092CA4663885A9A3(L_1, ((int32_t)122), NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:27>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_2 = __this->___rend;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_2, NULL);
+		if (L_3)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:29>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___rb;
+		NullCheck(L_4);
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_5;
+		L_5 = Component_GetComponentInChildren_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m36EDCB3A47ABF63F0F0630998380AA7635920535(L_4, Component_GetComponentInChildren_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m36EDCB3A47ABF63F0F0630998380AA7635920535_RuntimeMethod_var);
+		__this->___rend = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rend), (void*)L_5);
+	}
+
+IL_0037:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:31>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_6 = __this->___rend;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_6, NULL);
+		if (!L_7)
+		{
+			goto IL_005a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:33>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_8 = __this->___rend;
+		NullCheck(L_8);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_9;
+		L_9 = Renderer_get_sharedMaterial_mA2E0CA0A564617FFC3E0E50947C6300082C35F81(L_8, NULL);
+		NullCheck(L_9);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10;
+		L_10 = Material_get_color_mA4B7D4B96200D9D8B4F36BF19957E9DA81071DBB(L_9, NULL);
+		__this->___normalColor = L_10;
+	}
+
+IL_005a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:36>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_11 = __this->___rb;
+		NullCheck(L_11);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_11, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_12, NULL);
+		float L_14 = L_13.___y;
+		__this->___normalHeight = L_14;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:37>
+		float L_15 = __this->___normalHeight;
+		float L_16 = __this->___depth;
+		if ((!(((float)L_15) < ((float)((float)il2cpp_codegen_multiply((2.0f), L_16))))))
+		{
+			goto IL_0093;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:39>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralDD496DF24835D19D3087F783C1C159C888BC9666, NULL);
+	}
+
+IL_0093:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:41>
+		return;
+	}
+}
+// Method Definition Index: 90191
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPhysicalButton_FixedUpdate_mD24F22CB850F301E15145A7F645172C1BDF64B0B (VRPhysicalButton_t424442D60CF92EB75D68428D19993BA4F8DBAA20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:45>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0 = __this->___rb;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_1, NULL);
+		float L_3 = L_2.___y;
+		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:46>
+		bool L_4 = __this->___clicked;
+		if (L_4)
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		float L_5 = V_0;
+		float L_6 = __this->___depth;
+		if ((!(((float)L_5) < ((float)L_6))))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:48>
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_7 = __this->___onClick;
+		NullCheck(L_7);
+		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(L_7, NULL);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:49>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_8 = __this->___sound;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_8, NULL);
+		if (!L_9)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:51>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_10 = __this->___sound;
+		NullCheck(L_10);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_10, NULL);
+	}
+
+IL_004a:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:53>
+		__this->___clicked = (bool)1;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:55>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_11 = __this->___rend;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_11, NULL);
+		if (!L_12)
+		{
+			goto IL_00af;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:57>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_13 = __this->___rend;
+		NullCheck(L_13);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_14;
+		L_14 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_13, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15 = __this->___clickedColor;
+		NullCheck(L_14);
+		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_14, L_15, NULL);
+		return;
+	}
+
+IL_0075:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:60>
+		float L_16 = V_0;
+		float L_17 = __this->___normalHeight;
+		float L_18 = __this->___depth;
+		if ((!(((float)L_16) > ((float)((float)il2cpp_codegen_subtract(L_17, L_18))))))
+		{
+			goto IL_00af;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:62>
+		__this->___clicked = (bool)0;
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:64>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_19 = __this->___rend;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_20;
+		L_20 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_19, NULL);
+		if (!L_20)
+		{
+			goto IL_00af;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:66>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_21 = __this->___rend;
+		NullCheck(L_21);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_22;
+		L_22 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_21, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = __this->___normalColor;
+		NullCheck(L_22);
+		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_22, L_23, NULL);
+	}
+
+IL_00af:
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:87>
+		return;
+	}
+}
+// Method Definition Index: 90192
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRPhysicalButton__ctor_mD048BED569477B45DEF60445E56AD1E8F3362008 (VRPhysicalButton_t424442D60CF92EB75D68428D19993BA4F8DBAA20* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:10>
+		__this->___depth = (0.00999999978f);
+		//<source_info:./Library/PackageCache/com.franzco.unityutilities@e1ac92ef5c47/Runtime/Interaction/VRInteraction/VRPhysicalButton.cs:14>
+		__this->___forceMultiplier = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 45003
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		(&V_0)->___z = (0.0f);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 43382
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Ray_get_direction_m21C2D22D3BD4A683BD4DC191AB22DD05F5EC2086_inline (Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* __this, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___m_Direction;
+		return L_0;
+	}
+}
+// Method Definition Index: 44829
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline(__this, NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 44857
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 44854
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 44836
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		V_2 = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		float L_12 = V_0;
+		float L_13 = V_0;
+		float L_14 = V_1;
+		float L_15 = V_1;
+		float L_16 = V_2;
+		float L_17 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_18;
+		L_18 = sqrt(((double)((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_12, L_13)), ((float)il2cpp_codegen_multiply(L_14, L_15)))), ((float)il2cpp_codegen_multiply(L_16, L_17))))));
+		V_3 = ((float)L_18);
+		goto IL_0040;
+	}
+
+IL_0040:
+	{
+		float L_19 = V_3;
+		return L_19;
+	}
+}
+// Method Definition Index: 44855
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 44832
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_planeNormal, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	bool V_1 = false;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	float V_3 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		float L_0;
+		L_0 = Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline((&___1_planeNormal), (&___1_planeNormal), NULL);
+		V_0 = L_0;
+		float L_1 = V_0;
+		float L_2 = ((Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields*)il2cpp_codegen_static_fields_for(Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_il2cpp_TypeInfo_var))->___Epsilon;
+		V_1 = (bool)((((float)L_1) < ((float)L_2))? 1 : 0);
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_vector;
+		V_2 = L_4;
+		goto IL_006f;
+	}
+
+IL_001b:
+	{
+		float L_5;
+		L_5 = Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline((&___0_vector), (&___1_planeNormal), NULL);
+		float L_6 = V_0;
+		V_3 = ((float)(L_5/L_6));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___0_vector;
+		float L_8 = L_7.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___1_planeNormal;
+		float L_10 = L_9.___x;
+		float L_11 = V_3;
+		(&V_4)->___x = ((float)il2cpp_codegen_subtract(L_8, ((float)il2cpp_codegen_multiply(L_10, L_11))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___0_vector;
+		float L_13 = L_12.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___1_planeNormal;
+		float L_15 = L_14.___y;
+		float L_16 = V_3;
+		(&V_4)->___y = ((float)il2cpp_codegen_subtract(L_13, ((float)il2cpp_codegen_multiply(L_15, L_16))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___0_vector;
+		float L_18 = L_17.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___1_planeNormal;
+		float L_20 = L_19.___z;
+		float L_21 = V_3;
+		(&V_4)->___z = ((float)il2cpp_codegen_subtract(L_18, ((float)il2cpp_codegen_multiply(L_20, L_21))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_4;
+		V_2 = L_22;
+		goto IL_006f;
+	}
+
+IL_006f:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_2;
+		return L_23;
+	}
+}
+// Method Definition Index: 44835
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_SignedAngle_m76C77F9D7BAF5969FA5B7500ED2D5FF9F9FA4153_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_axis, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	float V_5 = 0.0f;
+	{
+		float L_0;
+		L_0 = Vector3_Angle_m77FA4FE195D5A09AFA28304707DD4EA837874F34_inline((&___0_from), (&___1_to), NULL);
+		V_0 = L_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_from;
+		float L_2 = L_1.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_to;
+		float L_4 = L_3.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___0_from;
+		float L_6 = L_5.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___1_to;
+		float L_8 = L_7.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_2, L_4)), ((float)il2cpp_codegen_multiply(L_6, L_8))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___0_from;
+		float L_10 = L_9.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___1_to;
+		float L_12 = L_11.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___0_from;
+		float L_14 = L_13.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___1_to;
+		float L_16 = L_15.___z;
+		V_2 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_10, L_12)), ((float)il2cpp_codegen_multiply(L_14, L_16))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___0_from;
+		float L_18 = L_17.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___1_to;
+		float L_20 = L_19.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = ___0_from;
+		float L_22 = L_21.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___1_to;
+		float L_24 = L_23.___x;
+		V_3 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_18, L_20)), ((float)il2cpp_codegen_multiply(L_22, L_24))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___2_axis;
+		float L_26 = L_25.___x;
+		float L_27 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = ___2_axis;
+		float L_29 = L_28.___y;
+		float L_30 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = ___2_axis;
+		float L_32 = L_31.___z;
+		float L_33 = V_3;
+		float L_34;
+		L_34 = Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_26, L_27)), ((float)il2cpp_codegen_multiply(L_29, L_30)))), ((float)il2cpp_codegen_multiply(L_32, L_33)))), NULL);
+		V_4 = L_34;
+		float L_35 = V_0;
+		float L_36 = V_4;
+		V_5 = ((float)il2cpp_codegen_multiply(L_35, L_36));
+		goto IL_0088;
+	}
+
+IL_0088:
+	{
+		float L_37 = V_5;
+		return L_37;
+	}
+}
+// Method Definition Index: 44850
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 44833
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	{
+		float L_0;
+		L_0 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___0_from), NULL);
+		float L_1;
+		L_1 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___1_to), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_2;
+		L_2 = sqrt(((double)((float)il2cpp_codegen_multiply(L_0, L_1))));
+		V_0 = ((float)L_2);
+		float L_3 = V_0;
+		V_2 = (bool)((((float)L_3) < ((float)(1.0E-15f)))? 1 : 0);
+		bool L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		V_3 = (0.0f);
+		goto IL_0058;
+	}
+
+IL_002c:
+	{
+		float L_5;
+		L_5 = Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline((&___0_from), (&___1_to), NULL);
+		float L_6 = V_0;
+		float L_7;
+		L_7 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_5/L_6)), (-1.0f), (1.0f), NULL);
+		V_1 = L_7;
+		float L_8 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_9;
+		L_9 = acos(((double)L_8));
+		V_3 = ((float)il2cpp_codegen_multiply(((float)L_9), (57.2957802f)));
+		goto IL_0058;
+	}
+
+IL_0058:
+	{
+		float L_10 = V_3;
+		return L_10;
+	}
+}
+// Method Definition Index: 44869
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, const RuntimeMethod* method) 
+{
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0;
+		L_0 = Quaternion_Internal_Inverse_m0ABC2C5E4F26053F9F6B8260065D08E264F62566((&___0_rotation), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 44886
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_lhs, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rhs, const RuntimeMethod* method) 
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ___0_lhs;
+		float L_1 = L_0.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_2 = ___1_rhs;
+		float L_3 = L_2.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_4 = ___0_lhs;
+		float L_5 = L_4.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_6 = ___1_rhs;
+		float L_7 = L_6.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_8 = ___0_lhs;
+		float L_9 = L_8.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_10 = ___1_rhs;
+		float L_11 = L_10.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12 = ___0_lhs;
+		float L_13 = L_12.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_14 = ___1_rhs;
+		float L_15 = L_14.___y;
+		(&V_0)->___x = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11)))), ((float)il2cpp_codegen_multiply(L_13, L_15))));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_16 = ___0_lhs;
+		float L_17 = L_16.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_18 = ___1_rhs;
+		float L_19 = L_18.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20 = ___0_lhs;
+		float L_21 = L_20.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_22 = ___1_rhs;
+		float L_23 = L_22.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_24 = ___0_lhs;
+		float L_25 = L_24.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_26 = ___1_rhs;
+		float L_27 = L_26.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_28 = ___0_lhs;
+		float L_29 = L_28.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30 = ___1_rhs;
+		float L_31 = L_30.___z;
+		(&V_0)->___y = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_17, L_19)), ((float)il2cpp_codegen_multiply(L_21, L_23)))), ((float)il2cpp_codegen_multiply(L_25, L_27)))), ((float)il2cpp_codegen_multiply(L_29, L_31))));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32 = ___0_lhs;
+		float L_33 = L_32.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_34 = ___1_rhs;
+		float L_35 = L_34.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_36 = ___0_lhs;
+		float L_37 = L_36.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38 = ___1_rhs;
+		float L_39 = L_38.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_40 = ___0_lhs;
+		float L_41 = L_40.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_42 = ___1_rhs;
+		float L_43 = L_42.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_44 = ___0_lhs;
+		float L_45 = L_44.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_46 = ___1_rhs;
+		float L_47 = L_46.___x;
+		(&V_0)->___z = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_33, L_35)), ((float)il2cpp_codegen_multiply(L_37, L_39)))), ((float)il2cpp_codegen_multiply(L_41, L_43)))), ((float)il2cpp_codegen_multiply(L_45, L_47))));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_48 = ___0_lhs;
+		float L_49 = L_48.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_50 = ___1_rhs;
+		float L_51 = L_50.___w;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_52 = ___0_lhs;
+		float L_53 = L_52.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_54 = ___1_rhs;
+		float L_55 = L_54.___x;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_56 = ___0_lhs;
+		float L_57 = L_56.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_58 = ___1_rhs;
+		float L_59 = L_58.___y;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_60 = ___0_lhs;
+		float L_61 = L_60.___z;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_62 = ___1_rhs;
+		float L_63 = L_62.___z;
+		(&V_0)->___w = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_49, L_51)), ((float)il2cpp_codegen_multiply(L_53, L_55)))), ((float)il2cpp_codegen_multiply(L_57, L_59)))), ((float)il2cpp_codegen_multiply(L_61, L_63))));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_64 = V_0;
+		return L_64;
+	}
+}
+// Method Definition Index: 44899
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Quaternion_ToAngleAxis_mA2A5A81DAE94A9C1AFC34112BE8E5C5C3E9297AF_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, float* ___0_angle, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_axis, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___1_axis;
+		float* L_1 = ___0_angle;
+		Quaternion_Internal_ToAxisAngleRad_m83A51085BD64C35A83E8F676695FE0A525F3D3E9(__this, L_0, L_1, NULL);
+		float* L_2 = ___0_angle;
+		float* L_3 = ___0_angle;
+		float L_4 = *((float*)L_3);
+		*((float*)L_2) = (float)((float)il2cpp_codegen_multiply(L_4, (57.2957802f)));
+		return;
+	}
+}
+// Method Definition Index: 44858
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___0_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___0_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___0_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 44793
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		float L_0 = __this->___m00;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_vector;
+		float L_2 = L_1.___x;
+		float L_3 = __this->___m01;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_vector;
+		float L_5 = L_4.___y;
+		float L_6 = __this->___m02;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___0_vector;
+		float L_8 = L_7.___z;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_2)), ((float)il2cpp_codegen_multiply(L_3, L_5)))), ((float)il2cpp_codegen_multiply(L_6, L_8))));
+		float L_9 = __this->___m10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___0_vector;
+		float L_11 = L_10.___x;
+		float L_12 = __this->___m11;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___0_vector;
+		float L_14 = L_13.___y;
+		float L_15 = __this->___m12;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___0_vector;
+		float L_17 = L_16.___z;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_9, L_11)), ((float)il2cpp_codegen_multiply(L_12, L_14)))), ((float)il2cpp_codegen_multiply(L_15, L_17))));
+		float L_18 = __this->___m20;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___0_vector;
+		float L_20 = L_19.___x;
+		float L_21 = __this->___m21;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = ___0_vector;
+		float L_23 = L_22.___y;
+		float L_24 = __this->___m22;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___0_vector;
+		float L_26 = L_25.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_18, L_20)), ((float)il2cpp_codegen_multiply(L_21, L_23)))), ((float)il2cpp_codegen_multiply(L_24, L_26))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_0;
+		return L_27;
+	}
+}
+// Method Definition Index: 44830
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_lhs;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_rhs;
+		float L_3 = L_2.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_lhs;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_rhs;
+		float L_7 = L_6.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_lhs;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_rhs;
+		float L_11 = L_10.___z;
+		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
+	}
+}
+// Method Definition Index: 44952
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	{
+		float L_0 = ___0_value;
+		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		V_1 = (0.0f);
+		goto IL_002d;
+	}
+
+IL_0015:
+	{
+		float L_2 = ___0_value;
+		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		V_1 = (1.0f);
+		goto IL_002d;
+	}
+
+IL_0029:
+	{
+		float L_4 = ___0_value;
+		V_1 = L_4;
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_5 = V_1;
+		return L_5;
+	}
+}
+// Method Definition Index: 44848
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___forwardVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 44950
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}
+// Method Definition Index: 44846
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___zeroVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 44817
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 44885
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
+		return L_0;
+	}
+}
+// Method Definition Index: 44856
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = ((-L_1));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_a;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = ((-L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___z;
+		(&V_0)->___z = ((-L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 44866
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_toDirection, const RuntimeMethod* method) 
+{
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0;
+		L_0 = Quaternion_Internal_FromToRotation_m4A801EE9080CD4CBCB9319FF12EB7934E885932F((&___0_fromDirection), (&___1_toDirection), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 44860
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	bool V_4 = false;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_lhs;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_rhs;
+		float L_3 = L_2.___x;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_lhs;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_rhs;
+		float L_7 = L_6.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_lhs;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_rhs;
+		float L_11 = L_10.___z;
+		V_2 = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		float L_12 = V_0;
+		float L_13 = V_0;
+		float L_14 = V_1;
+		float L_15 = V_1;
+		float L_16 = V_2;
+		float L_17 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_12, L_13)), ((float)il2cpp_codegen_multiply(L_14, L_15)))), ((float)il2cpp_codegen_multiply(L_16, L_17))));
+		float L_18 = V_3;
+		V_4 = (bool)((((float)L_18) < ((float)(9.99999944E-11f)))? 1 : 0);
+		goto IL_0043;
+	}
+
+IL_0043:
+	{
+		bool L_19 = V_4;
+		return L_19;
+	}
+}
+// Method Definition Index: 889
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 44705
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 11454
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_mA189895F44030B7359A0552C5DFFC061C480A601_gshared_inline (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 895
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_m83CB9958B22AB2F8796DF18C2E3835CCCC0A667D_gshared_inline (Action_3_tA853C36E2A8C004B5D6A94A9B6A92F93257AB4E3* __this, float ___0_arg1, float ___1_arg2, bool ___2_arg3, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, float, float, bool, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg1, ___1_arg2, ___2_arg3, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 891
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_gshared_inline (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, bool ___0_obj, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, bool, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 11454
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_m81A8F2411FB1485AF6A9ECCB3783CCEA13D785D8_gshared_inline (Queue_1_t5DF4B88487DC6E380564CBBD0FC9B111F01EB71E* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 11412
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____current;
+		return L_0;
+	}
+}
+// Method Definition Index: 11351
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 11362
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4EA3769821DBDED34CA0EBACD784AC6C1A536C1A_gshared_inline (List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_item, const RuntimeMethod* method) 
+{
+	ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_6 = V_0;
+		int32_t L_7 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ___0_item;
+		List_1_AddWithResize_m7AF5556215BF2EC986B31780ACADE159F4DAC1C5(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 11362
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m5AAB6DCB6C30EB5769B4E8DB8170E50319F0A9ED_gshared_inline (List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* __this, bool ___0_item, const RuntimeMethod* method) 
+{
+	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_6 = V_0;
+		int32_t L_7 = V_1;
+		bool L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (bool)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		bool L_9 = ___0_item;
+		List_1_AddWithResize_mD783561518F916982595A58C9A148BA3AA8F9B10(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 11362
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___0_item;
+		List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 3326
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* Array_Empty_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_m149247A6A82D3F19AE3B6E01B4ACCBF7D7D9E42B_gshared_inline (const RuntimeMethod* method) 
+{
+	il2cpp_rgctx_method_init(method);
+	{
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 2));
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_0 = ((EmptyArray_1_tA3FD4DA73690B22AF51247DE4AB33A52280CF1DD_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 2)))->___Value;
+		return L_0;
+	}
+}
+// Method Definition Index: 891
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 44827
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B3_0;
+	memset((&G_B3_0), 0, sizeof(G_B3_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___0_value;
+		float L_1;
+		L_1 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline(L_0, NULL);
+		V_0 = L_1;
+		float L_2 = V_0;
+		if ((((float)L_2) > ((float)(9.99999975E-06f))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___zeroVector;
+		G_B3_0 = L_3;
+		goto IL_004d;
+	}
+
+IL_0017:
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = ___0_value;
+		float L_5 = L_4->___x;
+		float L_6 = V_0;
+		(&V_1)->___x = ((float)(L_5/L_6));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_7 = ___0_value;
+		float L_8 = L_7->___y;
+		float L_9 = V_0;
+		(&V_1)->___y = ((float)(L_8/L_9));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = ___0_value;
+		float L_11 = L_10->___z;
+		float L_12 = V_0;
+		(&V_1)->___z = ((float)(L_11/L_12));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_1;
+		G_B3_0 = L_13;
+	}
+
+IL_004d:
+	{
+		V_2 = G_B3_0;
+		goto IL_0050;
+	}
+
+IL_0050:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_2;
+		return L_14;
+	}
+}
+// Method Definition Index: 44831
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_rhs, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___0_lhs;
+		float L_1 = L_0->___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = ___1_rhs;
+		float L_3 = L_2->___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = ___0_lhs;
+		float L_5 = L_4->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_6 = ___1_rhs;
+		float L_7 = L_6->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = ___0_lhs;
+		float L_9 = L_8->___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = ___1_rhs;
+		float L_11 = L_10->___z;
+		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
+	}
+}
+// Method Definition Index: 44834
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_m77FA4FE195D5A09AFA28304707DD4EA837874F34_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_to, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___0_from;
+		float L_1;
+		L_1 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline(L_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = ___1_to;
+		float L_3;
+		L_3 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline(L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_4;
+		L_4 = sqrt(((double)((float)il2cpp_codegen_multiply(L_1, L_3))));
+		V_0 = ((float)L_4);
+		float L_5 = V_0;
+		V_2 = (bool)((((float)L_5) < ((float)(1.0E-15f)))? 1 : 0);
+		bool L_6 = V_2;
+		if (!L_6)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		V_3 = (0.0f);
+		goto IL_0054;
+	}
+
+IL_002a:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_7 = ___0_from;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = ___1_to;
+		float L_9;
+		L_9 = Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline(L_7, L_8, NULL);
+		float L_10 = V_0;
+		float L_11;
+		L_11 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_9/L_10)), (-1.0f), (1.0f), NULL);
+		V_1 = L_11;
+		float L_12 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_13;
+		L_13 = acos(((double)L_12));
+		V_3 = ((float)il2cpp_codegen_multiply(((float)L_13), (57.2957802f)));
+		goto IL_0054;
+	}
+
+IL_0054:
+	{
+		float L_14 = V_3;
+		return L_14;
+	}
+}
+// Method Definition Index: 44949
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline (float ___0_f, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		float L_0 = ___0_f;
+		if ((((float)L_0) >= ((float)(0.0f))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		G_B3_0 = (-1.0f);
+		goto IL_0015;
+	}
+
+IL_0010:
+	{
+		G_B3_0 = (1.0f);
+	}
+
+IL_0015:
+	{
+		V_0 = G_B3_0;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 44841
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___x;
+		float L_1 = __this->___x;
+		float L_2 = __this->___y;
+		float L_3 = __this->___y;
+		float L_4 = __this->___z;
+		float L_5 = __this->___z;
+		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))));
+	}
+}
+// Method Definition Index: 44674
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_r;
+		__this->___r = L_0;
+		float L_1 = ___1_g;
+		__this->___g = L_1;
+		float L_2 = ___2_b;
+		__this->___b = L_2;
+		float L_3 = ___3_a;
+		__this->___a = L_3;
+		return;
+	}
+}
+// Method Definition Index: 44839
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = __this->___x;
+		float L_1 = __this->___x;
+		float L_2 = __this->___y;
+		float L_3 = __this->___y;
+		float L_4 = __this->___z;
+		float L_5 = __this->___z;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_6;
+		L_6 = sqrt(((double)((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))))));
+		return ((float)L_6);
+	}
+}
