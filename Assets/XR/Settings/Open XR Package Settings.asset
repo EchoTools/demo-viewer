@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ef793c31862a37448e907829482ef80, type: 3}
   m_Name: OculusQuestFeature Android
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   m_enabled: 0
   nameUi: Oculus Quest Support
   version: 1.0.0
@@ -748,7 +748,7 @@ MonoBehaviour:
   - {fileID: -4278566755950359107}
   - {fileID: 5772486496455053889}
   - {fileID: 2695209084273021126}
-  customLoaderName:
+  customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 1
   m_autoColorSubmissionMode: 1
@@ -756,7 +756,7 @@ MonoBehaviour:
     m_List: 00000000
   m_depthSubmissionMode: 0
   m_spacewarpMotionVectorTextureFormat: 0
-  m_optimizeBufferDiscards: 0
+  m_optimizeBufferDiscards: 1
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
