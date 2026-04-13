@@ -55,8 +55,9 @@ unity-build platform target: proto
     New-Item -ItemType Directory -Force -Path (Split-Path "{{target}}") | Out-Null; \
     $log = "{{project}}\Logs\build.log"; \
     & $unity -quit -batchmode -nographics -projectPath "{{project}}" -buildTarget "{{platform}}" -executeMethod BuildScript.PerformBuild -logFile $log "--output={{target}}" "--platform={{platform}}"; \
+    $ec = $LASTEXITCODE; \
     if (Test-Path $log) { Get-Content $log -Tail 50 }; \
-    if ($LASTEXITCODE -ne 0) { throw "Unity build failed with exit code $LASTEXITCODE. Full log: $log" }
+    if ($ec -ne 0) { throw "Unity build failed with exit code $ec. Full log: $log" }
 
 # Build for Linux
 build-linux: (unity-build "StandaloneLinux64" (project / "Build/Linux/ReplayViewer"))
