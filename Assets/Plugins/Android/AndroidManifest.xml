@@ -6,34 +6,19 @@
     <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true"/>
 
     <application>
+        <meta-data
+            android:name="com.oculus.supportedDevices"
+            android:value="quest|quest2|cambria|eureka|quest3s"/>
+
         <!--
-            Unity 6 uses UnityPlayerGameActivity (androidApplicationEntry = 1).
-            Merge the VR intent filter and focus-aware meta-data that
-            MetaQuestFeature / xrmanifest.androidlib would otherwise inject
-            into a nameless <activity> element, causing Gradle merge failure.
+            Force-enable UnityPlayerGameActivity so Android can launch the app.
+            Unity 6 generates this activity with enabled=false in the library
+            manifest; overriding it here at plugin level fixes the launch.
         -->
         <activity
             android:name="com.unity3d.player.UnityPlayerGameActivity"
             android:enabled="true"
-            android:exported="true"
-            tools:node="merge"
-            tools:replace="android:enabled">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="com.oculus.intent.category.VR"/>
-            </intent-filter>
-            <meta-data android:name="com.oculus.vr.focusaware" android:value="true"/>
-        </activity>
-
-        <!-- Remove the old UnityPlayerActivity declared by xrmanifest.androidlib -->
-        <activity
-            android:name="com.unity3d.player.UnityPlayerActivity"
-            tools:node="remove"/>
-
-        <meta-data
-            android:name="com.oculus.supportedDevices"
-            android:value="quest|quest2|cambria|eureka|quest3s"/>
+            tools:replace="android:enabled"/>
     </application>
 
 </manifest>
