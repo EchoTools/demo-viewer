@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - SnapUI
   - ArenaCollider
+  - XRController
   layers:
   - Default
   - TransparentFX
