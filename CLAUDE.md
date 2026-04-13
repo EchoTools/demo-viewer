@@ -92,3 +92,37 @@ buf.gen.yaml              Buf codegen config (C# output)
 | URP                       | Rendering pipeline                                       |
 | unityutilities            | Shared utility package                                   |
 | VelNet                    | Multiplayer shared viewing                               |
+
+---
+
+## Contributor Rules
+
+This codebase was just cleaned up. Keep it clean.
+
+### Git Discipline — Non-Negotiable
+
+- **Commit every meaningful change.** A new function, a bug fix, a refactor — commit it. If 15-20 minutes have passed without a commit, stop and commit.
+- **Push after every commit.** `git push` after every `git commit`. No exceptions. Unpushed commits are barely better than no commits.
+- **Branch before experimenting.** `git checkout -b experiment/description` before trying anything risky. Never experiment on main without a commit to fall back to.
+- **Commit before any destructive action.** Before deleting files, resetting, or making sweeping changes — commit and push first.
+- **No remote = no coding.** If there's no remote configured, stop and set one up before writing a single line.
+
+### Code Quality
+
+- **Read before you write.** Don't modify code you haven't read and understood. Don't assume what a function does.
+- **Verify before you claim done.** Build it. Run it. See the result. "It should work" is not verification.
+- **Stay in scope.** Do what was asked. No extra features, no drive-by refactoring, no "while I'm here" improvements.
+- **Don't touch generated code.** Protobuf-generated C# files are regenerated via `just proto`. Never hand-edit them.
+- **Don't leave commented-out code.** That's what git history is for.
+- **Search before you build.** Look for existing solutions in the codebase before creating new ones.
+- **Fix things, don't work around them.** Never suppress warnings, skip checks, or silence errors.
+- **Respect Unity's .meta files.** Never rename, move, or delete assets without understanding that every asset has a .meta file that tracks references. Breaking .meta links breaks the project.
+
+### Bug Fixes: Reproduce First
+- Run the code, see it fail, understand why, then fix it.
+- If you can't reproduce a bug, say so. Don't guess at fixes.
+- After fixing, run it again to prove the fix works. Then build to make sure nothing else broke.
+
+### Session Hygiene
+- **Start:** `git status`, commit any leftover changes, `git log --oneline -5` to remember where you were.
+- **End:** Commit everything (even WIP), push, verify the push succeeded.
