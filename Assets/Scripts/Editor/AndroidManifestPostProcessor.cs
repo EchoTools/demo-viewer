@@ -3,70 +3,85 @@ using System.Xml;
 using UnityEditor.Android;
 
 /// <summary>
-/// Post-processes the Android Gradle project to fix android:enabled=false
-/// on UnityPlayerGameActivity. Unity 6 generates the GameActivity with
-/// enabled=false in the library manifest; this patches it to true in the
-/// launcher manifest so the app can be launched by Android and the Quest.
+/// Fixes two Unity 6 + MetaQuestFeature manifest generation bugs:
+///
+///   1. MetaQuestFeature injects a nameless <activity> with the VR intent
+///      filter into unityLibrary/src/main/AndroidManifest.xml. Gradle
+///      requires activity elements to have android:name as a merge key, so
+///      this causes "Missing 'name' key attribute" and a build failure.
+///
+///   2. UnityPlayerGameActivity is generated with android:enabled="false",
+///      preventing Android from launching the app.
+///
+/// Fix: remove all nameless activities, merge their intent-filters and
+/// meta-data onto UnityPlayerGameActivity, and set enabled="true".
 /// </summary>
 public class AndroidManifestPostProcessor : IPostGenerateGradleAndroidProject
 {
+    private const string AndroidNS        = "http://schemas.android.com/apk/res/android";
     private const string GameActivityClass = "com.unity3d.player.UnityPlayerGameActivity";
 
     public int callbackOrder => 99;
 
     public void OnPostGenerateGradleAndroidProject(string gradlePath)
     {
-        // gradlePath points to the unityLibrary module.
-        // The launcher manifest is one level up, in the launcher/ sibling folder.
-        string launcherManifest = Path.Combine(
-            gradlePath, "..", "launcher", "src", "main", "AndroidManifest.xml");
-
-        launcherManifest = Path.GetFullPath(launcherManifest);
-
-        if (!File.Exists(launcherManifest))
+        // gradlePath = unityLibrary module root
+        string manifestPath = Path.Combine(gradlePath, "src", "main", "AndroidManifest.xml");
+        if (!File.Exists(manifestPath))
         {
-            UnityEngine.Debug.LogWarning(
-                "[AndroidManifestPostProcessor] Launcher manifest not found at: " + launcherManifest);
+            UnityEngine.Debug.LogWarning("[AndroidManifestPostProcessor] Manifest not found: " + manifestPath);
             return;
         }
 
         var doc = new XmlDocument();
-        doc.Load(launcherManifest);
+        doc.Load(manifestPath);
 
         XmlNamespaceManager ns = new XmlNamespaceManager(doc.NameTable);
-        ns.AddNamespace("android", "http://schemas.android.com/apk/res/android");
+        ns.AddNamespace("android", AndroidNS);
 
-        // Find or create the application element
         XmlElement application = doc.SelectSingleNode("/manifest/application", ns) as XmlElement;
         if (application == null)
         {
-            XmlElement manifest = doc.SelectSingleNode("/manifest") as XmlElement;
-            if (manifest == null)
-            {
-                UnityEngine.Debug.LogWarning("[AndroidManifestPostProcessor] No <manifest> root found.");
-                return;
-            }
-            application = doc.CreateElement("application");
-            manifest.AppendChild(application);
+            UnityEngine.Debug.LogWarning("[AndroidManifestPostProcessor] No <application> element found.");
+            return;
         }
 
-        // Find or create the GameActivity element
-        XmlElement activity = doc.SelectSingleNode(
+        // Find GameActivity (may not exist yet in library manifest)
+        XmlElement gameActivity = doc.SelectSingleNode(
             $"/manifest/application/activity[@android:name='{GameActivityClass}']", ns) as XmlElement;
 
-        if (activity == null)
+        if (gameActivity == null)
         {
-            activity = doc.CreateElement("activity");
-            activity.SetAttribute("name", "http://schemas.android.com/apk/res/android", GameActivityClass);
-            application.AppendChild(activity);
+            gameActivity = doc.CreateElement("activity");
+            gameActivity.SetAttribute("name", AndroidNS, GameActivityClass);
+            gameActivity.SetAttribute("exported", AndroidNS, "true");
+            application.AppendChild(gameActivity);
         }
 
-        // Force enabled=true so Android can launch the activity
-        activity.SetAttribute("enabled", "http://schemas.android.com/apk/res/android", "true");
+        // Force enabled=true
+        gameActivity.SetAttribute("enabled", AndroidNS, "true");
 
-        doc.Save(launcherManifest);
+        // Move intent-filters and meta-data from nameless activities onto GameActivity,
+        // then remove the nameless activities (they break Gradle merge).
+        var allActivities = application.SelectNodes("activity", ns);
+        if (allActivities != null)
+        {
+            foreach (XmlElement act in allActivities)
+            {
+                if (act.GetAttribute("name", AndroidNS) != string.Empty)
+                    continue; // named — leave it alone
+
+                // Adopt all child nodes into gameActivity
+                foreach (XmlNode child in act.ChildNodes)
+                    gameActivity.AppendChild(child.CloneNode(deep: true));
+
+                application.RemoveChild(act);
+            }
+        }
+
+        doc.Save(manifestPath);
 
         UnityEngine.Debug.Log(
-            "[AndroidManifestPostProcessor] Set android:enabled=true on " + GameActivityClass);
+            "[AndroidManifestPostProcessor] Fixed nameless activities and enabled GameActivity.");
     }
 }
