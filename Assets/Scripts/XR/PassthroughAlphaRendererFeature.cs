@@ -17,37 +17,58 @@ using UnityEngine.Rendering.Universal;
 ///
 /// Setup: select URP-Pipe_Renderer in Assets/Render/, click
 /// "Add Renderer Feature" and choose PassthroughAlphaRendererFeature.
+/// The shader field is auto-assigned; rebuild after adding the feature.
 /// </summary>
 public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
 {
+    // Serialized so Unity includes the shader in the build automatically.
+    [SerializeField] private Shader clearAlphaShader;
+
     private ClearAlphaPass _pass;
+    private Material _material;
 
     public override void Create()
     {
-        _pass = new ClearAlphaPass();
+        // Fallback to Shader.Find for editor convenience, but the serialized
+        // reference is what guarantees shader inclusion in device builds.
+        if (clearAlphaShader == null)
+            clearAlphaShader = Shader.Find("Hidden/Passthrough/ClearAlpha");
+
+        if (clearAlphaShader != null)
+        {
+            _material = CoreUtils.CreateEngineMaterial(clearAlphaShader);
+        }
+        else
+        {
+            Debug.LogWarning("[PassthroughAlpha] Shader 'Hidden/Passthrough/ClearAlpha' not found. " +
+                             "Assign it to the renderer feature in the Inspector.");
+        }
+
+        _pass = new ClearAlphaPass(_material);
         _pass.renderPassEvent = RenderPassEvent.BeforeRenderingOpaques;
     }
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
 #if !UNITY_EDITOR
-        // Only run on device, not in Play Mode in Editor (passthrough not active there)
-        renderer.EnqueuePass(_pass);
+        // Only run on device; passthrough is not active in Play Mode in Editor.
+        if (_material != null)
+            renderer.EnqueuePass(_pass);
 #endif
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        CoreUtils.Destroy(_material);
     }
 
     private class ClearAlphaPass : ScriptableRenderPass
     {
-        private static readonly int ShaderID = Shader.PropertyToID("_PassthroughTemp");
-        private Material _material;
+        private readonly Material _material;
 
-        public ClearAlphaPass()
+        public ClearAlphaPass(Material material)
         {
-            var shader = Shader.Find("Hidden/Passthrough/ClearAlpha");
-            if (shader != null)
-                _material = CoreUtils.CreateEngineMaterial(shader);
-            else
-                Debug.LogWarning("[PassthroughAlpha] Shader 'Hidden/Passthrough/ClearAlpha' not found.");
+            _material = material;
         }
 
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
@@ -55,7 +76,9 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
             if (_material == null) return;
 
             CommandBuffer cmd = CommandBufferPool.Get("ClearAlpha");
-            cmd.DrawMesh(RenderingUtils.fullscreenMesh, Matrix4x4.identity, _material, 0, 0);
+            // CoreUtils.DrawFullScreen handles XR single-pass stereo correctly,
+            // unlike DrawMesh which would apply eye-specific VP transforms.
+            CoreUtils.DrawFullScreen(cmd, _material);
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
