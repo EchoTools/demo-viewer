@@ -2,21 +2,24 @@ Shader "Hidden/Passthrough/ClearAlpha"
 {
     SubShader
     {
-        // Write only the alpha channel, touch nothing else.
-        // ZTest Always + ZWrite Off so it runs over the full screen
-        // regardless of depth, before any geometry is drawn.
+        // DIAGNOSTIC MODE: write RGBA=(0,0,0,0) to the ENTIRE screen
+        // at AfterRendering so we can confirm whether alpha=0 reaches the
+        // Quest compositor. If the screen shows full passthrough (real world
+        // visible through everything), alpha is working and we only need
+        // to fix the timing / target. If still black, alpha isn't reaching
+        // the compositor at all.
         Pass
         {
             Name "ClearAlpha"
             ZTest Always
             ZWrite Off
             Cull Off
-            ColorMask A
+            // DIAGNOSTIC: write RGBA so we know alpha is being pushed
+            ColorMask RGBA
 
             HLSLPROGRAM
             #pragma vertex Vert
             #pragma fragment Frag
-            // Required for single-pass stereo (multiview) on Quest.
             #pragma multi_compile_instancing
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
@@ -28,9 +31,6 @@ Shader "Hidden/Passthrough/ClearAlpha"
 
             struct Varyings
             {
-                // Positions are already in clip space on the fullscreen mesh;
-                // do NOT apply TransformObjectToHClip — that would multiply by
-                // the per-eye VP matrix and move the quad off-screen in XR.
                 float4 positionCS : SV_POSITION;
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -40,7 +40,6 @@ Shader "Hidden/Passthrough/ClearAlpha"
                 Varyings OUT;
                 UNITY_SETUP_INSTANCE_ID(IN);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(OUT);
-                // Pass clip-space xy through directly; w=1 keeps them in NDC.
                 OUT.positionCS = float4(IN.positionOS.xy, 0.0, 1.0);
                 return OUT;
             }
@@ -48,7 +47,10 @@ Shader "Hidden/Passthrough/ClearAlpha"
             half4 Frag(Varyings IN) : SV_Target
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(IN);
-                // Alpha = 0 → fully transparent → passthrough shows through.
+                // DIAGNOSTIC: solid black, alpha=0.
+                // If this shows passthrough → alpha IS working but we need
+                //   to fix the render event / intermediate texture issue.
+                // If this shows black → alpha is not reaching the compositor.
                 return half4(0, 0, 0, 0);
             }
             ENDHLSL

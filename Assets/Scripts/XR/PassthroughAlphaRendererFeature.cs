@@ -51,7 +51,12 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
 
         _pass = new ClearAlphaPass(_material)
         {
-            renderPassEvent = RenderPassEvent.BeforeRenderingOpaques
+            // DIAGNOSTIC: run last so this writes alpha=0 to the final
+            // render target (after all URP passes including any final blit).
+            // If passthrough now shows (even through geometry) → alpha works,
+            // we just need to fix which RT we target earlier in the pipeline.
+            // If still black → alpha is not reaching the compositor at all.
+            renderPassEvent = RenderPassEvent.AfterRendering + 10
         };
     }
 
