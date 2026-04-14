@@ -144,7 +144,11 @@ public class TableTopXRController : MonoBehaviour
     /// </summary>
     private void SetCameraTransparent()
     {
-        if (xrCamera == null) return;
+        if (xrCamera == null)
+        {
+            Debug.LogWarning("[TableTopXR] xrCamera is null — cannot set transparent background.");
+            return;
+        }
 
         xrCamera.clearFlags      = CameraClearFlags.SolidColor;
         xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
@@ -152,5 +156,7 @@ public class TableTopXRController : MonoBehaviour
         var urpData = xrCamera.GetUniversalAdditionalCameraData();
         if (urpData != null)
             urpData.renderPostProcessing = false;
+
+        Debug.Log($"[TableTopXR] Camera '{xrCamera.name}' set transparent. clearFlags={xrCamera.clearFlags} bg={xrCamera.backgroundColor}");
     }
 }
