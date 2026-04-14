@@ -182,6 +182,35 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private static ulong                     s_PassthroughLayerHandle;
     private static int                       s_FrameCount;
 
+    // File-based diagnostic log — written on first xrEndFrame call so it is
+    // visible even in release builds where Debug.Log does not appear in logcat.
+    private static System.Text.StringBuilder s_DiagLog = new System.Text.StringBuilder();
+    private static string                    s_DiagPath; // set from main thread in Start()
+
+    // Called from TableTopXRController.Start() on the main thread to record
+    // the persistent-data path (Application.persistentDataPath is thread-safe
+    // but setting it up from Start() guarantees Unity is fully initialised).
+    public static void SetDiagnosticPath(string persistentDataPath)
+    {
+        s_DiagPath = System.IO.Path.Combine(persistentDataPath, "passthrough_feature_diag.txt");
+        // Write whatever we've collected so far (lifecycle events before Start)
+        FlushDiagLog();
+    }
+
+    private static void DiagLog(string msg)
+    {
+        s_DiagLog.AppendLine(msg);
+        Debug.Log(msg);
+        FlushDiagLog();
+    }
+
+    private static void FlushDiagLog()
+    {
+        if (string.IsNullOrEmpty(s_DiagPath)) return;
+        try { System.IO.File.WriteAllText(s_DiagPath, s_DiagLog.ToString()); }
+        catch { /* ignore write errors */ }
+    }
+
     // -----------------------------------------------------------------------
     // HookGetInstanceProcAddr — wrap xrGetInstanceProcAddr so we intercept
     // any subsequent function lookups (specifically xrEndFrame).
@@ -223,7 +252,14 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private static int HookedEndFrameImpl(ulong session, ref XrFrameEndInfo frameEndInfo)
     {
         if (s_PassthroughLayerHandle == 0 || s_RealEndFrame == null)
+        {
+            if (s_FrameCount == 0)
+            {
+                s_FrameCount++;
+                DiagLog($"[TableTopPassthrough] xrEndFrame hook: bailing out. ptLayerHandle={s_PassthroughLayerHandle} realEndFrame={s_RealEndFrame != null}");
+            }
             return s_RealEndFrame?.Invoke(session, ref frameEndInfo) ?? 1;
+        }
 
         uint origCount = frameEndInfo.layerCount;
 
@@ -248,13 +284,12 @@ public class TableTopPassthroughFeature : OpenXRFeature
                 IntPtr ptr = origLayerPtrs[i];
                 if (ptr != IntPtr.Zero)
                 {
-                    // Read the type and flags from the base header
                     uint  type  = (uint)Marshal.ReadInt32(ptr, 0);
-                    ulong flags = (ulong)Marshal.ReadInt64(ptr, 2 * IntPtr.Size); // offset past type+padding+next
+                    ulong flags = (ulong)Marshal.ReadInt64(ptr, 2 * IntPtr.Size);
                     sb.AppendLine($"  layer[{i}]: type={type} flags={flags}");
                 }
             }
-            Debug.Log(sb.ToString());
+            DiagLog(sb.ToString());
         }
 
         // Ensure every existing eye-projection layer has BLEND_TEXTURE_SOURCE_ALPHA_BIT
@@ -278,7 +313,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
                     ulong newFlags = currentFlags | XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT;
                     Marshal.WriteInt64(ptr, flagsOffset, (long)newFlags);
                     if (logThisFrame)
-                        Debug.Log($"[TableTopPassthrough] Set BLEND_TEXTURE_SOURCE_ALPHA_BIT on projection layer[{i}]. was={currentFlags} now={newFlags}");
+                        DiagLog($"[TableTopPassthrough] Set BLEND_TEXTURE_SOURCE_ALPHA_BIT on projection layer[{i}]. was={currentFlags} now={newFlags}");
                 }
             }
         }
@@ -326,10 +361,12 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
     protected override bool OnInstanceCreate(ulong xrInstance)
     {
-        if (!OpenXRRuntime.IsExtensionEnabled("XR_FB_passthrough"))
+        bool extEnabled = OpenXRRuntime.IsExtensionEnabled("XR_FB_passthrough");
+        DiagLog($"[TableTopPassthrough] OnInstanceCreate: XR_FB_passthrough enabled={extEnabled}");
+        if (!extEnabled)
         {
-            Debug.LogWarning("[TableTopPassthrough] XR_FB_passthrough not available on this runtime.");
-            return true; // don't fail the feature, just skip
+            DiagLog("[TableTopPassthrough] XR_FB_passthrough not available on this runtime — skipping.");
+            return true;
         }
 
         _xrInstance  = xrInstance;
@@ -341,9 +378,11 @@ public class TableTopPassthroughFeature : OpenXRFeature
         ok &= LoadFunction("xrCreatePassthroughLayerFB",  out IntPtr p2);
         ok &= LoadFunction("xrPassthroughLayerResumeFB",  out IntPtr p3);
 
+        DiagLog($"[TableTopPassthrough] OnInstanceCreate: function load ok={ok} p0={p0} p1={p1} p2={p2} p3={p3}");
+
         if (!ok)
         {
-            Debug.LogWarning("[TableTopPassthrough] Could not load XR_FB_passthrough function pointers.");
+            DiagLog("[TableTopPassthrough] Could not load XR_FB_passthrough function pointers.");
             return true;
         }
 
@@ -361,9 +400,13 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
         // AlphaBlend must be set before xrBeginSession (called in OnSessionBegin).
         SetEnvironmentBlendMode(XrEnvironmentBlendMode.AlphaBlend);
-        Debug.Log("[TableTopPassthrough] AlphaBlend set in OnSessionCreate.");
+        DiagLog("[TableTopPassthrough] OnSessionCreate: AlphaBlend set.");
 
-        if (_xrCreatePassthroughFB == null) return;
+        if (_xrCreatePassthroughFB == null)
+        {
+            DiagLog("[TableTopPassthrough] OnSessionCreate: _xrCreatePassthroughFB is null — skipping.");
+            return;
+        }
 
         // Create the passthrough system handle
         var createInfo = new XrPassthroughCreateInfoFB
@@ -373,14 +416,14 @@ public class TableTopPassthroughFeature : OpenXRFeature
             flags = 0
         };
         int r = _xrCreatePassthroughFB(xrSession, ref createInfo, out _passthroughHandle);
-        if (r != 0)
+        DiagLog($"[TableTopPassthrough] OnSessionCreate: xrCreatePassthroughFB result={r} handle={_passthroughHandle}");
+        if (r != 0) return;
+
+        if (_xrCreatePassthroughLayerFB == null || _passthroughHandle == 0)
         {
-            Debug.LogWarning($"[TableTopPassthrough] xrCreatePassthroughFB failed: {r}");
+            DiagLog($"[TableTopPassthrough] OnSessionCreate: cannot create layer — layerFn={_xrCreatePassthroughLayerFB != null} handle={_passthroughHandle}");
             return;
         }
-        Debug.Log("[TableTopPassthrough] xrCreatePassthroughFB succeeded.");
-
-        if (_xrCreatePassthroughLayerFB == null || _passthroughHandle == 0) return;
 
         // Create the passthrough composition layer
         var layerInfo = new XrPassthroughLayerCreateInfoFB
@@ -392,38 +435,34 @@ public class TableTopPassthroughFeature : OpenXRFeature
             purpose     = XR_PASSTHROUGH_LAYER_PURPOSE_RECONSTRUCTION_FB
         };
         r = _xrCreatePassthroughLayerFB(xrSession, ref layerInfo, out _passthroughLayerHandle);
-        if (r != 0)
-            Debug.LogWarning($"[TableTopPassthrough] xrCreatePassthroughLayerFB failed: {r}");
-        else
-        {
+        DiagLog($"[TableTopPassthrough] OnSessionCreate: xrCreatePassthroughLayerFB result={r} layerHandle={_passthroughLayerHandle}");
+        if (r == 0)
             s_PassthroughLayerHandle = _passthroughLayerHandle; // expose to static hook
-            Debug.Log("[TableTopPassthrough] xrCreatePassthroughLayerFB succeeded.");
-        }
     }
 
     protected override void OnSessionBegin(ulong xrSession)
     {
+        DiagLog($"[TableTopPassthrough] OnSessionBegin: startFn={_xrPassthroughStartFB != null} ptHandle={_passthroughHandle} layerHandle={_passthroughLayerHandle}");
+
         if (_xrPassthroughStartFB == null || _passthroughHandle == 0)
         {
-            Debug.Log("[TableTopPassthrough] Native passthrough handles unavailable.");
+            DiagLog("[TableTopPassthrough] OnSessionBegin: passthrough handles unavailable — skipping.");
             return;
         }
 
         // Start the passthrough camera pipeline
         int r = _xrPassthroughStartFB(_passthroughHandle);
-        if (r == 0)
-            Debug.Log("[TableTopPassthrough] xrPassthroughStartFB succeeded.");
-        else
-            Debug.LogWarning($"[TableTopPassthrough] xrPassthroughStartFB failed: {r}");
+        DiagLog($"[TableTopPassthrough] OnSessionBegin: xrPassthroughStartFB result={r}");
 
         // Resume (activate) the passthrough composition layer
         if (_xrPassthroughLayerResumeFB != null && _passthroughLayerHandle != 0)
         {
             r = _xrPassthroughLayerResumeFB(_passthroughLayerHandle);
-            if (r == 0)
-                Debug.Log("[TableTopPassthrough] xrPassthroughLayerResumeFB succeeded.");
-            else
-                Debug.LogWarning($"[TableTopPassthrough] xrPassthroughLayerResumeFB failed: {r}");
+            DiagLog($"[TableTopPassthrough] OnSessionBegin: xrPassthroughLayerResumeFB result={r}");
+        }
+        else
+        {
+            DiagLog($"[TableTopPassthrough] OnSessionBegin: resumeFn={_xrPassthroughLayerResumeFB != null} layerHandle={_passthroughLayerHandle} — skipping resume.");
         }
     }
 

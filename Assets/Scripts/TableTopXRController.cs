@@ -44,6 +44,10 @@ public class TableTopXRController : MonoBehaviour
 
     private void Start()
     {
+        // Give the OpenXR feature a path to write its diagnostic log so it is
+        // readable even in release builds where Debug.Log is suppressed.
+        TableTopPassthroughFeature.SetDiagnosticPath(Application.persistentDataPath);
+
         if (arenaAnchor != null)
         {
             arenaAnchor.localScale = Vector3.one * tableTopScale;
