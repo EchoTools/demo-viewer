@@ -112,18 +112,23 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
     protected override void OnSessionBegin(ulong xrSession)
     {
-        if (_xrPassthroughStartFB == null || _passthroughHandle == 0) return;
+        // Always request AlphaBlend — Quest 3 supports it natively via standard OpenXR.
+        // The XR_FB_passthrough native calls are best-effort; if they fail the blend
+        // mode alone is sufficient on Quest 3.
+        SetEnvironmentBlendMode(XrEnvironmentBlendMode.AlphaBlend);
+        Debug.Log("[TableTopPassthrough] AlphaBlend requested.");
+
+        if (_xrPassthroughStartFB == null || _passthroughHandle == 0)
+        {
+            Debug.Log("[TableTopPassthrough] Native passthrough handles unavailable — relying on AlphaBlend only.");
+            return;
+        }
 
         int result = _xrPassthroughStartFB(_passthroughHandle);
         if (result == 0)
-        {
-            SetEnvironmentBlendMode(XrEnvironmentBlendMode.AlphaBlend);
-            Debug.Log("[TableTopPassthrough] Passthrough started, AlphaBlend set.");
-        }
+            Debug.Log("[TableTopPassthrough] xrPassthroughStartFB succeeded.");
         else
-        {
             Debug.LogWarning($"[TableTopPassthrough] xrPassthroughStartFB failed: {result}");
-        }
     }
 
     private bool LoadFunction(string name, out IntPtr ptr)
