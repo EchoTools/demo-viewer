@@ -158,5 +158,14 @@ public class TableTopXRController : MonoBehaviour
             urpData.renderPostProcessing = false;
 
         Debug.Log($"[TableTopXR] Camera '{xrCamera.name}' set transparent. clearFlags={xrCamera.clearFlags} bg={xrCamera.backgroundColor}");
+
+        // Log ALL active cameras so we can see if any are rendering on top.
+        var allCams = Camera.allCameras;
+        System.Text.StringBuilder sb = new System.Text.StringBuilder("[TableTopXR] All active cameras:\n");
+        foreach (var cam in allCams)
+        {
+            sb.AppendLine($"  '{cam.name}' depth={cam.depth} clearFlags={cam.clearFlags} bg={cam.backgroundColor} targetDisplay={cam.targetDisplay}");
+        }
+        Debug.Log(sb.ToString());
     }
 }
