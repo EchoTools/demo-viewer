@@ -201,21 +201,19 @@ public static class SetupOVRPassthrough
 
     private static XRLoader FindLoaderAsset(string loaderTypeName)
     {
-        string[] guids = AssetDatabase.FindAssets($"t:{loaderTypeName}");
+        // Search all XRLoader assets and match by type name (class name) or asset name.
+        // The asset file may be named differently (e.g. "Oculus Loader") from the class
+        // name (e.g. "OculusLoader"), so we check both.
+        string[] guids = AssetDatabase.FindAssets("t:XRLoader");
         foreach (string guid in guids)
         {
             string path = AssetDatabase.GUIDToAssetPath(guid);
             var obj = AssetDatabase.LoadAssetAtPath<XRLoader>(path);
-            if (obj != null && obj.GetType().Name == loaderTypeName)
-                return obj;
-        }
-        // Fallback: search all XRLoader assets by type name
-        guids = AssetDatabase.FindAssets("t:XRLoader");
-        foreach (string guid in guids)
-        {
-            string path = AssetDatabase.GUIDToAssetPath(guid);
-            var obj = AssetDatabase.LoadAssetAtPath<XRLoader>(path);
-            if (obj != null && obj.GetType().Name == loaderTypeName)
+            if (obj == null) continue;
+            // Match by class name or by asset name (with/without spaces)
+            string className = obj.GetType().Name;
+            string assetName = obj.name.Replace(" ", "");
+            if (className == loaderTypeName || assetName == loaderTypeName)
                 return obj;
         }
         return null;

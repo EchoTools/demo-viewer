@@ -42,6 +42,13 @@ public class TableTopXRController : MonoBehaviour
     private InputDevice rightController;
     private InputDevice leftController;
 
+    private void Awake()
+    {
+        // Must be set before the first frame is submitted so the compositor
+        // uses straight alpha (not premultiplied) — required for passthrough.
+        OVRManager.eyeFovPremultipliedAlphaModeEnabled = false;
+    }
+
     private void Start()
     {
         // Give the OpenXR feature a path to write its diagnostic log so it is
