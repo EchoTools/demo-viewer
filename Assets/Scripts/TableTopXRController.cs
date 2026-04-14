@@ -61,6 +61,7 @@ public class TableTopXRController : MonoBehaviour
             PlaceAnchorInFrontOfCamera();
         }
 
+        EnablePassthroughRuntime();
         SetCameraTransparent();
         DisableOtherCamerasFromVR();
 
@@ -149,10 +150,35 @@ public class TableTopXRController : MonoBehaviour
     }
 
     /// <summary>
+    /// Mirrors PassthroughEnabler from the working reference project:
+    /// explicitly triggers the OVR runtime property setter (not just the
+    /// serialized field), enables the passthrough layer, and hides the boundary.
+    /// Must run AFTER OVRManager.Start() — called from our own Start().
+    /// </summary>
+    private void EnablePassthroughRuntime()
+    {
+        if (OVRManager.instance != null)
+        {
+            OVRManager.instance.isInsightPassthroughEnabled = true;
+            try { OVRManager.boundary.SetVisible(false); } catch { }
+        }
+        else
+        {
+            Debug.LogWarning("[TableTopXR] OVRManager.instance is null — passthrough may not initialize.");
+        }
+
+        var layer = Object.FindFirstObjectByType<OVRPassthroughLayer>();
+        if (layer != null)
+            layer.enabled = true;
+        else
+            Debug.LogWarning("[TableTopXR] OVRPassthroughLayer not found in scene.");
+    }
+
+    /// <summary>
     /// Sets the camera to render with a transparent background so the Quest
     /// compositor can show the passthrough feed behind the scene.
-    /// The actual AlphaBlend mode and XR_FB_passthrough setup is handled by
-    /// TableTopPassthroughFeature (an OpenXRFeature that runs at session start).
+    /// Disables HDR (prevents R11G11B10 which has no alpha channel) and
+    /// post-processing (avoids intermediate blit that strips alpha).
     /// </summary>
     private void SetCameraTransparent()
     {
@@ -164,6 +190,7 @@ public class TableTopXRController : MonoBehaviour
 
         xrCamera.clearFlags      = CameraClearFlags.SolidColor;
         xrCamera.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        xrCamera.allowHDR        = false;
 
         var urpData = xrCamera.GetUniversalAdditionalCameraData();
         if (urpData != null)
