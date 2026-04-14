@@ -51,6 +51,7 @@ public class TableTopXRController : MonoBehaviour
         }
 
         SetCameraTransparent();
+        DisableOtherCamerasFromVR();
 
         InputDevices.deviceConnected += OnDeviceConnected;
         RefreshControllers();
@@ -159,13 +160,37 @@ public class TableTopXRController : MonoBehaviour
 
         Debug.Log($"[TableTopXR] Camera '{xrCamera.name}' set transparent. clearFlags={xrCamera.clearFlags} bg={xrCamera.backgroundColor}");
 
-        // Log ALL active cameras so we can see if any are rendering on top.
+        // Log ALL active cameras so we can see the full set.
         var allCams = Camera.allCameras;
         System.Text.StringBuilder sb = new System.Text.StringBuilder("[TableTopXR] All active cameras:\n");
         foreach (var cam in allCams)
         {
-            sb.AppendLine($"  '{cam.name}' depth={cam.depth} clearFlags={cam.clearFlags} bg={cam.backgroundColor} targetDisplay={cam.targetDisplay}");
+            sb.AppendLine($"  '{cam.name}' depth={cam.depth} clearFlags={cam.clearFlags} stereoTargetEye={cam.stereoTargetEye} targetDisplay={cam.targetDisplay}");
         }
         Debug.Log(sb.ToString());
+    }
+
+    /// <summary>
+    /// In passthrough mode only the XR camera should render to the VR display.
+    /// Other cameras (flat desktop/mobile, spectator, etc.) that render to the
+    /// HMD overwrite the transparent background and alpha we need for passthrough.
+    /// Setting stereoTargetEye=None stops them from submitting VR frames while
+    /// leaving them otherwise enabled for any non-VR purpose.
+    /// </summary>
+    private void DisableOtherCamerasFromVR()
+    {
+        var allCams = Camera.allCameras;
+        int disabled = 0;
+        foreach (var cam in allCams)
+        {
+            if (cam == xrCamera) continue;
+            if (cam.stereoTargetEye != StereoTargetEyeMask.None)
+            {
+                cam.stereoTargetEye = StereoTargetEyeMask.None;
+                disabled++;
+                Debug.Log($"[TableTopXR] Removed VR rendering from camera '{cam.name}' (was {cam.stereoTargetEye})");
+            }
+        }
+        Debug.Log($"[TableTopXR] DisableOtherCamerasFromVR: cleared {disabled} cameras from VR output.");
     }
 }

@@ -51,12 +51,7 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
 
         _pass = new ClearAlphaPass(_material)
         {
-            // DIAGNOSTIC: run last so this writes alpha=0 to the final
-            // render target (after all URP passes including any final blit).
-            // If passthrough now shows (even through geometry) → alpha works,
-            // we just need to fix which RT we target earlier in the pipeline.
-            // If still black → alpha is not reaching the compositor at all.
-            renderPassEvent = RenderPassEvent.AfterRendering + 10
+            renderPassEvent = RenderPassEvent.BeforeRenderingOpaques
         };
     }
 
@@ -112,7 +107,6 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
 
                 builder.SetRenderFunc(static (PassData data, RasterGraphContext ctx) =>
                 {
-                    Debug.Log("[PassthroughAlpha] RecordRenderGraph executing ClearAlpha pass.");
                     CoreUtils.DrawFullScreen(ctx.cmd, data.material);
                 });
             }
@@ -126,7 +120,6 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
         {
             if (_mat == null) return;
 
-            Debug.Log("[PassthroughAlpha] Execute (legacy) calling ClearAlpha pass.");
             CommandBuffer cmd = CommandBufferPool.Get("ClearAlpha");
             CoreUtils.DrawFullScreen(cmd, _mat);
             context.ExecuteCommandBuffer(cmd);
