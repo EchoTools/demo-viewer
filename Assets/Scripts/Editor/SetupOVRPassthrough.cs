@@ -136,6 +136,8 @@ public static class SetupOVRPassthrough
 
     // ─────────────────────────────────────────────────────────────────────────
     // Switch XR loader: OpenXR → Oculus
+    // Uses SerializedObject directly — avoids the XRPackageMetadataStore API
+    // which is not available in all XR Management versions.
     // ─────────────────────────────────────────────────────────────────────────
 
     private static bool SwitchXRLoaderToOculus(StringBuilder log)
@@ -147,40 +149,76 @@ public static class SetupOVRPassthrough
 
             if (generalSettings == null)
             {
-                log.AppendLine("⚠ XRGeneralSettings not found for Android — XR loader not switched.");
-                log.AppendLine("  Manually: Project Settings → XR Plug-in Management → Android → uncheck OpenXR, check Oculus.");
+                log.AppendLine("⚠ XRGeneralSettings not found — switch manually:");
+                log.AppendLine("  Project Settings → XR Plug-in Management → Android → uncheck OpenXR, check Oculus.");
                 return false;
             }
 
             XRManagerSettings mgr = generalSettings.Manager;
             if (mgr == null)
             {
-                log.AppendLine("⚠ XRManagerSettings is null — XR loader not switched.");
+                log.AppendLine("⚠ XRManagerSettings is null — switch loader manually.");
                 return false;
             }
 
-            // Remove OpenXR loader if present
-            string openXRLoaderName = "OpenXRLoader";
-            XRPackageMetadataStore.RemoveLoader(mgr, openXRLoaderName, BuildTargetGroup.Android);
+            // Find the OculusLoader asset that the Oculus XR Plugin creates
+            XRLoader oculusLoader = FindLoaderAsset("OculusLoader");
+            if (oculusLoader == null)
+            {
+                log.AppendLine("⚠ OculusLoader asset not found — Oculus XR Plugin may still be resolving.");
+                log.AppendLine("  Re-run Step 2 after Unity finishes the package reload, or switch manually:");
+                log.AppendLine("  Project Settings → XR Plug-in Management → Android → uncheck OpenXR, check Oculus.");
+                return false;
+            }
 
-            // Add Oculus loader
-            string oculusLoaderName = "OculusLoader";
-            bool assigned = XRPackageMetadataStore.AssignLoader(mgr, oculusLoaderName, BuildTargetGroup.Android);
+            // Directly set the loaders list via SerializedObject
+            var so      = new SerializedObject(mgr);
+            var loaders = so.FindProperty("m_Loaders");
+            if (loaders == null)
+            {
+                log.AppendLine("⚠ Could not find m_Loaders on XRManagerSettings.");
+                return false;
+            }
 
-            if (assigned)
-                log.AppendLine("✓ XR loader switched: OpenXR → Oculus.");
-            else
-                log.AppendLine("⚠ OculusLoader not assigned (may already be set or package not yet resolved).\n  If passthrough doesn't work, switch manually in Project Settings → XR Plug-in Management → Android.");
+            // Clear existing loaders and set Oculus as the only one
+            loaders.ClearArray();
+            loaders.InsertArrayElementAtIndex(0);
+            loaders.GetArrayElementAtIndex(0).objectReferenceValue = oculusLoader;
+            so.ApplyModifiedProperties();
 
             EditorUtility.SetDirty(mgr);
+            AssetDatabase.SaveAssets();
+            log.AppendLine("✓ XR loader switched to OculusLoader.");
             return true;
         }
         catch (Exception e)
         {
             log.AppendLine($"⚠ XR loader switch failed: {e.Message}");
-            log.AppendLine("  Manually: Project Settings → XR Plug-in Management → Android → uncheck OpenXR, check Oculus.");
+            log.AppendLine("  Switch manually: Project Settings → XR Plug-in Management → Android → uncheck OpenXR, check Oculus.");
             return false;
         }
+    }
+
+    private static XRLoader FindLoaderAsset(string loaderTypeName)
+    {
+        string[] guids = AssetDatabase.FindAssets($"t:{loaderTypeName}");
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            var obj = AssetDatabase.LoadAssetAtPath<XRLoader>(path);
+            if (obj != null && obj.GetType().Name == loaderTypeName)
+                return obj;
+        }
+        // Fallback: search all XRLoader assets by type name
+        guids = AssetDatabase.FindAssets("t:XRLoader");
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            var obj = AssetDatabase.LoadAssetAtPath<XRLoader>(path);
+            if (obj != null && obj.GetType().Name == loaderTypeName)
+                return obj;
+        }
+        return null;
     }
 
     // ─────────────────────────────────────────────────────────────────────────
