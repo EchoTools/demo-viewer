@@ -153,6 +153,23 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private ulong _passthroughLayerHandle;
 
     // -----------------------------------------------------------------------
+    // -----------------------------------------------------------------------
+    // XrCompositionLayerBaseHeader — minimal view to read type and flags
+    // from any composition layer (all layer types start with these fields).
+    // -----------------------------------------------------------------------
+    [StructLayout(LayoutKind.Sequential)]
+    private struct XrCompositionLayerBaseHeader
+    {
+        public uint   type;   // XrStructureType
+        public IntPtr next;
+        public ulong  flags;  // XrCompositionLayerFlags
+    }
+
+    private const uint XR_TYPE_COMPOSITION_LAYER_PROJECTION = 35u;
+    // Flag: tells the compositor to use the source texture's alpha channel.
+    private const ulong XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT = 2uL;
+
+    // -----------------------------------------------------------------------
     // Static state for the xrEndFrame hook.
     // Static because [MonoPInvokeCallback] methods cannot close over 'this'.
     // Delegates kept in static fields to prevent garbage collection.
@@ -163,6 +180,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private static PFN_xrEndFrame            s_RealEndFrame;
     private static PFN_xrEndFrame            s_HookedEndFrameDelegate;
     private static ulong                     s_PassthroughLayerHandle;
+    private static int                       s_FrameCount;
 
     // -----------------------------------------------------------------------
     // HookGetInstanceProcAddr — wrap xrGetInstanceProcAddr so we intercept
@@ -214,6 +232,57 @@ public class TableTopPassthroughFeature : OpenXRFeature
         for (uint i = 0; i < origCount; i++)
             origLayerPtrs[i] = Marshal.ReadIntPtr(frameEndInfo.layers, (int)(i * IntPtr.Size));
 
+        // Log layers once on the first intercepted frame to verify the hook
+        // is running and show what Unity is submitting (type + flags).
+        bool logThisFrame = (s_FrameCount == 0);
+        s_FrameCount++;
+
+        if (logThisFrame)
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine($"[TableTopPassthrough] xrEndFrame hook firing. " +
+                          $"origLayers={origCount} blendMode={frameEndInfo.environmentBlendMode} " +
+                          $"ptLayerHandle={s_PassthroughLayerHandle}");
+            for (uint i = 0; i < origCount; i++)
+            {
+                IntPtr ptr = origLayerPtrs[i];
+                if (ptr != IntPtr.Zero)
+                {
+                    // Read the type and flags from the base header
+                    uint  type  = (uint)Marshal.ReadInt32(ptr, 0);
+                    ulong flags = (ulong)Marshal.ReadInt64(ptr, 2 * IntPtr.Size); // offset past type+padding+next
+                    sb.AppendLine($"  layer[{i}]: type={type} flags={flags}");
+                }
+            }
+            Debug.Log(sb.ToString());
+        }
+
+        // Ensure every existing eye-projection layer has BLEND_TEXTURE_SOURCE_ALPHA_BIT
+        // set so the compositor uses the eye texture's alpha to blend with the
+        // passthrough layer (alpha=0 → passthrough, alpha=1 → rendered content).
+        // We write directly into the native struct via Marshal — Unity owns this
+        // memory for the duration of the xrEndFrame call, so it is safe to patch.
+        for (uint i = 0; i < origCount; i++)
+        {
+            IntPtr ptr = origLayerPtrs[i];
+            if (ptr == IntPtr.Zero) continue;
+
+            uint layerType = (uint)Marshal.ReadInt32(ptr, 0);
+            if (layerType == XR_TYPE_COMPOSITION_LAYER_PROJECTION)
+            {
+                // flags field offset: sizeof(uint type)=4 + padding=4 + sizeof(IntPtr next)=8 = 16
+                int flagsOffset = 4 + 4 + IntPtr.Size; // = 16 on ARM64
+                ulong currentFlags = (ulong)Marshal.ReadInt64(ptr, flagsOffset);
+                if ((currentFlags & XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT) == 0)
+                {
+                    ulong newFlags = currentFlags | XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT;
+                    Marshal.WriteInt64(ptr, flagsOffset, (long)newFlags);
+                    if (logThisFrame)
+                        Debug.Log($"[TableTopPassthrough] Set BLEND_TEXTURE_SOURCE_ALPHA_BIT on projection layer[{i}]. was={currentFlags} now={newFlags}");
+                }
+            }
+        }
+
         // Build the passthrough composition layer struct
         var ptLayer = new XrCompositionLayerPassthroughFB
         {
@@ -225,7 +294,6 @@ public class TableTopPassthroughFeature : OpenXRFeature
         };
 
         // Pin ptLayer so the GC cannot move it during the xrEndFrame call.
-        // GCHandle.AddrOfPinnedObject returns the address of the struct data.
         GCHandle ptHandle = GCHandle.Alloc(ptLayer, GCHandleType.Pinned);
 
         // Build new layers array: passthrough at index 0 (back), then original layers
@@ -361,8 +429,8 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
     protected override void OnSessionEnd(ulong xrSession)
     {
-        // Stop injecting the layer once the session ends.
         s_PassthroughLayerHandle = 0;
+        s_FrameCount = 0;
     }
 
     // -----------------------------------------------------------------------
