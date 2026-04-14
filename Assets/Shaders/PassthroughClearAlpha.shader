@@ -47,11 +47,13 @@ Shader "Hidden/Passthrough/ClearAlpha"
             half4 Frag(Varyings IN) : SV_Target
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(IN);
-                // DIAGNOSTIC: solid black, alpha=0.
-                // If this shows passthrough → alpha IS working but we need
-                //   to fix the render event / intermediate texture issue.
-                // If this shows black → alpha is not reaching the compositor.
-                return half4(0, 0, 0, 0);
+                // DIAGNOSTIC: solid RED, alpha=1.
+                // If screen turns RED → our write reaches the XR swapchain.
+                //   Then alpha=0 showing black means passthrough feed is not
+                //   active (xrPassthroughStartFB failed) — not an RT issue.
+                // If screen stays BLACK → a blit after our pass replaces it;
+                //   our write targets the wrong (intermediate) RT.
+                return half4(1, 0, 0, 1);
             }
             ENDHLSL
         }
