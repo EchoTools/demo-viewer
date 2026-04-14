@@ -172,25 +172,39 @@ public class TableTopXRController : MonoBehaviour
 
     /// <summary>
     /// In passthrough mode only the XR camera should render to the VR display.
-    /// Other cameras (flat desktop/mobile, spectator, etc.) that render to the
-    /// HMD overwrite the transparent background and alpha we need for passthrough.
-    /// Setting stereoTargetEye=None stops them from submitting VR frames while
-    /// leaving them otherwise enabled for any non-VR purpose.
+    /// Disables all other active cameras so they cannot overwrite the alpha=0
+    /// background the XR camera needs for passthrough compositing.
+    /// Also writes a diagnostic file to persistent storage for post-mortem review.
     /// </summary>
     private void DisableOtherCamerasFromVR()
     {
         var allCams = Camera.allCameras;
-        int disabled = 0;
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine($"[TableTopXR] DisableOtherCamerasFromVR — total active cameras: {allCams.Length}");
+
         foreach (var cam in allCams)
         {
-            if (cam == xrCamera) continue;
-            if (cam.stereoTargetEye != StereoTargetEyeMask.None)
+            string action = "kept (XR camera)";
+            if (cam != xrCamera)
             {
-                cam.stereoTargetEye = StereoTargetEyeMask.None;
-                disabled++;
-                Debug.Log($"[TableTopXR] Removed VR rendering from camera '{cam.name}' (was {cam.stereoTargetEye})");
+                cam.enabled = false;
+                action = "DISABLED";
             }
+            sb.AppendLine($"  '{cam.name}' depth={cam.depth} clearFlags={cam.clearFlags} stereo={cam.stereoTargetEye} → {action}");
         }
-        Debug.Log($"[TableTopXR] DisableOtherCamerasFromVR: cleared {disabled} cameras from VR output.");
+
+        string msg = sb.ToString();
+        Debug.Log(msg);
+
+        // Write to persistent storage so we can read it after the session ends.
+        try
+        {
+            string path = System.IO.Path.Combine(Application.persistentDataPath, "passthrough_cameras.txt");
+            System.IO.File.WriteAllText(path, msg);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"[TableTopXR] Could not write diagnostic file: {e.Message}");
+        }
     }
 }
