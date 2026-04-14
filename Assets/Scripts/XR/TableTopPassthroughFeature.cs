@@ -96,6 +96,11 @@ public class TableTopPassthroughFeature : OpenXRFeature
     {
         _xrSession = xrSession;
 
+        // Must be set before xrBeginSession (called in OnSessionBegin).
+        // Setting it in OnSessionBegin is too late — the mode is already locked in.
+        SetEnvironmentBlendMode(XrEnvironmentBlendMode.AlphaBlend);
+        Debug.Log("[TableTopPassthrough] AlphaBlend set in OnSessionCreate.");
+
         if (_xrCreatePassthroughFB == null) return;
 
         var info = new XrPassthroughCreateInfoFB
@@ -112,12 +117,6 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
     protected override void OnSessionBegin(ulong xrSession)
     {
-        // Always request AlphaBlend — Quest 3 supports it natively via standard OpenXR.
-        // The XR_FB_passthrough native calls are best-effort; if they fail the blend
-        // mode alone is sufficient on Quest 3.
-        SetEnvironmentBlendMode(XrEnvironmentBlendMode.AlphaBlend);
-        Debug.Log("[TableTopPassthrough] AlphaBlend requested.");
-
         if (_xrPassthroughStartFB == null || _passthroughHandle == 0)
         {
             Debug.Log("[TableTopPassthrough] Native passthrough handles unavailable — relying on AlphaBlend only.");
