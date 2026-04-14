@@ -346,7 +346,27 @@ public class TableTopPassthroughFeature : OpenXRFeature
             modifiedInfo.layerCount = origCount + 1;
             modifiedInfo.layers     = newLayersHandle.AddrOfPinnedObject();
 
-            return s_RealEndFrame(session, ref modifiedInfo);
+            // Verify the passthrough struct layout in memory before submission.
+            // On ARM64: type(4)+pad(4)+next(8)+flags(8)+space(8)+layerHandle(8) = 40 bytes.
+            if (logThisFrame)
+            {
+                IntPtr p = ptHandle.AddrOfPinnedObject();
+                uint  rtype  = (uint) Marshal.ReadInt32(p, 0);
+                long  rnext  = (long) Marshal.ReadInt64(p, 8);
+                ulong rflags = (ulong)Marshal.ReadInt64(p, 16);
+                ulong rspace = (ulong)Marshal.ReadInt64(p, 24);
+                ulong rlayer = (ulong)Marshal.ReadInt64(p, 32);
+                DiagLog($"[TableTopPassthrough] ptLayer in memory: type={rtype} next={rnext} flags={rflags} space={rspace} layerHandle={rlayer} addr={p}");
+                DiagLog($"[TableTopPassthrough] layers ptr={modifiedInfo.layers} layerCount={modifiedInfo.layerCount}");
+                // Verify layers[0] == &ptLayer
+                IntPtr layers0 = Marshal.ReadIntPtr(modifiedInfo.layers, 0);
+                DiagLog($"[TableTopPassthrough] layers[0]={layers0} (expected {p})");
+            }
+
+            int result = s_RealEndFrame(session, ref modifiedInfo);
+            if (logThisFrame)
+                DiagLog($"[TableTopPassthrough] xrEndFrame returned: {result}");
+            return result;
         }
         finally
         {
