@@ -11,7 +11,7 @@ Shader "Hidden/Passthrough/ClearAlpha"
             ZTest Always
             ZWrite Off
             Cull Off
-            ColorMask A
+            ColorMask RGBA
 
             HLSLPROGRAM
             #pragma vertex Vert
@@ -45,8 +45,11 @@ Shader "Hidden/Passthrough/ClearAlpha"
             half4 Frag(Varyings IN) : SV_Target
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(IN);
-                // Alpha = 0 → fully transparent → Quest compositor shows passthrough.
-                return half4(0, 0, 0, 0);
+                // DIAGNOSTIC: bright blue + alpha=0.
+                // Blue background  → shader runs, alpha not respected (intermediate RT stripping alpha?).
+                // Passthrough feed → shader runs and alpha=0 is correctly used.
+                // Still black      → shader not reaching eye texture.
+                return half4(0, 0, 1, 0);
             }
             ENDHLSL
         }

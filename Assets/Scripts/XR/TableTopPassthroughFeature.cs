@@ -204,6 +204,14 @@ public class TableTopPassthroughFeature : OpenXRFeature
         FlushDiagLog();
     }
 
+    // Called from other features that share this diagnostic file.
+    public static void DiagAppend(string msg)
+    {
+        s_DiagLog.AppendLine(msg);
+        Debug.Log(msg);
+        FlushDiagLog();
+    }
+
     private static void FlushDiagLog()
     {
         if (string.IsNullOrEmpty(s_DiagPath)) return;

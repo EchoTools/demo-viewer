@@ -51,15 +51,33 @@ public class PassthroughAlphaRendererFeature : ScriptableRendererFeature
 
         _pass = new ClearAlphaPass(_material)
         {
-            renderPassEvent = RenderPassEvent.BeforeRenderingOpaques
+            // AfterRenderingPostProcessing: runs after all URP passes so nothing
+            // can overwrite our alpha write. Combined with ZTest Greater this
+            // will only touch pixels with no geometry (infinite far plane).
+            renderPassEvent = RenderPassEvent.AfterRenderingPostProcessing
         };
     }
+
+    // Diagnostic: count how many times AddRenderPasses is called so we can
+    // confirm the feature is active even in a release build.
+    private static int s_EnqueueCount;
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
 #if !UNITY_EDITOR
         if (_pass != null)
+        {
             renderer.EnqueuePass(_pass);
+            s_EnqueueCount++;
+            // Write a quick diagnostic line every ~60 frames
+            if (s_EnqueueCount <= 5 || s_EnqueueCount % 180 == 0)
+                TableTopPassthroughFeature.DiagAppend(
+                    $"[PassthroughAlpha] AddRenderPasses #{s_EnqueueCount} passNull={_pass == null} matNull={_material == null}");
+        }
+        else
+        {
+            TableTopPassthroughFeature.DiagAppend("[PassthroughAlpha] AddRenderPasses: _pass is null — not enqueued!");
+        }
 #endif
     }
 
