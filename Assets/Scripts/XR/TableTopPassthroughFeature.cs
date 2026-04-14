@@ -17,22 +17,24 @@ using UnityEditor.XR.OpenXR.Features;
 ///   2. Sets XrEnvironmentBlendMode = AlphaBlend in OnSessionCreate so the
 ///      compositor blends rendered frames over the real-world camera feed.
 ///   3. Creates a passthrough handle (xrCreatePassthroughFB) and starts it
-///      (xrPassthroughStartFB) — this starts the camera capture pipeline.
+///      (xrPassthroughStartFB) — this activates the camera capture pipeline.
 ///   4. Creates a passthrough layer (xrCreatePassthroughLayerFB) and resumes
-///      it (xrPassthroughLayerResumeFB) — this creates the composition layer.
+///      it (xrPassthroughLayerResumeFB) — creates the composition layer object.
 ///   5. Hooks xrGetInstanceProcAddr to intercept xrEndFrame and prepend an
 ///      XrCompositionLayerPassthroughFB to every frame submission.
-///      Without this explicit composition layer, Meta Quest 3 shows black
-///      even with AlphaBlend mode and alpha=0 pixels in the eye texture.
 ///
-/// The URP PassthroughAlphaRendererFeature still runs: it writes alpha=0 to
-/// background pixels so the compositor knows WHERE to composite the passthrough
-/// feed.  This feature provides the passthrough image itself.
+/// Why the composition layer is required:
+///   Meta Quest 3 needs an explicit XrCompositionLayerPassthroughFB in
+///   xrEndFrame to source the passthrough camera feed into the compositor.
+///   Without it, "PT is: ON numLayers: 0" appears in logcat and the
+///   background stays black even with AlphaBlend mode and alpha=0 pixels.
 ///
-/// Enabled automatically by the "Tools → Setup XR Table-Top" editor tool.
-/// Can also be enabled manually in:
-///   Project Settings → XR Plug-in Management → OpenXR → Android → Features
-///   → Table-Top Passthrough
+/// The URP PassthroughAlphaRendererFeature writes alpha=0 to background
+/// pixels so the compositor knows WHERE to show the passthrough image.
+/// This feature provides the image itself via the composition layer.
+///
+/// No 'unsafe' code is used: struct pinning uses GCHandle.Alloc (Pinned)
+/// and ref parameters replace pointer parameters in delegate signatures.
 /// </summary>
 #if UNITY_EDITOR
 [OpenXRFeature(
@@ -58,7 +60,10 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private const uint XR_PASSTHROUGH_LAYER_PURPOSE_RECONSTRUCTION_FB = 0u;
 
     // -----------------------------------------------------------------------
-    // Native struct layouts (must match the ABI exactly)
+    // Native struct layouts (must match OpenXR ABI on ARM64)
+    //
+    // IntPtr fields automatically get natural 8-byte alignment on ARM64,
+    // matching the implicit padding the C compiler inserts after uint type.
     // -----------------------------------------------------------------------
 
     [StructLayout(LayoutKind.Sequential)]
@@ -89,21 +94,24 @@ public class TableTopPassthroughFeature : OpenXRFeature
         public ulong  layerHandle; // XrPassthroughLayerFB handle
     }
 
-    // XrFrameEndInfo — pointer-sized fields, so we use IntPtr for layers*.
-    // In 64-bit ARM (Quest 3) IntPtr is 8 bytes, matching the ABI.
+    // XrFrameEndInfo — layers field stored as IntPtr (pointer value).
+    // Elements are read via Marshal.ReadIntPtr to avoid 'unsafe' code.
     [StructLayout(LayoutKind.Sequential)]
-    private unsafe struct XrFrameEndInfo
+    private struct XrFrameEndInfo
     {
-        public uint    type;                  // 14 = XR_TYPE_FRAME_END_INFO
-        public IntPtr  next;
-        public long    displayTime;           // XrTime (int64)
-        public uint    environmentBlendMode;
-        public uint    layerCount;
-        public IntPtr* layers;               // const XrCompositionLayerBaseHeader* const*
+        public uint   type;                  // 14 = XR_TYPE_FRAME_END_INFO
+        public IntPtr next;
+        public long   displayTime;           // XrTime (int64)
+        public uint   environmentBlendMode;
+        public uint   layerCount;
+        public IntPtr layers;               // const XrCompositionLayerBaseHeader* const*
     }
 
     // -----------------------------------------------------------------------
     // Delegate types
+    // Using 'ref' parameters instead of pointers avoids 'unsafe' code.
+    // The C# runtime marshals 'ref T' as a pointer to T when invoking
+    // unmanaged delegates, which is what the OpenXR ABI expects.
     // -----------------------------------------------------------------------
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -127,15 +135,15 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private delegate int PFN_xrPassthroughLayerResumeFB(ulong layer);
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    private unsafe delegate int PFN_xrEndFrame(ulong session, XrFrameEndInfo* frameEndInfo);
+    private delegate int PFN_xrEndFrame(ulong session, ref XrFrameEndInfo frameEndInfo);
 
     // -----------------------------------------------------------------------
     // Instance-level function pointers (loaded in OnInstanceCreate)
     // -----------------------------------------------------------------------
 
-    private PFN_xrGetInstanceProcAddr   _getProcAddr;
-    private PFN_xrCreatePassthroughFB   _xrCreatePassthroughFB;
-    private PFN_xrPassthroughStartFB    _xrPassthroughStartFB;
+    private PFN_xrGetInstanceProcAddr      _getProcAddr;
+    private PFN_xrCreatePassthroughFB      _xrCreatePassthroughFB;
+    private PFN_xrPassthroughStartFB       _xrPassthroughStartFB;
     private PFN_xrCreatePassthroughLayerFB _xrCreatePassthroughLayerFB;
     private PFN_xrPassthroughLayerResumeFB _xrPassthroughLayerResumeFB;
 
@@ -145,9 +153,9 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private ulong _passthroughLayerHandle;
 
     // -----------------------------------------------------------------------
-    // Static state for xrEndFrame hook
-    // Static because [MonoPInvokeCallback] functions cannot close over 'this'.
-    // Delegates are stored statically to prevent GC collection.
+    // Static state for the xrEndFrame hook.
+    // Static because [MonoPInvokeCallback] methods cannot close over 'this'.
+    // Delegates kept in static fields to prevent garbage collection.
     // -----------------------------------------------------------------------
 
     private static PFN_xrGetInstanceProcAddr s_RealGetProcAddr;
@@ -157,13 +165,13 @@ public class TableTopPassthroughFeature : OpenXRFeature
     private static ulong                     s_PassthroughLayerHandle;
 
     // -----------------------------------------------------------------------
-    // HookGetInstanceProcAddr — replace xrGetInstanceProcAddr so we can
-    // intercept any OpenXR function (specifically xrEndFrame).
+    // HookGetInstanceProcAddr — wrap xrGetInstanceProcAddr so we intercept
+    // any subsequent function lookups (specifically xrEndFrame).
     // -----------------------------------------------------------------------
 
     protected override IntPtr HookGetInstanceProcAddr(IntPtr func)
     {
-        s_RealGetProcAddr        = Marshal.GetDelegateForFunctionPointer<PFN_xrGetInstanceProcAddr>(func);
+        s_RealGetProcAddr           = Marshal.GetDelegateForFunctionPointer<PFN_xrGetInstanceProcAddr>(func);
         s_HookedGetProcAddrDelegate = HookedGetInstanceProcAddrImpl; // keep delegate alive
         return Marshal.GetFunctionPointerForDelegate(s_HookedGetProcAddrDelegate);
     }
@@ -176,7 +184,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
         // Replace xrEndFrame with our wrapper
         if (name == "xrEndFrame" && function != IntPtr.Zero)
         {
-            s_RealEndFrame          = Marshal.GetDelegateForFunctionPointer<PFN_xrEndFrame>(function);
+            s_RealEndFrame           = Marshal.GetDelegateForFunctionPointer<PFN_xrEndFrame>(function);
             s_HookedEndFrameDelegate = HookedEndFrameImpl;
             function = Marshal.GetFunctionPointerForDelegate(s_HookedEndFrameDelegate);
         }
@@ -188,19 +196,25 @@ public class TableTopPassthroughFeature : OpenXRFeature
     // Hooked xrEndFrame — prepends XrCompositionLayerPassthroughFB so the
     // Quest compositor shows the passthrough feed behind the rendered scene.
     //
-    // Memory safety: ptLayer and newLayers are stack-allocated locals whose
-    // lifetime covers the entire xrEndFrame call.  No heap allocation needed.
+    // Memory safety: GCHandle.Alloc(Pinned) keeps the passthrough layer struct
+    // and the new layers array alive and at a fixed address for the duration
+    // of the real xrEndFrame call, then frees them in a finally block.
     // -----------------------------------------------------------------------
 
     [AOT.MonoPInvokeCallback(typeof(PFN_xrEndFrame))]
-    private static unsafe int HookedEndFrameImpl(ulong session, XrFrameEndInfo* frameEndInfo)
+    private static int HookedEndFrameImpl(ulong session, ref XrFrameEndInfo frameEndInfo)
     {
-        if (s_PassthroughLayerHandle == 0 || frameEndInfo == null || s_RealEndFrame == null)
-        {
-            if (s_RealEndFrame != null) return s_RealEndFrame(session, frameEndInfo);
-            return 1; // XR_ERROR_HANDLE_INVALID fallback
-        }
+        if (s_PassthroughLayerHandle == 0 || s_RealEndFrame == null)
+            return s_RealEndFrame?.Invoke(session, ref frameEndInfo) ?? 1;
 
+        uint origCount = frameEndInfo.layerCount;
+
+        // Read existing layer pointers from native memory
+        IntPtr[] origLayerPtrs = new IntPtr[origCount];
+        for (uint i = 0; i < origCount; i++)
+            origLayerPtrs[i] = Marshal.ReadIntPtr(frameEndInfo.layers, (int)(i * IntPtr.Size));
+
+        // Build the passthrough composition layer struct
         var ptLayer = new XrCompositionLayerPassthroughFB
         {
             type        = XR_TYPE_COMPOSITION_LAYER_PASSTHROUGH_FB,
@@ -210,21 +224,32 @@ public class TableTopPassthroughFeature : OpenXRFeature
             layerHandle = s_PassthroughLayerHandle,
         };
 
-        uint origCount = frameEndInfo->layerCount;
+        // Pin ptLayer so the GC cannot move it during the xrEndFrame call.
+        // GCHandle.AddrOfPinnedObject returns the address of the struct data.
+        GCHandle ptHandle = GCHandle.Alloc(ptLayer, GCHandleType.Pinned);
 
-        // Build a layers array with the passthrough layer at position 0 (back of stack)
-        // followed by the original layers (eye projection layer etc.).
-        IntPtr* newLayers = stackalloc IntPtr[(int)(origCount + 1)];
-        newLayers[0] = (IntPtr)(&ptLayer); // passthrough at the back
+        // Build new layers array: passthrough at index 0 (back), then original layers
+        IntPtr[] newLayerPtrs = new IntPtr[origCount + 1];
+        newLayerPtrs[0] = ptHandle.AddrOfPinnedObject();
         for (uint i = 0; i < origCount; i++)
-            newLayers[i + 1] = frameEndInfo->layers[i];
+            newLayerPtrs[i + 1] = origLayerPtrs[i];
 
-        // Copy the original info, patch in the new layers array
-        var modifiedInfo = *frameEndInfo;
-        modifiedInfo.layerCount = origCount + 1;
-        modifiedInfo.layers     = newLayers;
+        // Pin the new layers pointer array too
+        GCHandle newLayersHandle = GCHandle.Alloc(newLayerPtrs, GCHandleType.Pinned);
 
-        return s_RealEndFrame(session, &modifiedInfo);
+        try
+        {
+            var modifiedInfo = frameEndInfo;
+            modifiedInfo.layerCount = origCount + 1;
+            modifiedInfo.layers     = newLayersHandle.AddrOfPinnedObject();
+
+            return s_RealEndFrame(session, ref modifiedInfo);
+        }
+        finally
+        {
+            newLayersHandle.Free();
+            ptHandle.Free();
+        }
     }
 
     // -----------------------------------------------------------------------
@@ -239,7 +264,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
             return true; // don't fail the feature, just skip
         }
 
-        _xrInstance = xrInstance;
+        _xrInstance  = xrInstance;
         _getProcAddr = Marshal.GetDelegateForFunctionPointer<PFN_xrGetInstanceProcAddr>(xrGetInstanceProcAddr);
 
         bool ok = true;
@@ -312,7 +337,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
     {
         if (_xrPassthroughStartFB == null || _passthroughHandle == 0)
         {
-            Debug.Log("[TableTopPassthrough] Native passthrough handles unavailable — relying on AlphaBlend only.");
+            Debug.Log("[TableTopPassthrough] Native passthrough handles unavailable.");
             return;
         }
 
@@ -336,7 +361,7 @@ public class TableTopPassthroughFeature : OpenXRFeature
 
     protected override void OnSessionEnd(ulong xrSession)
     {
-        // Clear the static handle so the hook stops injecting after session ends.
+        // Stop injecting the layer once the session ends.
         s_PassthroughLayerHandle = 0;
     }
 
