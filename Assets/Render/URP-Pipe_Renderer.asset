@@ -69,5 +69,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81137eac1d21f0640bd18b89fe26ef70, type: 3}
   m_Name: PassthroughAlphaRendererFeature
   m_EditorClassIdentifier: Assembly-CSharp::PassthroughAlphaRendererFeature
-  m_Active: 1
+  m_Active: 0
   clearAlphaShader: {fileID: 4800000, guid: 063d1932430d03340a196be64e7561e5, type: 3}

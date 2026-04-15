@@ -24,6 +24,9 @@
     }
   ],
   "dependencies": {
+    "com.meta.xr.sdk.all": "85.0.0",
+    "com.unity.xr.oculus": "4.5.4",
+
     "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
     "com.franzco.unityutilities": "https://github.com/AntonFranzluebbers/unityutilities.git",
     "com.unity.2d.sprite": "1.0.0",

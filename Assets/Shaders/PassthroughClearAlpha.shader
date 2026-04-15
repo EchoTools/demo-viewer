@@ -11,7 +11,7 @@ Shader "Hidden/Passthrough/ClearAlpha"
             ZTest Always
             ZWrite Off
             Cull Off
-            ColorMask RGBA
+            ColorMask A
 
             HLSLPROGRAM
             #pragma vertex Vert
@@ -49,7 +49,7 @@ Shader "Hidden/Passthrough/ClearAlpha"
                 // Blue background  → shader runs, alpha not respected (intermediate RT stripping alpha?).
                 // Passthrough feed → shader runs and alpha=0 is correctly used.
                 // Still black      → shader not reaching eye texture.
-                return half4(0, 0, 1, 0);
+                return half4(0, 0, 0, 0);
             }
             ENDHLSL
         }
