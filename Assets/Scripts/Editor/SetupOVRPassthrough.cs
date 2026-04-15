@@ -302,9 +302,10 @@ public static class SetupOVRPassthrough
             log.AppendLine($"✓ OVRPassthroughLayer added to '{host.name}'.");
         }
 
-        // projectionSurfaceType = Reconstruction (0), placement = Underlay (0)
+        // projectionSurfaceType = Reconstruction (0)
+        // overlayType: OVROverlay.OverlayType enum is None=0, Underlay=1, Overlay=2
         SetSerializedField(existing, "projectionSurfaceType", 0);
-        SetSerializedField(existing, "overlayType", 0); // 0 = Underlay
+        SetSerializedField(existing, "overlayType", 1); // 1 = Underlay
 
         log.AppendLine("  → Underlay, Reconstruction surface");
         EditorUtility.SetDirty(host);
