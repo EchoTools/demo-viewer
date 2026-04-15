@@ -51,9 +51,13 @@ public class TableTopXRController : MonoBehaviour
 
     private void Start()
     {
-        // Give the OpenXR feature a path to write its diagnostic log so it is
-        // readable even in release builds where Debug.Log is suppressed.
+        // Set up file-based diagnostic log (survives release builds; read via adb).
+        string diagPath = System.IO.Path.Combine(
+            Application.persistentDataPath, "tabletop_xr_diag.txt");
         TableTopPassthroughFeature.SetDiagnosticPath(Application.persistentDataPath);
+        _diagPath = diagPath;
+        Diag("=== TableTopXRController.Start ===");
+        Diag($"persistentDataPath={Application.persistentDataPath}");
 
         if (arenaAnchor != null)
         {
@@ -67,6 +71,21 @@ public class TableTopXRController : MonoBehaviour
 
         InputDevices.deviceConnected += OnDeviceConnected;
         RefreshControllers();
+    }
+
+    // ── Lightweight file diagnostic (reads with: adb shell cat <path>) ────────
+    private static string _diagPath;
+    private static readonly System.Text.StringBuilder _diagBuf = new System.Text.StringBuilder();
+
+    private static void Diag(string msg)
+    {
+        _diagBuf.AppendLine($"[{System.DateTime.Now:HH:mm:ss.fff}] {msg}");
+        Debug.Log("[TableTopXR] " + msg);
+        if (!string.IsNullOrEmpty(_diagPath))
+        {
+            try { System.IO.File.WriteAllText(_diagPath, _diagBuf.ToString()); }
+            catch { }
+        }
     }
 
     private void OnDestroy()
@@ -157,21 +176,36 @@ public class TableTopXRController : MonoBehaviour
     /// </summary>
     private void EnablePassthroughRuntime()
     {
+        Diag("--- EnablePassthroughRuntime ---");
+        Diag($"OVRManager.instance={(OVRManager.instance != null ? "OK" : "NULL")}");
+
+        // OVRPlugin state
+        try
+        {
+            Diag($"OVRPlugin.initialized={OVRPlugin.initialized}");
+            Diag($"PT supported={OVRPlugin.IsInsightPassthroughSupported()}");
+            Diag($"PT initialized={OVRPlugin.IsInsightPassthroughInitialized()}");
+        }
+        catch (System.Exception ex) { Diag($"OVRPlugin query failed: {ex.Message}"); }
+
         if (OVRManager.instance != null)
         {
             OVRManager.instance.isInsightPassthroughEnabled = true;
+            Diag($"isInsightPassthroughEnabled set to true");
             try { OVRManager.boundary.SetVisible(false); } catch { }
         }
         else
         {
-            Debug.LogWarning("[TableTopXR] OVRManager.instance is null — passthrough may not initialize.");
+            Diag("WARNING: OVRManager.instance is null — passthrough may not initialize");
         }
 
         var layer = Object.FindFirstObjectByType<OVRPassthroughLayer>();
+        Diag($"OVRPassthroughLayer={(layer != null ? $"found on '{layer.gameObject.name}' enabled={layer.enabled}" : "NOT FOUND")}");
         if (layer != null)
+        {
             layer.enabled = true;
-        else
-            Debug.LogWarning("[TableTopXR] OVRPassthroughLayer not found in scene.");
+            Diag($"OVRPassthroughLayer.enabled forced true; overlayType={layer.overlayType} projSurface={layer.projectionSurfaceType}");
+        }
     }
 
     /// <summary>
@@ -196,7 +230,7 @@ public class TableTopXRController : MonoBehaviour
         if (urpData != null)
             urpData.renderPostProcessing = false;
 
-        Debug.Log($"[TableTopXR] Camera '{xrCamera.name}' set transparent. clearFlags={xrCamera.clearFlags} bg={xrCamera.backgroundColor}");
+        Diag($"Camera '{xrCamera.name}': clearFlags={xrCamera.clearFlags} bg={xrCamera.backgroundColor} allowHDR={xrCamera.allowHDR} postFX={urpData?.renderPostProcessing}");
 
         // Log ALL active cameras so we can see the full set.
         var allCams = Camera.allCameras;
