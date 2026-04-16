@@ -17,6 +17,7 @@ using EchoVRAPI;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 using Debug = UnityEngine.Debug;
 using Transform = UnityEngine.Transform;
 
@@ -111,12 +112,12 @@ public class DemoStart : MonoBehaviour
 	#endregion
 
 
-	private void Start()
+	private IEnumerator Start()
 	{
 		// Ahh yes welcome to the code
 
 		instance = this;
-		
+
 		// Initialize debug logging
 		if (gameObject.GetComponent<DebugLogger>() == null)
 		{
@@ -124,13 +125,29 @@ public class DemoStart : MonoBehaviour
 		}
 
 		string demoFile = PlayerPrefs.GetString("fileDirector");
-		
+
+		// If no file was selected via the UI, copy bundled replays from
+		// StreamingAssets/Replays/ to persistentDataPath/Replays/ (required on
+		// Android — StreamingAssets are inside the APK and can't be read directly),
+		// then load the first one found.
+		if (string.IsNullOrEmpty(demoFile))
+		{
+			yield return StartCoroutine(EnsureBundledReplaysCopied());
+			string replaysDir = Path.Combine(Application.persistentDataPath, "Replays");
+			if (Directory.Exists(replaysDir))
+			{
+				string[] extensions = { ".echoreplay", ".nevrcap", ".tape" };
+				demoFile = Directory.EnumerateFiles(replaysDir)
+					.FirstOrDefault(f => extensions.Contains(Path.GetExtension(f).ToLowerInvariant()));
+			}
+		}
+
 		// load arena model so it isn't empty if there is no file selected
 		if (string.IsNullOrEmpty(demoFile))
 		{
 			SceneManager.LoadSceneAsync(GameManager.instance.arenaModelScenes[PlayerPrefs.GetInt("ArenaModelIndex", 0)], LoadSceneMode.Additive);
 		}
-		
+
 		replayFileNameText.text = Path.GetFileName(demoFile);
 		replay.LoadFile(demoFile);
 
@@ -205,6 +222,52 @@ public class DemoStart : MonoBehaviour
 
 		float[] options = { 1, 10, 30, 50 };
 		GameManager.instance.vrRig.transform.parent.localScale = Vector3.one * options[PlayerPrefs.GetInt("VRArenaScale", 2)];
+	}
+
+	/// <summary>
+	/// Copies files listed in StreamingAssets/Replays/manifest.txt to
+	/// persistentDataPath/Replays/ if they aren't already there.
+	/// Required on Android where StreamingAssets live inside the APK.
+	/// </summary>
+	private IEnumerator EnsureBundledReplaysCopied()
+	{
+		string manifestUrl = Application.streamingAssetsPath + "/Replays/manifest.txt";
+		using (UnityWebRequest req = UnityWebRequest.Get(manifestUrl))
+		{
+			yield return req.SendWebRequest();
+			if (req.result != UnityWebRequest.Result.Success)
+			{
+				Debug.LogWarning("[DemoStart] StreamingAssets/Replays/manifest.txt not found: " + req.error);
+				yield break;
+			}
+
+			string destDir = Path.Combine(Application.persistentDataPath, "Replays");
+			Directory.CreateDirectory(destDir);
+
+			foreach (string line in req.downloadHandler.text.Split('\n'))
+			{
+				string name = line.Trim();
+				if (string.IsNullOrEmpty(name)) continue;
+
+				string destPath = Path.Combine(destDir, name);
+				if (File.Exists(destPath)) continue;
+
+				string srcUrl = Application.streamingAssetsPath + "/Replays/" + name;
+				using (UnityWebRequest fileReq = UnityWebRequest.Get(srcUrl))
+				{
+					yield return fileReq.SendWebRequest();
+					if (fileReq.result == UnityWebRequest.Result.Success)
+					{
+						File.WriteAllBytes(destPath, fileReq.downloadHandler.data);
+						Debug.Log($"[DemoStart] Copied bundled replay to {destPath}");
+					}
+					else
+					{
+						Debug.LogWarning($"[DemoStart] Failed to copy bundled replay '{name}': " + fileReq.error);
+					}
+				}
+			}
+		}
 	}
 
 	// Update is called once per frame
@@ -706,10 +769,6 @@ public class DemoStart : MonoBehaviour
 					}
 					playerV4Objects[player.name] = Instantiate(playerV4Prefab, playerObjsParent).GetComponent<PlayerV4>();
 					playerV4Objects[player.name].name = player.name;
-					
-					// Make the PlayerV4 model translucent too
-					MakePlayerTranslucent(playerV4Objects[player.name].gameObject, 0.3f);
-					
 					Debug.Log($"[DemoStart] Created PlayerV4 skeleton for {player.name}");
 				}
 
@@ -825,9 +884,6 @@ public class DemoStart : MonoBehaviour
 		{
 			// instantiate it
 			playerObjects.Add((teamIndex, player.name), Instantiate(teamIndex == 0 ? bluePlayerPrefab : orangePlayerPrefab, playerObjsParent).GetComponent<PlayerCharacter>());
-			
-			// Make the player translucent so bones are visible
-			MakePlayerTranslucent(playerObjects[(teamIndex, player.name)].gameObject, 0.3f);
 		}
 
 		PlayerCharacter p = playerObjects[(teamIndex, player.name)];
@@ -1023,43 +1079,6 @@ public class DemoStart : MonoBehaviour
 		return null;
 	}
 
-	/// <summary>
-	/// Makes a player GameObject and all its children translucent to show bones underneath.
-	/// </summary>
-	/// <param name="playerObject">The player GameObject</param>
-	/// <param name="alpha">Alpha value (0-1), where 0.3 = 30% opacity</param>
-	private static void MakePlayerTranslucent(GameObject playerObject, float alpha)
-	{
-		// Get all renderers in the player and its children
-		Renderer[] renderers = playerObject.GetComponentsInChildren<Renderer>();
-		
-		foreach (Renderer renderer in renderers)
-		{
-			// Skip trail renderers and particle systems
-			if (renderer is TrailRenderer || renderer is ParticleSystemRenderer)
-				continue;
-			
-			foreach (Material mat in renderer.materials)
-			{
-				// Convert material to transparent rendering mode
-				mat.SetFloat("_Mode", 3); // Transparent mode
-				mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-				mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-				mat.SetInt("_ZWrite", 0);
-				mat.DisableKeyword("_ALPHATEST_ON");
-				mat.EnableKeyword("_ALPHABLEND_ON");
-				mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-				mat.renderQueue = 3000;
-				
-				// Set the alpha value
-				Color color = mat.color;
-				color.a = alpha;
-				mat.color = color;
-			}
-		}
-		
-		Debug.Log($"[DemoStart] Made player {playerObject.name} translucent (alpha: {alpha})");
-	}
 }
 
 /// <summary>
