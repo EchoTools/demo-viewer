@@ -13,8 +13,7 @@ using UnityEngine;
 /// What it does:
 ///   1.  Finds GameManager, DemoStart, vrCamera, and Playhead in the open scene.
 ///   2.  Creates a "TableAnchor" empty GameObject at scene root (idempotent).
-///   3.  Moves "Old Arena", "Players", and "disc" under TableAnchor so they
-///       scale together as one unit.
+///   3.  Moves static arena content under TableAnchor so it can scale as one unit.
 ///   4.  Adds TableTopXRController to the GameManager object and wires
 ///       arenaAnchor, xrCamera, and playhead.
 ///   5.  Creates a small "PlayPauseButton" sphere beside the arena and
@@ -31,12 +30,11 @@ public static class SetupXRTableTop
     private const string ButtonName = "PlayPauseButton";
     private const string XRControllerTag = "XRController";
 
-    // Names of arena-content objects to group under TableAnchor.
+    // Names of static arena-content objects to group under TableAnchor.
     // Extend this list if you add more root-level arena objects.
     private static readonly string[] ArenaContentNames =
     {
         "Old Arena",
-        "Players",
         "disc",
     };
 
@@ -142,6 +140,13 @@ public static class SetupXRTableTop
 
             Undo.SetTransformParent(found.transform, tableAnchor.transform, $"Parent {goName} to TableAnchor");
             log.Add($"• Moved '{goName}' under TableAnchor.");
+        }
+
+        GameObject players = GameObject.Find("Players");
+        if (players != null && players.transform.IsChildOf(tableAnchor.transform))
+        {
+            Undo.SetTransformParent(players.transform, null, "Detach Players from TableAnchor");
+            log.Add("• Detached 'Players' from TableAnchor so runtime player meshes do not inherit table-top scale.");
         }
 
         // ── 6. Reset RigScaler to 1:1 (arena is now scaled, not the rig) ─────────

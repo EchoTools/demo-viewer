@@ -63,6 +63,7 @@ public class TableTopXRController : MonoBehaviour
         {
             arenaAnchor.localScale = Vector3.one * tableTopScale;
             PlaceAnchorInFrontOfCamera();
+            ValidatePlayerParenting();
         }
 
         EnablePassthroughRuntime();
@@ -166,6 +167,26 @@ public class TableTopXRController : MonoBehaviour
         arenaAnchor.position = xrCamera.transform.position
             + forward * 1f
             + Vector3.up * (0.8f - xrCamera.transform.position.y);
+    }
+
+    private void ValidatePlayerParenting()
+    {
+        DemoStart demoStart = DemoStart.instance;
+        if (demoStart == null)
+            demoStart = Object.FindFirstObjectByType<DemoStart>();
+
+        Transform players = demoStart != null ? demoStart.playerObjsParent : null;
+        if (players == null || arenaAnchor == null || !players.IsChildOf(arenaAnchor))
+            return;
+
+        string message = $"Players parent '{players.name}' is under scaled arenaAnchor '{arenaAnchor.name}' " +
+                         $"(anchor scale={arenaAnchor.localScale}, lossyScale={arenaAnchor.lossyScale}). " +
+                         "Dynamic player meshes would inherit table-top scale and become effectively invisible. " +
+                         "Detaching Players to scene root.";
+        Debug.LogError("[TableTopXR] " + message);
+        Diag("ERROR: " + message);
+
+        players.SetParent(null, true);
     }
 
     /// <summary>
