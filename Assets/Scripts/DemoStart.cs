@@ -728,9 +728,13 @@ public class DemoStart : MonoBehaviour
 
 		List<PlayerCharacter> movedObjects = new List<PlayerCharacter>();
 
+		bool hasBonePlayers = viewingFrame.bones != null &&
+		                      viewingFrame.bones.user_bones != null &&
+		                      viewingFrame.bones.user_bones.Length > 0;
+
 		// Update the playerv4 data
 		// Render bones if available
-		if (viewingFrame.bones != null && viewingFrame.bones.user_bones != null && viewingFrame.bones.user_bones.Length > 0)
+		if (hasBonePlayers)
 		{
 			if (playhead.CurrentFrameIndex == 0)
 			{
@@ -792,38 +796,44 @@ public class DemoStart : MonoBehaviour
 			Debug.LogWarning("[DemoStart] No bone data in this replay file");
 		}
 
-
-		// Update the players
-		for (int t = 0; t < 2; t++)
+		if (hasBonePlayers)
 		{
-			if (viewingFrame.teams[t].players != null)
+			DestroyLegacyPlayerObjects();
+		}
+		else
+		{
+			// Update the players
+			for (int t = 0; t < 2; t++)
 			{
-				foreach (Player player in viewingFrame.teams[t].players)
+				if (viewingFrame.teams[t].players != null)
 				{
-					// get the matching player from the previous frame.
-					// Searching through all the players is the only way, since they may have 
-					// switched teams or been reorganized in the list when another player joins
-					Player previousPlayer = FindPlayerOnTeam(previousFrame.teams[t], player.name);
+					foreach (Player player in viewingFrame.teams[t].players)
+					{
+						// get the matching player from the previous frame.
+						// Searching through all the players is the only way, since they may have
+						// switched teams or been reorganized in the list when another player joins
+						Player previousPlayer = FindPlayerOnTeam(previousFrame.teams[t], player.name);
 
-					RenderPlayer(player, previousPlayer, t, viewingFrame.client_name == player.name ? viewingFrame.player : null);
+						RenderPlayer(player, previousPlayer, t, viewingFrame.client_name == player.name ? viewingFrame.player : null);
 
-					movedObjects.Add(playerObjects[(t, player.name)]);
+						movedObjects.Add(playerObjects[(t, player.name)]);
+					}
 				}
 			}
-		}
 
-		// remove players that weren't accessed this frame
-		List<(int, string)> playersToRemove = new List<(int, string)>();
-		foreach ((int, string) playerIndex in playerObjects.Keys)
-		{
-			if (!movedObjects.Contains(playerObjects[playerIndex]))
+			// remove players that weren't accessed this frame
+			List<(int, string)> playersToRemove = new List<(int, string)>();
+			foreach ((int, string) playerIndex in playerObjects.Keys)
 			{
-				Destroy(playerObjects[playerIndex].gameObject);
-				playersToRemove.Add(playerIndex);
+				if (!movedObjects.Contains(playerObjects[playerIndex]))
+				{
+					Destroy(playerObjects[playerIndex].gameObject);
+					playersToRemove.Add(playerIndex);
+				}
 			}
-		}
 
-		playersToRemove.ForEach(p => playerObjects.Remove(p));
+			playersToRemove.ForEach(p => playerObjects.Remove(p));
+		}
 
 		// A juno robot that takes the place of the spectator camera
 		// Check if the client is spectating
@@ -840,6 +850,22 @@ public class DemoStart : MonoBehaviour
 				junoCamera.SetActive(false);
 			}
 		} 
+	}
+
+	private void DestroyLegacyPlayerObjects()
+	{
+		if (playerObjects.Count == 0) return;
+
+		Debug.LogWarning($"[DemoStart] Bone-backed PlayerV4 rendering is active; destroying {playerObjects.Count} legacy PlayerCharacter objects to prevent overlapping dummy players.");
+		foreach (PlayerCharacter playerObject in playerObjects.Values)
+		{
+			if (playerObject != null)
+			{
+				Destroy(playerObject.gameObject);
+			}
+		}
+
+		playerObjects.Clear();
 	}
 
 	private Player FindPlayerOnTeam(Team team, string name)
