@@ -74,6 +74,7 @@ public class DemoStart : MonoBehaviour
 	public GameObject bluePlayerPrefab;
 	public GameObject orangePlayerPrefab;
 	public GameObject playerV4Prefab;
+	public bool usePlayerV4BoneRendering = false;
 	public GameObject junoCamera;
 
 	private bool isScored = false;
@@ -731,10 +732,11 @@ public class DemoStart : MonoBehaviour
 		bool hasBonePlayers = viewingFrame.bones != null &&
 		                      viewingFrame.bones.user_bones != null &&
 		                      viewingFrame.bones.user_bones.Length > 0;
+		bool usePlayerV4ThisFrame = usePlayerV4BoneRendering && hasBonePlayers;
 
 		// Update the playerv4 data
 		// Render bones if available
-		if (hasBonePlayers)
+		if (usePlayerV4ThisFrame)
 		{
 			if (playhead.CurrentFrameIndex == 0)
 			{
@@ -805,15 +807,24 @@ public class DemoStart : MonoBehaviour
 		}
 		else if (playhead.CurrentFrameIndex == 0)
 		{
-			Debug.LogWarning("[DemoStart] No bone data in this replay file");
+			if (hasBonePlayers)
+			{
+				Debug.Log($"[DemoStart] Bone data found for {viewingFrame.bones.user_bones.Length} players, but legacy IK PlayerCharacter rendering is active; PlayerV4 is disabled.");
+			}
+			else
+			{
+				Debug.LogWarning("[DemoStart] No bone data in this replay file");
+			}
 		}
 
-		if (hasBonePlayers)
+		if (usePlayerV4ThisFrame)
 		{
 			DestroyLegacyPlayerObjects();
 		}
 		else
 		{
+			DestroyPlayerV4Objects();
+
 			// Update the players
 			for (int t = 0; t < 2; t++)
 			{
@@ -878,6 +889,22 @@ public class DemoStart : MonoBehaviour
 		}
 
 		playerObjects.Clear();
+	}
+
+	private void DestroyPlayerV4Objects()
+	{
+		if (playerV4Objects.Count == 0) return;
+
+		Debug.LogWarning($"[DemoStart] Legacy IK PlayerCharacter rendering is active; destroying {playerV4Objects.Count} PlayerV4 objects to prevent overlapping avatars.");
+		foreach (PlayerV4 playerObject in playerV4Objects.Values)
+		{
+			if (playerObject != null)
+			{
+				Destroy(playerObject.gameObject);
+			}
+		}
+
+		playerV4Objects.Clear();
 	}
 
 	private Player FindPlayerOnTeam(Team team, string name)
