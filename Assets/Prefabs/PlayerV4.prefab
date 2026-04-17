@@ -884,6 +884,10 @@ MonoBehaviour:
   head: {fileID: 2988193784740117542}
   leftHand: {fileID: 4966313906473809034}
   rightHand: {fileID: 1549497537955700795}
+  blueTeamMaterial: {fileID: 2100000, guid: 67f0670470d56ea4fa1258b8a6f00944, type: 2}
+  orangeTeamMaterial: {fileID: 2100000, guid: 8c8d10509775f924e818fb03b20a09f2, type: 2}
+  blueEyesMaterial: {fileID: 2100000, guid: 95150e93c553bbc45858386a0f957e89, type: 2}
+  orangeEyesMaterial: {fileID: 2100000, guid: af7b7d6b9cd1dfa40bc69a448fad0436, type: 2}
   boneMapping:
   - {fileID: 2390506800206397993}
   - {fileID: 7634045437231935217}

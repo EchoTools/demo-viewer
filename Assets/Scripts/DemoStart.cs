@@ -759,11 +759,23 @@ public class DemoStart : MonoBehaviour
 			}
 
 			// Update skeleton objects for all players
-			List<Player> playerList = viewingFrame.GetAllPlayers(true);
-			playerList.Sort((p1, p2) => p2.team_color.CompareTo(p1.team_color));
+			List<(Player player, Team.TeamColor teamColor)> playerList = new List<(Player, Team.TeamColor)>();
+			for (int t = 0; t < viewingFrame.teams.Count; t++)
+			{
+				Team team = viewingFrame.teams[t];
+				if (team?.players == null) continue;
+
+				Team.TeamColor teamColor = t < 2 ? (Team.TeamColor)t : Team.TeamColor.spectator;
+				foreach (Player player in team.players)
+				{
+					playerList.Add((player, teamColor));
+				}
+			}
+			playerList.Sort((p1, p2) => p2.teamColor.CompareTo(p1.teamColor));
 			for (int i = 0; i < playerList.Count; i++)
 			{
-				Player player = playerList[i];
+				Player player = playerList[i].player;
+				Team.TeamColor teamColor = playerList[i].teamColor;
 				if (!playerV4Objects.ContainsKey(player.name))
 				{
 					if (playerV4Prefab == null)
@@ -779,11 +791,11 @@ public class DemoStart : MonoBehaviour
 				BonePlayer bones = null;
 				if (player.playerid >= 0 && bonesByPlayerid.TryGetValue(player.playerid, out bones))
 				{
-					playerV4Objects[player.name].SetPlayerData(player.team_color, player, bones);
+					playerV4Objects[player.name].SetPlayerData(teamColor, player, bones);
 				}
 				else
 				{
-					playerV4Objects[player.name].SetPlayerData(player.team_color, player, null);
+					playerV4Objects[player.name].SetPlayerData(teamColor, player, null);
 					if (playhead.CurrentFrameIndex == 0)
 					{
 						Debug.LogWarning($"[DemoStart] No bone data found for player {player.name} (playerid: {player.playerid}). Available bone player IDs: [{string.Join(", ", bonesByPlayerid.Keys)}]");
